@@ -1,0 +1,24 @@
+---
+import PageNotFoundHero from "@components/PageNotFoundHero.astro"
+import Footer from "@components/ui/Footer.astro"
+import hero from "@assets/hero/hero.jpg"
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Page Not Found</title>
+		<link rel="stylesheet" href="/assets/styles/cssReset.css" />
+		<link rel="stylesheet" href="/assets/styles/mainStyles.css" />
+	</head>
+	<body>
+		<PageNotFoundHero
+            image={hero}
+        />
+        <Footer />
+	</body>
+</html>
+    

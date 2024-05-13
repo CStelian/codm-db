@@ -1,0 +1,52 @@
+---
+import NavBar from '@components/ui/NavBar.astro'
+import Footer from '@components/ui/Footer.astro'
+
+
+interface Props {
+	title: string
+    desc: string
+	image: string
+    url: string
+    type: string
+    twitter?: string
+    siteName?: string
+    locale?: string
+    keywords?: string
+}
+
+const { title, desc, image, url, type, twitter, siteName, locale, keywords } = Astro.props
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+		<meta name="description" content={desc} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={desc} />
+		<meta property="og:image" content={image} />
+		<meta property="og:url" content={url} />
+		<meta property="og:type" content={type} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content={twitter} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={desc} />
+		<meta name="twitter:image" content={image} />
+		<meta name="twitter:creator" content={twitter} />
+		<meta property="og:site_name" content={siteName} />
+		<meta property="og:locale" content={locale} />
+		<meta name="keywords" content={keywords} />
+		<link rel="canonical" href={url} />
+		<link rel="stylesheet" href="/assets/styles/cssReset.css" />
+		<link rel="stylesheet" href="/assets/styles/mainStyles.css" />
+	</head>
+	<body>
+		<NavBar />
+		<slot />
+		<Footer />
+	</body>
+</html>

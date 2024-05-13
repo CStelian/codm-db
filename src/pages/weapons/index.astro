@@ -1,0 +1,199 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from "@utils/seoData/pages"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import { Image } from "astro:assets"
+import CoDMLogo from "@assets/logos/codm-logo.png"
+import type { WeaponType } from "@utils/types"
+import Weapon from "@components/utils/Weapon.astro"
+
+const title = pagesSEO.weapons.title
+const desc = pagesSEO.weapons.desc
+const image = pagesSEO.weapons.image
+const url = pagesSEO.weapons.url
+const type = mainSiteSEO.type
+const siteName = mainSiteSEO.siteName
+const twitter = mainSiteSEO.twitter
+const locale = mainSiteSEO.locale
+const keywords = pagesSEO.weapons.keywords
+
+const weaponsList = await fetch(`${Astro.url.origin}/data/weapons.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type={type}
+    siteName={siteName}
+    twitter={twitter}
+    locale={locale}
+    keywords={keywords}
+>
+
+    <main>
+
+        <h1>
+            Weapons in Call of Duty®: Mobile
+            <Image
+                src={CoDMLogo}
+                alt="Call of Duty®: Mobile Logo"
+                width="40"
+                height="40"
+            />
+        
+        </h1>
+
+        <form>
+            <label for="search">Search for a weapon:</label>
+            <input type="text" id="search" name="search" placeholder="Type a weapon name..." />
+            <select>
+                <option value="all">All</option>
+                <option value="ar">Assault Rifle</option>
+                <option value="sr">Sniper</option>
+                <option value="lmg">LMG</option>
+                <option value="smg">SMG</option>
+                <option value="sg">Shotgun</option>
+                <option value="pistol">Pistol</option>
+                <option value="launcher">Launcher</option>
+            </select>
+        </form>
+        
+        <div class="weapons-list">
+
+            {weaponsList.map((weapon: WeaponType) => (
+                <Weapon
+                    id={weapon.id}
+                    name={weapon.name}
+                    desc={weapon.desc}
+                    type={weapon.type}
+                />
+            ))}
+
+        </div>
+
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        min-height: calc(100vh - 4rem);
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 1rem;
+        filter: drop-shadow(0 0 0.75rem #000);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input, select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #000;
+        border-radius: 0.25rem;
+    }
+
+    input {
+        margin-bottom: 0.5rem;
+    }
+
+    select {
+        margin-bottom: 1rem;
+    }
+
+    .weapons-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+        padding-inline: 1rem;
+    }
+
+    @media (max-width: 768px) {
+
+        .weapons-list {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+    }
+
+</style>
+
+<script>
+
+    const search = document.querySelector("input")
+    const select = document.querySelector("select")
+    const weapons = document.querySelectorAll("#weapon")
+
+    if(!search || !select || !weapons) {
+        throw new Error("Couldn't find the search, select or weapons elements")
+    }
+
+    search.addEventListener("input", () => {
+        const searchValue = search.value.toLowerCase()
+
+        weapons.forEach((weapon) => {
+            const weaponName = weapon.querySelector("h2")?.textContent?.toLowerCase() || '';
+
+            if(weaponName.includes(searchValue)) {
+                const weaponElement = weapon as HTMLElement
+                weaponElement.style.display = "block"
+            } else {
+                const weaponElement = weapon as HTMLElement
+                weaponElement.style.display = "none"
+            }
+        })
+    })
+
+    select.addEventListener("change", () => {
+        const selectValue = select.value
+
+        weapons.forEach((weapon) => {
+
+            if(selectValue === "all" || weapon.classList.contains(selectValue)) {
+                const weaponElement = weapon as HTMLElement
+                weaponElement.style.display = "block"
+            } else {
+                const weaponElement = weapon as HTMLElement
+                weaponElement.style.display = "none"
+            }
+        })
+    })
+
+    const nav = document.querySelector("nav")
+    const main = document.querySelector("main")
+
+    if(!nav || !main) {
+        throw new Error("Couldn't find the nav or main elements")
+    }
+
+    main.style.minHeight = `calc(100vh - ${nav.clientHeight}px)`
+
+</script>

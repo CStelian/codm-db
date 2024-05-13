@@ -1,0 +1,63 @@
+---
+import { navBarPages } from "@utils/lists/pages"
+import { Image } from "astro:assets"
+import logo from "@assets/logos/codm-db-logo.png"
+---
+
+<nav>
+
+    <div class="nav-logo">
+        <a href="/">
+            <Image
+                src={logo}
+                alt="Call of Duty Mobile Database"
+                width={200}
+                height={50}
+            />
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        {navBarPages.map((page) => (
+            <li>
+                <a href={page.path} class="nav-link">
+                    {page.name}
+                </a>
+            </li>
+        ))}
+    </ul>
+
+</nav>
+
+<style>
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: var(--primary-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .nav-link {
+        color: var(--secondary-text-color);
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+
+</style>

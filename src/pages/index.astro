@@ -1,0 +1,36 @@
+---
+import Hero from "@components/Hero.astro"
+import Layout from "@layouts/Layout.astro"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import hero from "@assets/hero/hero.jpg"
+
+const title = mainSiteSEO.title
+const desc = mainSiteSEO.desc
+const keywords = mainSiteSEO.keywords
+const url = mainSiteSEO.url
+const image = mainSiteSEO.image
+const twitter = mainSiteSEO.twitter
+const siteName = mainSiteSEO.siteName
+const type = mainSiteSEO.type
+const locale = mainSiteSEO.locale
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    keywords={keywords}
+    url={url}
+    image={image}
+    twitter={twitter}
+    siteName={siteName}
+    type={type}
+    locale={locale}
+>
+    <Hero
+        image={hero}
+        year="2024"
+        season="Season 4: Fool's Gold"
+        ctaLink="https://www.callofduty.com/blog/2024/04/call-of-duty-mobile-season-4-fools-gold-seek-new-riches-intel"
+    />
+</Layout>

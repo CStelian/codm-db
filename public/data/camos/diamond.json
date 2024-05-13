@@ -1,0 +1,16 @@
+{
+    "ar": "Get 10 kills in a completed match 150 times to unlock.",
+    "sr": "Get 10 kills in a completed match 120 times to unlock.",
+    "lmg": "Get 10 kills in a completed match 120 times to unlock.",
+    "smg": "Get 10 kills in a completed match 120 times to unlock.",
+    "sg": "Get 10 kills in a completed match 120 times to unlock.",
+    "mr": "Get 10 kills in a completed match 100 times to unlock.",
+    "pistol": "Get 10 kills in a completed match 80 times to unlock.",
+    "launcher": {
+        "fhj18": "Destroy 100 UAVs to unlock.",
+        "smrs": "Destroy 100 UAVs to unlock.",
+        "thumper": "Get 10 kills in a completed match 100 times to unlock.",
+        "d13sector": "Destroy 100 UAVs to unlock."
+    },
+    "melee": "Get 500 kills to unlock."
+}

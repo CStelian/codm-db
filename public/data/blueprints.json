@@ -1,0 +1,159 @@
+[
+    {
+        "id": "m4",
+        "legendary": ["Court Jester","Thermal Shroud","Iron Song","Void Implosion (available only in Garena & Chinese version)","Black Gold Royal"],
+        "epic": ["Werewolf Fighter","Black Gold","CQB","Minotaur","Smart Rifle","Magmacomb","Enchanted Carbine","Eruption","Jade","Teal Steal","Back Scratcher","Silver Ghoul","Living Rust","Sickle","Feral Stalker","Radar", "Meteor Shower","Six Feet","The Breakup","Spurred","Munitions","Wicked Whisper","Dangerous Waters","Vengeance","Living Rust","Sickle","Feral Stalker","Radar","Meteor Shower","Six Feet","The Breakup","Spurred","Munitions","Wicked Whisper","Dangerous Waters","Vengeance", "Prince of Time"]
+    },
+    {
+        "id": "type-25",
+        "legacy": ["Phoenix Inferno"],
+        "legendary": ["Bloody Vengeance", "Magnetic Engine", "Horseman's Pick", "Hell's Horse"],
+        "epic": ["Geometry", "Cardboard", "Cyberspace", "Silver Ghoul", "Thermonuclear", "Demise", "Ruby", "Heartbreaker", "Infiltrate", "Defibrillator", "Password Protected", "Iced Out", "Sanguine", "Oni", "Cutting Edge", "Steel Blue", "Jungle Militia", "Summerburst", "Moonlight Rime", "Blight", "Coils", "Cindersmoke", "Bolt Press", "Street Cred India", "Grid Runner", "Last Stand", "Fighting Girl", "Rooster's Dawn", "Summer Coaster", "Tactical Inlay", "Sapphire"]
+    },
+    {
+        "id": "m16",
+        "legendary": ["Targonite-3", "Peacock's Cry"],
+        "epic": ["Valentine", "Bloody Vengeance", "Heavy Duty", "Fubar", "Ruby", "Alligator Alley", "Fright Night", "Gold Glitter", "Chrome Wave", "The Stripe", "Patriotic", "2nd Anniversary Limited", "Pumpkin Repeater", "Lab Standard", "Born to Win", "Wise Vines", "Street Art", "Hanahaki", "Wired Dread", "The Chase!"]
+    },
+    {
+        "id": "ak117",
+        "mythic": ["Grim Ending"],
+        "legendary": ["Holidays", "Meltdown", "Platinum Raider (exclusive to the Garena & Chinese versions)", "Aesir", "Dazzling Rhythm", "Meltdown Prestige (purchasing 3 main rewards from draws to unlock, exclusive to the event)"],
+        "epic": ["Medieval", "Year of the Rat", "Smart Rifle", "Cyberspace", "Magmacomb", "Bengal", "Fighter Aircraft", "Barricade", "Kit Bag", "Snake Bite", "Armor Plated", "Subtropic", "Neon Lotus", "BiSH", "Outcast", "Ice Crystal", "Moonstone", "Sprite Ops", "Revolt", "Emergence", "Calligraphy", "VHS Glitch", "Munitions", "Rhinestone", "Nightwind", "Nightwind Red", "Nightwind Silver", "Nightwind Black", "Un-Official Merch", "Tank Wheels", "Sakura Storm", "Wrapped", "Archtoxin", "Bolted Steel", "Black Rose", "Eclipse", "Winged Lapis", "Admiral's Pick", "Future Apollo", "School's Out", "Pop Idol", "Iron Flight", "Jeweled Scales", "Resonant Frequency", "Corporate Issue", "Engraved Longevity", "Floating Lotus", "Vintage Roadster", "Savaged Fate"]
+    },
+    {
+        "id": "ak-47",
+        "mythic": ["Radiance"],
+        "legendary": ["Wrath Black & Gold", "Pumpkin Head (Formerly an Epic Blueprint)", "Kuromaku", "Kuromaku Prestige (purchasing 3 main rewards from draws to unlock, exclusive to the event)", "Moon Shadow", "Iron Lion"],
+        "epic": ["Red Action", "Tank", "Steel Blue", "Gold", "Jade", "Metallic Mist", "Mirage", "Trail and Error", "Artillery", "Woodland Strife", "Stakeholder", "Frostbrand", "Demolition", "Year of Ox", "Graveyard Watch", "Trial and Error", "Rogue Intel", "Living Rust", "Koi Pond", "Life and Death", "Deep Tech", "Shore Leave", "Paranormal Prize", "Resonant", "Mech Owl", "Potion Seller", "Blazed Prisma", "Mania", "Ancient Wizard", "Splitting Grin", "World Maker", "Electrified", "Burning Ruby", "Eminent Assault", "Orbit", "Coded", "God Hunter", "Pink Perforator", "Serpent Queen"]
+    },
+    {
+        "id": "asm10",
+        "legendary": ["Bunker Buster", "Abyssal Agent", "Sleek Defiance (Available only in Garena and CN versions)", "Red Shadow"],
+        "epic": ["Black Gold", "Heatstroke", "Doomed Drake", "Plasma", "Assembly", "Nuclear Fallout", "Strafing Run", "Direct Heat", "Misha", "Bomb Baby", "Party Area", "Automaton", "Mitosis", "Scabbard", "Volution", "Tomb Trapper", "2nd Anniversary Limited", "Rideout", "Flames and Frost", "Burnt Bone", "Snakeskin", "Enlightened", "Abyssal Flame", "Vulpine Prankster", "Midfield Legend", "Castle in the Dark", "Neon Oni", "Hot Zone", "Empty Shells", "Leonine Guardian", "Space Station", "Frog Prince"]
+    },
+    {
+        "id": "bk57",
+        "legendary": ["Space Race", "Flash Freeze", "Spectral Song"],
+        "epic": ["New Year '20", "Wild West", "Firecracker", "Wasteland", "Championship Purple", "Gimmick", "Nuclear Fallout", "Odyssey", "Going Kawaii", "Data Miner", "Guardian Spirit", "Counter Stealth Unit", "Ready to Blow", "Vapor Sunset", "Mech Tiger", "Death Card", "Call of the Tropics", "Bleeding Rose", "Music For Life", "Dragonic Technique", "Sapphire"]
+    },
+    {
+        "id": "lk24",
+        "legendary": ["Justicar", "Anime Girl (formerly called Idol Star)", "Drop Shock"],
+        "epic": ["Royal Crimson", "CQB", "Viking", "Cyberspace", "Heatstroke", "Bengal", "Antivenom", "Championship Purple", "Backwoods", "Sharkbait (formerly called Sharkbite)", "Citrine", "Magnetic Pulse", "Nosebleed", "Firehook", "Emergence", "Last Stand", "Down Range", "Chromatic City (formerly called Neon Tiger)", "Bitmap", "Last Stand", "Toxic Overflow", "Vanquished", "Phoenix", "Rusted Shroud", "Troublesome Tiki", "Monster Love", "M.V.P Messi", "Amethyst Serpent", "Dragon Boat Festival", "Indomitable", "Envenomed"]
+    },
+    {
+        "id": "icr-1",
+        "legendary": ["Forced Laughter", "Innovator", "Sabre Blade", "Knock Out", "Wisterian Visage (Garena & Chinese version exclusive)"],
+        "epic": ["Dark Matter", "Lava", "Nuclear Fallout", "Color Spectrum", "Retro Nuclear", "Tourmaline", "Hot Heat", "Meteor Core", "Phobos", "Circuit Board", "Ignition", "Fenrir", "Ferrofluid", "Bright Nova", "Crimson Knife", "Blood Money", "Chrome Bones", "Geometry", "Festive Frenzy", "Trenched", "Starmap", "Death Ahoy", "Deathstalked", "Bloody Skies", "Bonsai Militant", "Shiver", "Skitter", "Sonic Waves", "Spun Gold", "Threaded Mystery", "Verdant Mist", "Vaporous Spite"]
+    },
+    {
+        "id": "man-o-war",
+        "legendary": ["Dream Crystal", "Death Scythe", "Death Scythe Prestige (purchasing 3 main rewards from draws to unlock, exclusive to the event)", "Strafing Run"],
+        "epic": ["Industrial Revolution", "Nuclear Fallout", "Zilch", "Cardinal", "Tiger's Eye", "Dark Flare", "Ice Crystal", "Pack Leader", "Circuit Board", "Five Knights", "UAC", "Sakura Storm", "Bloodbath", "Enteroctopus", "Hazardous", "Constrictor", "Red Action", "Vicious Party", "Covenant Standard", "Wolf's Mane", "Sterling Ace", "Enteroctopus", "Desecration", "Spirit Sender", "Tropical Storm", "Slick Spectrum", "Dial-Tone", "Dark Matter", "Coded", "Warrior's Redoubt", "Bright Night"]
+    },
+    {
+        "id": "kn-44",
+        "legendary": ["Color Spectrum", "Dance of Death", "Mystic Fox", "Shadow's Wings"],
+        "epic": ["Eruption", "Living Rust", "Untamed", "Cyberspace", "Tourmaline", "Black Gold", "Giftwrapped", "Golden Talon", "Championship Mindset", "Swindler", "ENOC", "Imperial Guard", "Silver Patriot", "Bats Reunion", "Frosted Spikes", "Peak Light", "Shield Breaker", "Fortified Steel", "Roller Star", "Silver Jet", "Vindictive Viper", "Rockin'!", "Candy Bracelet", "Side Scroller", "Geisha's Gaze", "Summer Sunset", "Batty", "Closing Shot"]
+    },
+    {
+        "id": "hbra3",
+        "legendary": ["Swarm", "Rictus Arc", "Lucid Sands"],
+        "epic": ["Dragon Dance", "Moonstone", "Mob Boss", "Black Gold", "Soul Chain", "New Horizon", "Capacitor", "Porcelain Yakuza", "Glow Fly", "Ferrofluid", "Bear Fist", "Halberd", "Lead Launcher", "Antikythera", "Jaguar 3000", "Street Cred EU", "Kitten Boss", "Burning Cobalt", "Iron Flight", "Steel Carnage", "Avenir", "Hanahaki", "Mahogany Shooter", "Bright Night"]
+    },
+    {
+        "id": "hvk-30",
+        "legendary": ["Maximum Security", "Cartridge Crusher", "New Reign"],
+        "epic": ["Eruption", "Chrome Wave", "Pseudoscience", "Target Lock", "Insurgent", "Jumper Cable", "Dark Matter", "Nettle Bloom", "Spray Bomb", "Smart Rifle", "Fortune's Favor", "Black Beard's Blaster", "Toxic Charge", "Cloud Cover", "Lava Beast", "Ice Demon", "Russian Heart"]
+    },
+    {
+        "id": "dr-h",
+        "legendary": ["Wicked Claw", "Purebred", "Blood Rose", "Poised Guardian", "KUROHANA – 68"],
+        "epic": ["Chained", "Basecamp", "Noir", "Comrade", "Gold Glitter", "Circuit Board", "Cyber Security", "Widower", "Sludge", "Revolt", "Metallurgy", "Wastelander", "Rebreather", "Mother of Pearl", "2nd Anniversary Limited", "Geometry", "Altered Human", "Tactical Prowl", "Algorithmic", "Dark Matter", "Ferg’s Nuker", "Pop Cat", "Survivalist’s Special", "Neon Shuriken", "Dark Secrets", "Nuclear Fallout", "Burning Iron", "Waves", "Harrowing Night", "LU-NA", "Ali (Garena & CN version)", "God Hunter", "Feathered"]
+    },
+    {
+        "id": "peacekeeper-mk2",
+        "mythic": ["Artifact"],
+        "legendary": ["Crustpunker", "Vivid Notes"],
+        "epic": ["Blast Off", "Divine Presence", "Golden Talon", "Runic Fire", "Moon Glow", "Debris Field", "Spine Rattle", "Plasma Explosion", "Mission Debrief", "Apex Predator", "Jeweled Scales", "Vengeful Urge", "Tuning Frequency", "Falling Angel", "Vengeance", "Battle Hues"]
+    },
+    {
+        "id": "fr.556",
+        "legendary": ["Superhighway", "Geo-Blaster 3000"],
+        "epic": ["Rogue Agent", "Insurgency", "Kuudere", "Patchwork", "Munitions", "Iron Chariot", "Ghost of the Sea", "Undead Watcher", "Smart Rifle", "Fractured Forces", "Greater Spiral", "Twisting Ashes", "Cobra Jungle", "Temple Guardian", "Make It Rain", "Illumination", "Side Scroller", "Tricker Treater", "Melting Eye", "Unburied Treasure"]
+    },
+    {
+        "id": "as-val",
+        "mythic": ["Double Edge"],
+        "legendary": ["Steel Fusion", "Beijing Operatic"],
+        "epic": ["Judgment", "Playmaker", "Radion Burst", "Red Action", "Pollinator", "Plasma Explosion", "Countdown", "Tagger", "Reek Oil Repeater", "Spilled", "Angel Fire", "Hell Shredder", "Heat Shield", "No Man’s Land", "Mission Debrief", "Demon Spawning", "Abyssal Slayer", "Iron Flight", "Cosmic Dust", "Make It Rain", "Baneful", "Treasure Seeker", "Deadly Lasers"]
+    },
+    {
+        "id": "cr-56-amax",
+        "legendary": ["Red Death", "Feral Tusk", "Twisted Visions", "Distemper"],
+        "epic": ["Torpedo", "Street Venom", "Barrier Break", "Tattered Shot", "Vector Pop", "Confession", "Dark Matter", "Frosted Gift", "Bloody Slasher", "Painted Winds", "Woeful Bone", "Glittery Nights", "Focus", "Revivalist"]
+    },
+    {
+        "id": "m13",
+        "mythic": ["Morningstar"],
+        "legendary": ["Liminal Flare", "Carrot Cutie"],
+        "epic": ["Darkwing", "Dark Matter", "Brimstone", "Sweaterscape", "Cool Tiger", "Opulent Courage", "Vector Point", "Space Walker", "Sapphire Burst", "Covert Canopy", "Warlock’s Spell", "M.V.P. Neymar Jr", "Solar Spirit", "Lucid", "Cold Cream", "Smoldering Beholder", "Empty Shells", "Diamond Edge", "Interlock ADV", "Spectral Choir", "Aubergine and Teal", "Chrome Cruiser"]
+    },
+    {
+        "id": "swordfish",
+        "legendary": ["Calaca", "Aquatic Slayer", "Calaca Prestige (purchasing 3 main rewards from draws to unlock, exclusive to the event)"],
+        "epic": ["MK2", "Comical Rage", "Dark Matter", "Cool Tiger", "Vitamin Punch", "Mechanical God", "Arid Shroud", "Eclipse", "Smeared Hand", "Lucky Ball"]
+    },
+    {
+        "id": "kilo-141",
+        "mythic": ["Demonsong"],
+        "legendary": ["Nova Gold", "Legion’s Spear"],
+        "epic": ["Grub", "Hair Metal", "Essence of Life", "K-484", "Counter-Cat", "God of the Sea", "Back to the Fray", "Liquid Portal", "Gentleman’s Calling", "Sonic Waves", "Desert Misfit", "Refreshing", "Umber Cloud", "Webspinner"]
+    },
+    {
+        "id": "oden",
+        "mythic": ["Divine Smite"],
+        "legendary": ["Gripped Chaos"],
+        "epic": ["Megalodon", "Nuclear Fallout", "Neko-Neko", "Demonic Sight", "Red Sleigher", "Poetic Winds", "Russian Heart", "Violet Crystal", "Sonic Waves", "Tranquil Vision", "Scoreboard!"]
+    },
+    {
+        "id": "krig-6",
+        "mythic": ["Ice Drake"],
+        "legendary": ["Slick Chrome"],
+        "epic": ["Earth’s Crust", "The Jolly Blaster", "Dog House", "Dark Matter", "Turquoise Griffin", "Vibrant Spray", "Submerged", "Final Covenant (Garena & Chinese exclusive)", "Grim Reminder", "Devillish", "Silken"]
+    },
+    {
+        "id": "em2",
+        "mythic": ["Eclipse Phaser"],
+        "legendary": ["Pineapple Crush"],
+        "epic": ["Gilded Hammer", "Rockin’!", "Liquid Portal", "Demonic Feline", "Coded", "Imminent Demise", "Frog Prince"]
+    },
+    {
+        "id": "maddox",
+        "legendary": ["Avalanche", "Squash Demon"],
+        "epic": ["Aerodynamic", "Menacing Champ", "Collapse Fluid", "Summer Sunset"]
+    },
+    {
+        "id": "ffar-1",
+        "mythic": ["Bright Blade"],
+        "legendary": ["Pharaoh’s Words"],
+        "epic": ["Burnt a Cinder", "Hieroglyphic Heat", "Mad Hatter’s Revenge"]
+    },
+    {
+        "id": "grau-556",
+        "mythic": ["Phantom’s Core"],
+        "legendary": ["Burned Soul"],
+        "epic": ["Nordic Warrior", "Cryptic Whisper", "The Inevitable", "Grinding Gears", "Refreshing"]
+    },
+    {
+        "id": "groza",
+        "legendary": ["Severed Flowers"],
+        "epic": ["Final Gift", "Razored Scales", "Majestic Scales"]
+    },
+    {
+        "id": "type-19",
+        "mythic": ["Celestial Ink"],
+        "epic": ["Imperial Refinement"]
+    }
+]

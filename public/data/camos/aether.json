@@ -1,0 +1,20 @@
+{
+    "ar": "Get 25 kills with this weapon in 6 completed Undead Siege matches. (Hard or Nightmare)",
+    "sr": "Get 8 kills with this weapon in 6 completed Undead Siege matches. (Hard or Nightmare)",
+    "lmg": "Get 25 kills with this weapon in 6 completed Undead Siege matches. (Hard or Nightmare)",
+    "smg": "Get 25 kills with this weapon in 6 completed Undead Siege matches. (Hard or Nightmare)",
+    "sg": "Get 12 kills with this weapon in 6 completed Undead Siege matches. (Hard or Nightmare)",
+    "mr": "Get 8 kills with this weapon in 6 completed Undead Siege matches. (Hard or Nightmare)",
+    "pistol": "Get 15 kills with this weapon in 6 completed Undead Siege matches. (Hard or Nightmare)",
+    "launcher" : "Unlock Aether Crystal Camo for all primary weapons.",
+    "melee": {
+        "machete": "Unlock Aether Crystal Camo for all assault rifles.",
+        "sickle": "Unlock Aether Crystal Camo for all snipers.",
+        "baseballBat": "Unlock Aether Crystal Camo for all LMGs.",
+        "axe": "Unlock Aether Crystal Camo for all SMGs.",
+        "shovel": "Unlock Aether Crystal Camo for all shotguns.",
+        "knife": "Unlock Aether Crystal Camo for all marksman rifles.",
+        "katana": "Unlock Aether Crystal Camo for all pistols.",
+        "default": "Unlock Aether Crystal Camo for all primary weapons."
+    }
+}

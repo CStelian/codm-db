@@ -1,0 +1,570 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import ProgressBar from "@components/utils/ProgressBar.astro"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+
+import type { WeaponType } from "@utils/types"
+import type { WeaponBlueprint } from "@utils/types"
+
+const { id } = Astro.params
+
+const weaponsList = await fetch(`${Astro.url.origin}/data/weapons.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+let name = ""
+let desc = ""
+let type = ""
+let dmg = "" as number | string
+let acc = "" as number | string
+let range = "" as number | string
+let fireRate = "" as number | string
+let mobility = "" as number | string
+let ctrl = "" as number | string
+
+weaponsList.forEach((weapon: WeaponType) => {
+    if (weapon.id === id) {
+        name = weapon.name
+        desc = weapon.desc
+        switch(weapon.type) {
+            case "ar":
+                type = "Assault Rifle"
+                break
+            case "sr":
+                type = "Sniper"
+                break
+            case "lmg":
+                type = "LMG"
+                break
+            case "smg":
+                type = "SMG"
+                break
+            case "sg":
+                type = "Shotgun"
+                break
+            case "pistol":
+                type = "Pistol"
+                break
+            case "launcher":
+                type = "Launcher"
+            break
+        }
+        dmg = weapon.dmg
+        acc = weapon.acc
+        range = weapon.range
+        fireRate = weapon.fireRate
+        mobility = weapon.mobility
+        ctrl = weapon.ctrl
+    }
+})
+
+const goldCamoRequirements = await fetch(`${Astro.url.origin}/data/camos/gold.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+let sand = ""
+let dragon = ""
+let splinter = ""
+let tiger = ""
+let jungle = ""
+let reptile = ""
+
+weaponsList.forEach((weapon: WeaponType) => {
+    if (weapon.id === id) {
+        switch (weapon.type) {
+        case "ar":
+            sand = goldCamoRequirements.ar.sand
+            dragon = goldCamoRequirements.ar.dragon
+            splinter = goldCamoRequirements.ar.splinter
+            tiger = goldCamoRequirements.ar.tiger
+            jungle = goldCamoRequirements.ar.jungle
+            reptile = goldCamoRequirements.ar.reptile
+            break
+        case "sr":
+            sand = goldCamoRequirements.sr.sand
+            dragon = goldCamoRequirements.sr.dragon
+            splinter = goldCamoRequirements.sr.splinter
+            tiger = goldCamoRequirements.sr.tiger
+            jungle = goldCamoRequirements.sr.jungle
+            reptile = goldCamoRequirements.sr.reptile
+            break
+        case "lmg":
+            sand = goldCamoRequirements.lmg.sand
+            dragon = goldCamoRequirements.lmg.dragon
+            splinter = goldCamoRequirements.lmg.splinter
+            tiger = goldCamoRequirements.lmg.tiger
+            jungle = goldCamoRequirements.lmg.jungle
+            reptile = goldCamoRequirements.lmg.reptile
+            break
+        case "smg":
+            sand = goldCamoRequirements.smg.sand
+            dragon = goldCamoRequirements.smg.dragon
+            splinter = goldCamoRequirements.smg.splinter
+            tiger = goldCamoRequirements.smg.tiger
+            jungle = goldCamoRequirements.smg.jungle
+            reptile = goldCamoRequirements.smg.reptile
+            break
+        case "sg":
+            sand = goldCamoRequirements.sg.sand
+            dragon = goldCamoRequirements.sg.dragon
+            splinter = goldCamoRequirements.sg.splinter
+            tiger = goldCamoRequirements.sg.tiger
+            jungle = goldCamoRequirements.sg.jungle
+            reptile = goldCamoRequirements.sg.reptile
+            break
+        case "pistol":
+            sand = goldCamoRequirements.pistol.sand
+            dragon = goldCamoRequirements.pistol.dragon
+            splinter = goldCamoRequirements.pistol.splinter
+            tiger = goldCamoRequirements.pistol.tiger
+            jungle = goldCamoRequirements.pistol.jungle
+            reptile = goldCamoRequirements.pistol.reptile
+            break
+        case "launcher":
+            switch (weaponsList.id) {
+                case "fhj-18":
+                    sand = goldCamoRequirements.launcher.fhj18.sand
+                    dragon = goldCamoRequirements.launcher.fhj18.dragon
+                    splinter = goldCamoRequirements.launcher.fhj18.splinter
+                    tiger = goldCamoRequirements.launcher.fhj18.tiger
+                    jungle = goldCamoRequirements.launcher.fhj18.jungle
+                    reptile = goldCamoRequirements.launcher.fhj18.reptile
+                    break
+                case "smrs":
+                    sand = goldCamoRequirements.launcher.smrs.sand
+                    dragon = goldCamoRequirements.launcher.smrs.dragon
+                    splinter = goldCamoRequirements.launcher.smrs.splinter
+                    tiger = goldCamoRequirements.launcher.smrs.tiger
+                    jungle = goldCamoRequirements.launcher.smrs.jungle
+                    reptile = goldCamoRequirements.launcher.smrs.reptile
+                    break
+                case "thumper":
+                    sand = goldCamoRequirements.launcher.thumper.sand
+                    dragon = goldCamoRequirements.launcher.thumper.dragon
+                    splinter = goldCamoRequirements.launcher.thumper.splinter
+                    tiger = goldCamoRequirements.launcher.thumper.tiger
+                    jungle = goldCamoRequirements.launcher.thumper.jungle
+                    reptile = goldCamoRequirements.launcher.thumper.reptile
+                    break
+                case "d13-sector":
+                    sand = goldCamoRequirements.launcher.d13sector.sand
+                    dragon = goldCamoRequirements.launcher.d13sector.dragon
+                    splinter = goldCamoRequirements.launcher.d13sector.splinter
+                    tiger = goldCamoRequirements.launcher.d13sector.tiger
+                    jungle = goldCamoRequirements.launcher.d13sector.jungle
+                    reptile = goldCamoRequirements.launcher.d13sector.reptile
+                    break
+                default:
+                    sand = "There is no data for this weapon."
+                    dragon = "There is no data for this weapon."
+                    splinter = "There is no data for this weapon."
+                    tiger = "There is no data for this weapon."
+                    jungle = "There is no data for this weapon."
+                    reptile = "There is no data for this weapon."
+            }
+            break
+        default:
+            sand = "There is no data for this weapon."
+            dragon = "There is no data for this weapon."
+            splinter = "There is no data for this weapon."
+            tiger = "There is no data for this weapon."
+            jungle = "There is no data for this weapon."
+            reptile = "There is no data for this weapon."
+        }
+    }
+})
+
+const platinumCamoRequirements = await fetch(`${Astro.url.origin}/data/camos/platinum.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+let platinum = ""
+
+weaponsList.forEach((weapon: WeaponType) => {
+    if (weapon.id === id) {
+        switch (weapon.type) {
+        case "ar":
+            platinum = platinumCamoRequirements.ar
+            break
+        case "sr":
+            platinum = platinumCamoRequirements.sr
+            break
+        case "lmg":
+            platinum = platinumCamoRequirements.lmg
+            break
+        case "smg":
+            platinum = platinumCamoRequirements.smg
+            break
+        case "sg":
+            platinum = platinumCamoRequirements.sg
+            break
+        case "pistol":
+            platinum = platinumCamoRequirements.pistol
+            break
+        case "launcher":
+            platinum = platinumCamoRequirements.launcher
+            break
+        default:
+            platinum = "There is no data for this weapon."
+        }
+    }
+})
+
+const damascusCamoRequirements = await fetch(`${Astro.url.origin}/data/camos/damascus.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+let damascus = ""
+
+weaponsList.forEach((weapon: WeaponType) => {
+    if (weapon.id === id) {
+        switch (weapon.type) {
+        case "ar":
+            damascus = damascusCamoRequirements.ar
+            break
+        case "sr":
+            damascus = damascusCamoRequirements.sr
+            break
+        case "lmg":
+            damascus = damascusCamoRequirements.lmg
+            break
+        case "smg":
+            damascus = damascusCamoRequirements.smg
+            break
+        case "sg":
+            damascus = damascusCamoRequirements.sg
+            break
+        case "pistol":
+            damascus = damascusCamoRequirements.pistol
+            break
+        case "launcher":
+            damascus = damascusCamoRequirements.launcher
+            break
+        default:
+            damascus = "There is no data for this weapon."
+        }
+    }
+})
+
+const diamondCamoRequirements = await fetch(`${Astro.url.origin}/data/camos/diamond.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+let diamond = ""
+
+weaponsList.forEach((weapon: WeaponType) => {
+    if (weapon.id === id) {
+        switch (weapon.type) {
+        case "ar":
+            diamond = diamondCamoRequirements.ar
+            break
+        case "sr":
+            diamond = diamondCamoRequirements.sr
+            break
+        case "lmg":
+            diamond = diamondCamoRequirements.lmg
+            break
+        case "smg":
+            diamond = diamondCamoRequirements.smg
+            break
+        case "sg":
+            diamond = diamondCamoRequirements.sg
+            break
+        case "pistol":
+            diamond = diamondCamoRequirements.pistol
+            break
+        case "launcher":
+            switch (weapon.id) {
+                case "fhj-18":
+                    diamond = diamondCamoRequirements.launcher.fhj18
+                    break
+                case "smrs":
+                    diamond = diamondCamoRequirements.launcher.smrs
+                    break
+                case "thumper":
+                    diamond = diamondCamoRequirements.launcher.thumper
+                    break
+                case "d13-sector":
+                    diamond = diamondCamoRequirements.launcher.d13sector
+                    break
+                default:
+                    diamond = "There is no data for this weapon."
+                }
+            break
+        default:
+            diamond = "There is no data for this weapon."
+        }
+    }
+})
+
+let aetherCrystalCamoRequirements = await fetch(`${Astro.url.origin}/data/camos/aether.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+let aether = ""
+
+weaponsList.forEach((weapon: WeaponType) => {
+    if (weapon.id === id) {
+        switch (weapon.type) {
+        case "ar":
+            aether = aetherCrystalCamoRequirements.ar
+            break
+        case "sr":
+            aether = aetherCrystalCamoRequirements.sr
+            break
+        case "lmg":
+            aether = aetherCrystalCamoRequirements.lmg
+            break
+        case "smg":
+            aether = aetherCrystalCamoRequirements.smg
+            break
+        case "sg":
+            aether = aetherCrystalCamoRequirements.sg
+            break
+        case "pistol":
+            aether = aetherCrystalCamoRequirements.pistol
+            break
+        case "launcher":
+            aether = aetherCrystalCamoRequirements.launcher
+            break
+        default:
+            aether = "There is no data for this weapon."
+        }
+    }
+})
+
+const weaponBlueprints = await fetch(`${Astro.url.origin}/data/blueprints.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+let mythicBlueprints: any[] = []
+let legacyBlueprints: any[] = []
+let legendaryBlueprints: any[] = []
+let epicBlueprints: any[] = []
+
+weaponBlueprints.forEach((weapon: WeaponBlueprint) => {
+    if (weapon.id === id) {
+        mythicBlueprints = weapon.mythic ?? []
+        legacyBlueprints = weapon.legacy ?? []
+        legendaryBlueprints = weapon.legendary ?? []
+        epicBlueprints = weapon.epic ?? []
+    }
+})
+
+
+---
+
+<Layout
+    title={name}
+    desc={desc}
+    url={`${mainSiteSEO.url}/weapons/${id}`}
+    image={`${mainSiteSEO.url}/assets/weapons/${id}.png`}
+    type="article"
+>
+    <h1>
+        <span class="main-title">
+            {name}
+        </span>
+
+        <span class="weapon-type">({type})</span>
+
+    </h1>
+
+    <p class="weapon-description">
+        {desc}
+    </p>
+
+    <Image
+        src={`/assets/images/weapons/${id}.webp`}
+        alt={name}
+        width={800}
+        height={400}
+    />
+
+    <div class="weapon-stats">
+    
+        <ProgressBar
+            title="Damage"
+            progress={dmg}
+        />
+
+        <ProgressBar
+            title="Fire Rate"
+            progress={fireRate}
+        />
+
+        <ProgressBar
+            title="Accuracy"
+            progress={acc}
+        />
+
+        <ProgressBar
+            title="Mobility"
+            progress={mobility}
+        />
+
+        <ProgressBar
+            title="Range"
+            progress={range}
+        />
+
+        <ProgressBar
+            title="Control"
+            progress={ctrl}
+        />
+
+    </div>
+
+    <hr />
+
+    <div class="camos">
+        <h2>Gold Camo Requirements</h2>
+        <ul>
+            <li>Sand: {sand}</li>
+            <li>Dragon: {dragon}</li>
+            <li>Splinter: {splinter}</li>
+            <li>Tiger: {tiger}</li>
+            <li>Jungle: {jungle}</li>
+            <li>Reptile: {reptile}</li>
+        </ul>
+
+        <h2>Platinum Camo Requirements</h2>
+        <p>{platinum}</p>
+
+        <h2>Damascus Camo Requirements</h2>
+        <p>{damascus}</p>
+
+        <h2>Diamond Camo Requirements</h2>
+        <p>{diamond}</p>
+
+        <h2>Aether Crystal Camo Requirements</h2>
+        <p>{aether}</p>
+
+    </div>
+
+    <hr />
+
+    <div class="blueprints">
+
+        {mythicBlueprints.length > 0 && (
+            <div>
+                <h2 class="mythic">Mythic Blueprints</h2>
+                <ul>
+                    {mythicBlueprints.map((blueprint) => (
+                        <li>{name} - {blueprint}</li>
+                    ))}
+                </ul>
+            </div>
+        )}
+
+        {legacyBlueprints.length > 0 && (
+            <div>
+                <h2 class="legacy">Legacy Blueprints</h2>
+                <ul>
+                    {legacyBlueprints.map((blueprint) => (
+                        <li>{name} - {blueprint}</li>
+                    ))}
+                </ul>
+            </div>
+        )}
+
+        {legendaryBlueprints.length > 0 && (
+            <div>
+                <h2 class="legendary">Legendary Blueprints</h2>
+                <ul>
+                    {legendaryBlueprints.map((blueprint) => (
+                        <li>{name} - {blueprint}</li>
+                    ))}
+                </ul>
+            </div>
+        )}
+
+        {epicBlueprints.length > 0 && (
+            <div>
+                <h2 class="epic">Epic Blueprints</h2>
+                <ul>
+                    {epicBlueprints.map((blueprint) => (
+                        <li>
+                            {name === "Swordfish" && blueprint === "MK2" ? 
+                            `${name} ${blueprint}` : 
+                            `${name} - ${blueprint}`
+                        }
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )}
+        
+    </div>
+
+</Layout>
+
+<style>
+    
+    h1 {
+        text-align: center;
+    }
+
+    .weapon-type {
+        font-size: 1.5rem;
+        color: var(--tertiary-text-color);
+    }
+
+    .weapon-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .weapon-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    img {
+        margin: 2rem auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .camos {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .blueprints {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .blueprints h2 {
+        margin-top: 2rem;
+    }
+
+    .mythic {
+        color: var(--mythic-color);
+    }
+
+    .legacy {
+        color: var(--legacy-color);
+    }
+
+    .legendary {
+        color: var(--legendary-color);
+    }
+
+    .epic {
+        color: var(--epic-color);
+    }
+
+    hr {
+        margin: 2rem auto;
+        width: 90%;
+    }
+
+</style>

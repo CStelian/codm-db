@@ -1,0 +1,100 @@
+{
+    "ar": {
+        "sand": "Get 600 kills using the assault rifle.",
+        "dragon": "Get 50 hip fire kills using the assault rifle.",
+        "splinter": "Get 80 kills at long range using the assault rifle.",
+        "tiger": "Get 125 kills with full attachments equipped using the assault rifle.",
+        "jungle": "Get 100 headshot kills using the assault rifle.",
+        "reptile": "Get 80 kills with no attachments equipped using the assault rifle."
+    },
+    "sr":  {
+        "sand": "Get 350 kills using the sniper.",
+        "dragon": "Get 45 kills while crouching using the sniper.",
+        "splinter": "Get 120 kills at long range using the sniper.",
+        "tiger": "Get 125 kills with full attachments equipped using the sniper.",
+        "jungle": "Get 50 headshot kills using the sniper.",
+        "reptile": "Get 60 kills with no attachments equipped using the sniper."
+    },
+    "lmg":  {
+        "sand": "Get 400 kills using the LMG.",
+        "dragon": "Get 45 hip fire kills using the LMG.",
+        "splinter": "Get 45 kills at long range using the LMG.",
+        "tiger": "Get 125 kills with full attachments equipped using the LMG.",
+        "jungle": "Get 50 headshot kills using the LMG.",
+        "reptile": "Get 60 kills with no attachments equipped using the LMG."
+    },
+    "smg": {
+        "sand": "Get 400 kills using the SMG.",
+        "dragon": "Get 75 hip fire kills using the SMG.",
+        "splinter": "Get 45 kills at long range using the SMG.",
+        "tiger": "Get 200 kills with full attachments equipped using the SMG.",
+        "jungle": "Get 80 headshot kills using the SMG.",
+        "reptile": "Get 60 kills with no attachments equipped using the SMG."
+    },
+    "sg": {
+        "sand": "Get 300 kills using the shotgun.",
+        "dragon": "Get 50 hip fire kills using the shotgun.",
+        "splinter": "Get 2 kills without dying 30 times using the shotgun.",
+        "tiger": "Get 200 kills with full attachments equipped using the shotgun.",
+        "jungle": "Get 40 headshot kills using the shotgun.",
+        "reptile": "Get 80 kills with no attachments equipped using the shotgun."
+    },
+    "mr":  {
+        "sand": "Get 350 kills using the marksman rifle.",
+        "dragon": "Get 45 kills while crouching using the marksman rifle.",
+        "splinter": "Get 120 kills at long range using the marksman rifle.",
+        "tiger": "Get 125 kills with full attachments equipped using the marksman rifle.",
+        "jungle": "Get 50 headshot kills using the marksman rifle.",
+        "reptile": "Get 60 kills with no attachments equipped using the marksman rifle."
+    },
+    "pistol":  {
+        "sand": "Get 200 kills using the pistol.",
+        "dragon": "Get 25 hip fire kills using the pistol.",
+        "splinter": "Get 25 kills at long range using the pistol.",
+        "tiger": "Get 90 kills with full attachments equipped using the pistol.",
+        "jungle": "Get 45 headshot kills using the pistol.",
+        "reptile": "Get 60 kills with no attachments equipped using the pistol."
+    },
+    "launcher": {
+        "fhj18":  {
+            "sand": "Destroy 50 scorestreaks using the FHJ-18.",
+            "dragon": "Destroy 30 air scorestreaks using the FHJ-18.",
+            "splinter": "Destroy 30 UAVs using the FHJ-18.",
+            "tiger": "Destroy 10 ground scorestreaks using the FHJ-18.",
+            "jungle": "Double kill with one shot 18 times using the FHJ-18.",
+            "reptile": "Destroy 10 vehicles in Battle Royale using the FHJ-18."
+        },
+        "smrs":  {
+            "sand": "Get 50 kills using the SMRS.",
+            "dragon": "Destroy 30 UAVs using the SMRS.",
+            "splinter": "Get 30 kills while crouching using the SMRS.",
+            "tiger": "Destroy 30 air scorestreaks using the SMRS.",
+            "jungle": "Get 50 kills with the Cold-Blooded perk equipped using the SMRS.",
+            "reptile": "Double kill with one shot 18 times using the SMRS."
+        },
+        "thumper":  {
+            "sand": "Get 50 kills using the Thumper.",
+            "dragon": "Get 2 kills without dying 30 times using the Thumper.",
+            "splinter": "Get 30 kills while crouching using the Thumper.",
+            "tiger": "Destroy 10 scorestreaks using the Thumper.",
+            "jungle": "Get 50 kills with the Cold-Blooded perk equipped using the Thumper.",
+            "reptile": "Double kill with one shot 18 times using the Thumper."
+        },
+        "d13sector":  {
+            "sand": "Get 50 kills using the D13 Sector.",
+            "dragon": "Get 50 hip fire kills using the D13 Sector.",
+            "splinter": "Get 30 kills while crouching using the D13 Sector.",
+            "tiger": "Get 2 kills without dying 30 times using the D13 Sector.",
+            "jungle": "Get 50 kills with the Dead Silence perk equipped using the D13 Sector.",
+            "reptile": "Get 3 kills without dying 18 times using the D13 Sector."
+        }
+    },
+    "melee":  {
+        "sand": "Get 50 kills using the melee weapon.",
+        "dragon": "Get 30 kills from behind using the melee weapon.",
+        "splinter": "Get 30 kills whil crounching or sliding using the melee weapon.",
+        "tiger": "Get 2 kills without dying 30 times using the melee weapon.",
+        "jungle": "Get 50 kills with the Dead Silence perk equipped using the melee weapon.",
+        "reptile": "Get 3 kills without dying 18 times using the melee weapon."
+    }
+}

@@ -1,0 +1,111 @@
+---
+import { Image } from "astro:assets"
+import logo from '@assets/logos/codm-db-logo.png'
+import { footerPages } from "@utils/lists/pages"
+import { legalPages } from "@utils/lists/pages"
+
+const currentYear = new Date().getFullYear()
+---
+
+<footer>
+
+    <div class="columns">
+        <div class="col-1">
+            <Image
+                src={logo}
+                alt="CoD: Mobile Database Logo"
+            />
+        </div>
+        <div class="col-2">
+            <h3>Links</h3>
+            <ul>
+                {footerPages.map(page => (
+                    <li>
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+        <div class="col-3">
+            <h3>Legal</h3>
+            <ul>
+                {legalPages.map(page => (
+                    <li>
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+
+        <p>
+            © Activision Publishing, Inc. CALL OF DUTY and the stylized letter M are trademarks of Activision Publishing, Inc. This website is not affiliated or sponsored by Activision Blizzard.
+        </p>
+
+        <p>&copy; {currentYear} CoD: Mobile Database</p>
+    </div>
+
+</footer>
+
+<style>
+
+    footer {
+        padding: 2rem;
+        background-color: var(--primary-color);
+        color: black;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .col-1 img {
+        width: 420px;
+        height: auto;
+    }
+
+    .col-2 ul,
+    .col-3 ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .col-2 a,
+    .col-3 a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .col-2 a:hover,
+    .col-3 a:hover {
+        text-decoration: underline;
+    }
+
+    a[aria-disabled="true"] {
+        color: rgba(0, 0, 0, 0.25);
+        pointer-events: none;
+    }
+
+    .copyright {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .copyright p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+
+        .columns {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+</style>
