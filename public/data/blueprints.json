@@ -449,5 +449,25 @@
         "id": "argus",
         "legendary": ["Carmine Flare"],
         "epic": ["Death Branch", "Immortal Pattern", "Strong Winter Wind"]
+    },
+    {
+        "id": "kilo-bolt-action",
+        "legendary": ["Rail Gun", "Scarlet Shot"],
+        "epic": ["Lazarus", "Dealer", "Digital Death", "Trap Shooter", "Constable", "Pane", "Mystical Crown", "Stalk", "In the Dark", "Rex Mortem", "Symphony"]
+    },
+    {
+        "id": "sks",
+        "legendary": ["Particle Splitter", "Luminary", "Deathlance", "Particle Splitter Prestige"],
+        "epic": ["Robot Samurai", "Malpractice", "Pack Hunter", "Technic Turret", "Meteoric", "Smart Rifle", "Crimson Sonata", "Shield Breaker", "Ruby Serpent", "Steel Tigers", "Z-09 Xylith", "Killer Upgrade", "Ignited Rage", "Deadly Acquisition", "War-Tooled"]
+    },
+    {
+        "id": "sp-r-208",
+        "legendary": ["Counter Spy", "Dual Persona"],
+        "epic": ["Dragon Head", "Lost Gothic", "Ethereal", "Flora", "Long Serpent", "Conservationist", "Antikythera", "Top Turtle", "Feline Fine", "Wild West", "The Sacrifice", "Making Waves"]
+    },
+    {
+        "id": "mk2",
+        "legendary": ["Helix Grade"],
+        "epic": ["Brushstroke", "Patriotic", "Constrictor", "Future Sharpshooter", "Fast Skies", "Persistence", "Majestic Scales", "Floating Lotus"]
     }
 ]
