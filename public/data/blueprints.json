@@ -222,5 +222,61 @@
         "id": "lw3-tundra",
         "legendary": ["Crimson Jaws"],
         "epic": ["Red Queen's Rebuke", "Immortal Stone", "Bright Night"]
+    },
+    {
+        "id": "s36",
+        "legendary": ["Phobos"],
+        "epic": ["Heavy Duty", "Dive Bomb", "Ritual", "Heartbreaker", "Quartz", "Slapstick", "Vagabond", "Hoard", "Tropical Storm", "Rockin'!", "Vengeful Clucks", "Neon Oni", "Empty Shells", "Mystic Vision", "Night in the City", "Winged Stinger"]
+    },
+    {
+        "id": "ul736",
+        "legendary": ["Depth Charge", "Electric Light"],
+        "epic": ["Meteor Shower", "Teal Steal", "Contamination", "Wasteland", "Forester", "Quartz", "Direct Heat", "Solar Wind", "Oil Spill", "X Marks the Spot", "All Out War", "Cat's Clan", "Gourd Loader", "Octopus", "Make It Rain", "Fast Skies", "Glittery Nights", "Attack Speed"]
+    },
+    {
+        "id": "rpd",
+        "legendary": ["Practical Joker", "Yellowjacket", "Luxury Carving"],
+        "epic": ["Werewolf Fighter", "Cyberspace", "Mirage", "Orbit", "Carnivorous", "Festive", "Mainframe", "Ghostyard", "Dog Fighter", "Wave Lord", "Emerald Scales", "Smeared Hand", "Gold Elixir", "Nuclear Fallout", "Liquid Portal", "Demon Spawning", "Apex Predator", "Topaz Cavern", "Fire Charge", "Big Comrade", "Side Scroller", "Mermaid's Beckoning", "4th Anno Blammo", "Elemental Aggression"]
+    },
+    {
+        "id": "m4lmg",
+        "legendary": ["Salamander", "Micro Nuked"],
+        "epic": ["Black Gold", "Medieval", "Heat Stroke", "Moonstone", "Hot Spot", "Slagged", "Ooze", "Revolution", "Demolition", "Checkpoint", "Bamboo Shoot", "Munitions", "Deadly Helix", "Vector Pop", "Barbed Sting", "Cold Cutter", "Overclocked", "Tropical Storm", "Aquatic", "Power Pulse", "Beastly Waters", "Hell Shredder"]
+    },
+    {
+        "id": "chopper",
+        "legendary": ["Chain Reaction", "Rules of the Game", "Hell Dog"],
+        "epic": ["Fortress", "Collateral", "Klondike", "Visceral", "Become War", "Firewall", "Slicked", "Red Action", "Be So Lovely", "Sakura Storm", "Super Inductor", "Dark in the Depths", "Dark Matter", "Make It Rain", "Side Scroller", "Graven Aggressor"]
+    },
+    {
+        "id": "holger-26",
+        "mythic": ["Dark Frontier"],
+        "legendary": ["Risen Deep", "Jacked Lantern"],
+        "epic": ["Fool Square", "Surface Tension", "Anodized", "Vector Pop", "2nd Anniversary Limited", "Chromium Claw", "Spilled", "Gradient Shot", "Steelmelt", "Dream Maker", "Serpentine Sands", "Eclipse", "Call of the Tropics", "In the Dark", "The Great Christmas Gun", "Tuning Frequency", "Veil of Shadows (Garena & Chinese exclusive)", "Storm Surge", "Serpent's Gold"]
+    },
+    {
+        "id": "hades",
+        "legendary": ["Void Sender", "Serpentine"],
+        "epic": ["Shoulder Cannon", "Piercing Hawk", "Phage", "Holowing", "Mud Track", "Hell Shredder", "Tropical Storm", "Bael", "Yellow Viper", "Refracted", "Jeweled Scales", "Dark Matter", "Forest Rifle", "The Chase!"]
+    },
+    {
+        "id": "pkm",
+        "legendary": ["Red Nose Revenge"], 
+        "epic": ["Boru", "Gilded Lion", "Specter Claw", "Prism", "Bamboo Ballistics", "Corporate Colors", "Sweaterscape", "Rockin'!", "Sinister Smile", "Volcanic Ash", "Meiji", "Empty Shells", "Tropical Flora", "God Hunter"]
+    },
+    {
+        "id": "dingo",
+        "legendary": ["Scarlet Oracle"],
+        "epic": ["Monkey King's Legacy", "Gemmed Beast", "Hanahaki", "Utopian Epoch", "In The Dark", "Strong Winter Winds", "Glass Razor", "Deco Ornate"]
+    },
+    {
+        "id": "bruen-mk9",
+        "legendary": ["Deadly Strings"],
+        "epic": ["Bird of Paradise", "Majestic Scales", "Floating Lotus"]
+    },
+    {
+        "id": "mg42",
+        "mythic": ["The Campaign"],
+        "epic": ["Rubble Maker"]
     }
 ]
