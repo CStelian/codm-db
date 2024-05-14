@@ -469,5 +469,48 @@
         "id": "mk2",
         "legendary": ["Helix Grade"],
         "epic": ["Brushstroke", "Patriotic", "Constrictor", "Future Sharpshooter", "Fast Skies", "Persistence", "Majestic Scales", "Floating Lotus"]
+    },
+    {
+        "id": "j358",
+        "legendary": ["Heavy Handed"],
+        "epic": ["Scorpion (formerly called Abomination)", "Black Gold", "Phobos", "Zero G", "Meltdown", "Firecracker", "Nuclear Fallout", "Narcissist", "Revolution", "Ruby", "Echolocation", "Ritual", "Quartz", "Pantomime", "Citrine", "Enlightened", "Noir", "Defibrillator", "Merrymaker", "Glasslike", "Demolition", "Revolt", "Parzival", "Sakura Storm", "Effigy", "Cutting Edge", "Stampede", "Target Lock", "Hot Spot", "Surface Tension", "Mud Track", "150 BPM", "Demon Spawning", "Polar Opposite", "Grim Ending", "Shot of Caffeine"]
+    },
+    {
+        "id": "mw11",
+        "epic": ["Wrath Black & Gold", "Hot Spot", "Nuclear Fallout", "Living Rust", "Oil Spill", "Color Spectrum", "Dive Bomb", "Strafing Run", "Revolution", "Uncaged", "Echolocation", "Beekeeper", "Bite Size", "Sharkbite", "Gold Glitter", "Wicked Whisper", "Party Area", "Radar", "Chevalier", "Serpentine", "Noir", "Bear Trap", "Bombs Away", "Holidays", "Circuit Board", "Mire", "Mitosis", "Emergence", "Rogue Intel", "Cosmos", "Sakura Storm", "Visceral", "Bubblegum", "Glow Fly", "Exosphere", "Murder", "Dangerous Waters", "The Standard Issue", "Patriotic", "Bullet Ants", "Quartz", "Spilled", "Greater Spiral", "Bleeding Rose", "Wicked Whipser", "Anniversary Celebration", "In the Dark", "Dark Matter (available only in Garena)", "Neon Paint", "Neon Shuriken", "Fallen Royal"]
+    },
+    {
+        "id": ".50-gs",
+        "legendary": ["Calamity"],
+        "epic": ["Comrade", "Breach", "Sprite Ops", "Slipstream", "All Out War", "Emergence", "Vagabond", "Revolt", "Porcelain Yakuza", "Glow Fly", "Malpractice", "Murder", "Stampede", "Dangerous Waters", "Radion Burst", "Waterproof", "Bullet Ants", "ENOC", "Red Action", "Runic Fire", "Down Range", "Tank Wheels", "Meteoric", "Spray Bomb", "Phage", "Bats Reunion", "Bolted Steel", "Antikythera", "Burnt Bone", "Shield Breaker", "Blossom Breath", "Iced Out", "Mine Burst", "Eclipse", "Admiral's Pick", "Future Apollo", "Cobra Jungle", "Feline Fine", "World Maker", "Radiator (Garena and CN versions only)", "Shocking Truth", "Red Electro", "Astronomy's Heart", "Intercessor", "Corrosive Fear", "Emblazoned Ire"]
+    },
+    {
+        "id": "renetti",
+        "legendary": ["Metal Phantom"],
+        "epic": ["Survival Essential", "Fenrir", "Stalker", "Regicide", "Radion Burst", "Tokyo Rain", "Flora", "Wyrm", "Frost Tooth", "Down Range", "Debris Field", "Sakura Storm", "Chromium Claw", "Spilled", "Tactical Prowl", "Toxic Overflow", "Blight", "Dark Matter", "Inner Mechanism", "Ghoulish", "Bleeding Rose", "Amethyst Lights", "Tiny Comrade", "Angelic Depths"]
+    },
+    {
+        "id": "shorty",
+        "legendary": ["Last Resort"],
+        "epic": ["Aether Machine", "Deep Tech", "Frozen Sun", "Plasma Explosion", "Tank Wheels", "Airship", "Cat's Meow", "Viaje de la Muerte", "Coils", "Phoenix", "Sapphire Burst", "Iron Flight", "Tuning Frequency", "Patched", "Grim Gold", "Grinding Gears", "Gripping Thunder", "Strike Scarlet"]
+    },
+    {
+        "id": "crossbow",
+        "legendary": ["Kinetic Electricity"],
+        "epic": ["Phage", "Coils", "Heat Extractor", "Trenched", "Violet Flow", "Melting Eye", "Survivalist's Special", "Sea Deity", "Mission Debrief", "Cobra Jungle", "Only Opera", "Jade Hare", "Tropical Storm", "Make It Rain", "Meiji", "Liquid Light", "Sweaterscape", "Gilded Past", "Electrical Animus"]
+    },
+    {
+        "id": "l-car-9",
+        "legendary": ["Industrial Pulverizer"],
+        "epic": ["Scoring", "Lapis", "Violet Crystal", "Flaming Sun", "Dark Matter"]
+    },
+    {
+        "id": "dobvra",
+        "legendary": ["Light's Echo"],
+        "epic": ["Making Waves"]
+    },
+    {
+        "id": "nail-gun",
+        "legendary": ["Dark Experiments"]
     }
 ]
