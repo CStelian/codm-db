@@ -1,0 +1,74 @@
+[
+    {
+        "id": "hardline",
+        "name": "Hardline",
+        "tier": "blue",
+        "desc": "Increases points earned from killing enemies by 25%, by proxy increasing the amount of charge for Operator Skills per action, EXCEPT for the Munitions Box."
+    },
+    {
+        "id": "persistence",
+        "name": "Persistence",
+        "tier": "blue",
+        "desc": "Scorestreak progression doesn't reset upon death, but cost is doubled for each Scorestreak once per match. Scorestreaks will also be divided into 3 ranks, and you can only equip one of each rank at the same time."
+    },
+    {
+        "id": "demo-expert",
+        "name": "Demo Expert",
+        "tier": "blue",
+        "desc": "Increases the damage of explosives by 25%."
+    },
+    {
+        "id": "dead-silence",
+        "name": "Dead Silence",
+        "tier": "blue",
+        "desc": "Grants silent movement while walking, crouching or during prone. Sound spread distance becomes shorter while sprinting."
+    },
+    {
+        "id": "engineer",
+        "name": "Engineer",
+        "tier": "blue",
+        "desc": "Reveals enemy equipment and scorestreaks. Re-roll friendly Care Packages and booby trap enemy Care Packages."
+    },
+    {
+        "id": "tactical-mask",
+        "name": "Tactical Mask",
+        "tier": "blue",
+        "desc": "Reduces the duration of enemy tactical equipment effects by 40%."
+    },
+    {
+        "id": "alert",
+        "name": "Alert",
+        "tier": "blue",
+        "desc": "Shows a general location of enemies on the mini-map as they approach."
+    },
+    {
+        "id": "shrapnel",
+        "name": "Shrapnel",
+        "tier": "blue",
+        "desc": "Spawn with a extra piece of lethal equipament. Explosive damage delays enemy health regeneration."
+    },
+    {
+        "id": "high-alert",
+        "name": "High Alert",
+        "tier": "blue",
+        "desc": "Your vision pulses when enemies outside of your view see you. Mark enemies, their equipment, and their scorestreaks by aiming down your sights."
+    },
+    {
+        "id": "firepower-support",
+        "name": "Firepower Support",
+        "tier": "blue",
+        "desc": "Adds 2 reserve ammunition to all launchers. 40% chance to obtain the enemy's Scorestreaks when destroying it with a launcher."
+    },
+    {
+        "id": "unit-support",
+        "name": "Unit Support",
+        "tier": "blue",
+        "desc": "Operator Skill charges 40% from teammate kills, but your Operator Skill charge is reduced by 50%. 10% of Scorestreak charge comes from teammate kills when capturing Objectives. This perk only increases charging speed with will be adjusted according to the player count."
+    },
+    {
+        "id": "survival-training",
+        "name": "Survival Training",
+        "tier": "blue",
+        "desc": "Immune to the negative effects of a single hostile tactical item. 30 second cooldown."
+    }
+]

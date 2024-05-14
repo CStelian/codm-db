@@ -51,3 +51,10 @@ export type mapType = {
     desc?: string
     type?: string
 }
+
+export type perkType = {
+    id: string
+    name: string
+    tier: string
+    desc: string
+}

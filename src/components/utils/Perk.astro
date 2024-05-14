@@ -1,0 +1,97 @@
+---
+import { Image } from 'astro:assets'
+
+
+interface Props {
+    id: string
+    name: string
+    desc: string
+    tier: string
+}
+
+const { id, name, tier } = Astro.props
+
+---
+
+<a href={`/perks/${id}`} class=`perk ${tier}` data-tier={tier}>
+
+    <div>
+
+        <div class="image">
+
+            <Image
+            src={`/assets/images/perks/${tier}/${id}.png`}
+            alt={name}
+            width={300}
+            height={300}
+        />
+
+        </div>
+
+        <div class="metadata">
+
+            <h2>{name}</h2>
+
+        </div>
+
+    </div>
+
+</a>
+
+<style>
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 1rem;
+        max-width: fit-content;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--color-bg-secondary);
+    }
+
+    .image {
+        flex: 0 0 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 1rem;
+    }
+
+    .metadata {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .red {
+        border: 2px solid var(--red-perk);
+    }
+
+    .blue {
+        border: 2px solid var(--blue-perk);
+    }
+
+    .green {
+        border: 2px solid var(--green-perk);
+    }
+
+</style>

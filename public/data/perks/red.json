@@ -1,0 +1,74 @@
+[
+    {
+        "id": "fast-recover",
+        "name": "Fast Recover",
+        "tier": "red",
+        "desc": "Increase HP recovery rate by 35%."
+    },
+    {
+        "id": "lightweight",
+        "name": "Lightweight",
+        "tier": "red",
+        "desc": "Sprinting speed is increased by 5% and fall damage is greatly reduced."
+    },
+    {
+        "id": "agile",
+        "name": "Agile",
+        "tier": "red",
+        "desc": "Object mantling speed is increased and the aim time of weapons after sprinting is reduced."
+    },
+    {
+        "id": "flak-jacket",
+        "name": "Flak Jacket",
+        "tier": "red",
+        "desc": "Explosive damage is reduced by 35%. Throwing back a grenade resets time. Reduces the continuous damage from Molotov Cocktail and Thermite."
+    },
+    {
+        "id": "skulker",
+        "name": "Skulker",
+        "tier": "red",
+        "desc": "Move 12% faster when walking and crouching."
+    },
+    {
+        "id": "tactician",
+        "name": "Tactician",
+        "tier": "red",
+        "desc": "Spawn with an extra piece of tactical equipment."
+    },
+    {
+        "id": "restock",
+        "name": "Restock",
+        "tier": "red",
+        "desc": "Recharges equipment over 25 seconds. Replenishes one Combat Axe."
+    },
+    {
+        "id": "overclock",
+        "name": "Overclock",
+        "tier": "red",
+        "desc": "Increases the charging speed of the Operator Skill."
+    },
+    {
+        "id": "martyrdom",
+        "name": "Martyrdom",
+        "tier": "red",
+        "desc": "Drop a live grenade upon death."
+    },
+    {
+        "id": "iron-lungs",
+        "name": "Iron Lungs",
+        "tier": "red",
+        "desc": "Hold your breath longer for steadier sniper shots."
+    },
+    {
+        "id": "pin-point",
+        "name": "Pin Point",
+        "tier": "red",
+        "desc": "Outline enemies when dealing or taking weapon damage and enhance aim assist."
+    },
+    {
+        "id": "dauntless",
+        "name": "Dauntless",
+        "tier": "red",
+        "desc": "All burning damage received is reduced and movement speed debuffs have no affect."
+    }
+]

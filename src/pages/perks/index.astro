@@ -1,0 +1,181 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from '@utils/seoData/pages'
+import { Image } from "astro:assets"
+import Perk from "@components/utils/Perk.astro"
+
+import CoDMLogo from "@assets/logos/codm-logo.png"
+
+import type { perkType } from "@utils/types"
+
+const title = pagesSEO.perks.title
+const desc = pagesSEO.perks.desc
+const image = pagesSEO.perks.image
+const url = pagesSEO.perks.url
+const keywords = pagesSEO.perks.keywords
+
+const redPerksList = await fetch(`${Astro.url.origin}/data/perks/red.json`).then(res => res.json())
+const greenPerksList = await fetch(`${Astro.url.origin}/data/perks/green.json`).then(res => res.json())
+const bluePerksList = await fetch(`${Astro.url.origin}/data/perks/blue.json`).then(res => res.json())
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type="website"
+    keywords={keywords}
+>
+    <main>
+
+        <h1>
+            Perks in Call of Duty®: Mobile
+            <Image
+                src={CoDMLogo}
+                alt="Call of Duty®: Mobile Logo"
+                width="40"
+                height="40"
+            />
+        
+        </h1>
+
+        <form>
+            <label for="search">Search for a perk:</label>
+            <input type="text" id="search" name="search" placeholder="Type a perk name..." />
+            <select>
+                <option value="all">All</option>
+                <option value="red">Tier 1</option>
+                <option value="green">Tier 2</option>
+                <option value="blue">Tier 3</option>
+            </select>
+        </form>
+
+        <div class="perks-list">
+
+            {redPerksList.map((perk: perkType) => (
+                <Perk
+                    id={perk.id}
+                    name={perk.name}
+                    desc={perk.desc}
+                    tier={perk.tier}
+                />
+            ))}
+
+            {greenPerksList.map((perk: perkType) => (
+                <Perk
+                    id={perk.id}
+                    name={perk.name}
+                    desc={perk.desc}
+                    tier={perk.tier}
+                />
+            ))}
+
+            {bluePerksList.map((perk: perkType) => (
+                <Perk
+                    id={perk.id}
+                    name={perk.name}
+                    desc={perk.desc}
+                    tier={perk.tier}
+                />
+            ))}
+
+        </div>
+
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        padding: 1rem;
+        min-height: calc(100vh - 4rem);
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 1rem;
+        filter: drop-shadow(0 0 0.75rem #000);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input, select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #000;
+        border-radius: 0.25rem;
+    }
+
+    input {
+        margin-bottom: 0.5rem;
+    }
+
+    select {
+        margin-bottom: 1rem;
+    }
+
+    .perks-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+</style>
+
+<script>
+
+    const search = document.querySelector('input[name="search"]')
+    const select = document.querySelector('select')
+    const perks = document.querySelectorAll('.perk')
+
+    if(!search || !select || !perks) {
+        throw new Error('Missing elements')
+    }
+
+    search.addEventListener('input', () => {
+        const value = (search as HTMLInputElement).value.toLowerCase()
+        perks.forEach(perk => {
+            const name = (perk as HTMLElement)?.querySelector('h2')?.textContent?.toLowerCase()
+            if (name && name.includes(value)) {
+                (perk as HTMLElement).style.display = 'block'
+            } else {
+                (perk as HTMLElement).style.display = 'none'
+            }
+        })
+    })
+
+    select.addEventListener('change', () => {
+        const value = select.value
+        perks.forEach(perk => {
+            if (value === 'all') {
+                (perk as HTMLElement).style.display = 'block'
+            } else {
+                const tier = perk.getAttribute('data-tier')
+                if (tier === value) {
+                    (perk as HTMLElement).style.display = 'block'
+                } else {
+                    (perk as HTMLElement).style.display = 'none'
+                }
+            }
+        })
+    })
+
+</script>

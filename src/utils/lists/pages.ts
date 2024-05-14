@@ -6,6 +6,10 @@ export const navBarPages = [
     {
         name: 'Modes',
         path: '/modes'
+    },
+    {
+        name: 'Perks',
+        path: '/perks'
     }
 ]
 

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "vulture",
+        "name": "Vulture",
+        "tier": "green",
+        "desc": "Eliminating enemies grants 100% magazine capacity for your current weapon and restores 40 HP (effect can only occur once every 2 seconds, bypassing HP recovery delay)."
+    },
+    {
+        "id": "cold-blooded",
+        "name": "Cold-Blooded",
+        "tier": "green",
+        "desc": "Enemy AI-controlled Scorestreaks cannot target you. Does not affect manually-controlled Scorestreaks."
+    },
+    {
+        "id": "tracker",
+        "name": "Tracker",
+        "tier": "green",
+        "desc": "Enemy footprints are visible for 4 seconds."
+    },
+    {
+        "id": "toughness",
+        "name": "Toughness",
+        "tier": "green",
+        "desc": "Flinch when being shot is reduced by 60%."
+    },
+    {
+        "id": "hard-wired",
+        "name": "Hard Wired",
+        "tier": "green",
+        "desc": "Become immune to Counter-UAVs and EMP Grenades, and no longer trigger Trip Mines. Enemy Tracker perks are also reduced."
+    },
+    {
+        "id": "ghost",
+        "name": "Ghost",
+        "tier": "green",
+        "desc": "Enemy UAVs cannot reveal your position and Advanced UAVs will not reveal your direction. Enemy VTOLs, Predator Missile and Heartbeat Sensor will not detect your position. Enemy's vision will not pulse when they are equipped with High Alert."
+    },
+    {
+        "id": "quick-fix",
+        "name": "Quick Fix",
+        "tier": "green",
+        "desc": "Gun, melee, and combat axe kills regenerate health immediately - triggered once every 2 seconds. Capturing and holding objectives increases health regeneration."
+    },
+    {
+        "id": "amped",
+        "name": "Amped",
+        "tier": "green",
+        "desc": "Take advantage of faster weapon swap, throwing grenade swap and launcher reload speed (excludes pistol and melee swaps)."
+    },
+    {
+        "id": "recon",
+        "name": "Recon",
+        "tier": "green",
+        "desc": "After an enemy is killed, nearby enemies will be scanned and displayed on the mini map."
+    },
+    {
+        "id": "gung-ho",
+        "name": "Gung-Ho",
+        "tier": "green",
+        "desc": "Hip fire, throw grenades and change mags while sprinting."
+    },
+    {
+        "id": "spycraft",
+        "name": "Spycraft",
+        "tier": "green",
+        "desc": "Hack enemy Field Upgrade including: Trophy System, Trip Mine, SAM Turret, Sentry Turret, Transfrom Shield and Munitions Box. These units can be controlled after manual hack is complete."
+    }
+]
