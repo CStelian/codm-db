@@ -18,3 +18,36 @@ export type WeaponBlueprint = {
     legendary?: string[]
     epic?: string[]
 }
+
+export type gameModeType = {
+    id: string
+    name: string
+    gameType: string
+    type: string
+    ranked: boolean
+    timeLimited: boolean
+    rules: string
+    maps: Array<{
+        id: string
+        name: string
+    }>
+}
+
+export type zombieModeType = {
+    id: string
+    name: string
+    gameType: string
+    timeLimited: boolean
+    desc: string
+    maps: Array<{
+        id: string
+        name: string
+    }>
+}
+
+export type mapType = {
+    id: string
+    name: string
+    desc?: string
+    type?: string
+}

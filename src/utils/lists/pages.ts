@@ -2,6 +2,10 @@ export const navBarPages = [
     {
         name: 'Weapons',
         path: '/weapons'
+    },
+    {
+        name: 'Modes',
+        path: '/modes'
     }
 ]
 

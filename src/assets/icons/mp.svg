@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="157.90005mm"
+   height="75.055435mm"
+   viewBox="0 0 157.90005 75.055435"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-31.322591,-92.747648)">
+    <g
+       id="g2">
+      <g
+         id="g3">
+        <path
+           style="font-weight:bold;font-size:109.223px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;fill-opacity:1;stroke-width:1.27996"
+           d="M 30.748763,170.93459 V 94.478486 H 45.384645 L 77.933099,148.43465 H 70.178266 L 102.1806,94.478486 h 14.52666 l 0.21845,76.456104 h -16.6019 l -0.10922,-51.00715 h 3.05824 L 77.714653,162.85208 H 69.741374 L 43.637077,119.92744 h 3.713582 v 51.00715 z"
+           id="text1"
+           transform="scale(1.0186618,0.98168012)"
+           aria-label="M" />
+        <path
+           d="M 123.06035,168.57927 V 93.360069 h 32.55917 q 10.10086,0 17.40787,3.331136 7.30701,3.22368 11.28288,9.348675 3.97587,6.12499 3.97587,14.61401 0,8.38157 -3.97587,14.50656 -3.97587,6.125 -11.28288,9.45613 -7.30701,3.22368 -17.40787,3.22368 h -22.88813 l 7.73683,-7.84429 v 28.5833 z m 17.40787,-26.64909 -7.73683,-8.27411 h 21.92102 q 8.0592,0 12.03508,-3.43859 3.97587,-3.4386 3.97587,-9.56359 0,-6.23245 -3.97587,-9.67104 -3.97588,-3.43859 -12.03508,-3.43859 h -21.92102 l 7.73683,-8.274111 z"
+           id="text2"
+           style="font-weight:bold;font-size:107.456px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;fill-opacity:1;stroke-width:1.25924"
+           transform="scale(1.0049738,0.99505082)"
+           aria-label="P" />
+      </g>
+    </g>
+  </g>
+</svg>

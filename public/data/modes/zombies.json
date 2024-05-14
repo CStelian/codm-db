@@ -1,0 +1,92 @@
+[
+    {
+        "id": "zombies-classic-normal",
+        "name": "Zombies Classic - Normal",
+        "gameType": "zombies",
+        "timeLimited": false,
+        "desc": "Defend against the zombies and defeat the Ultimate zombies.",
+        "maps": [
+            {
+                "id": "shi-no-numa",
+                "name": "Shi No Numa"
+            }
+        ]
+    },
+    {
+        "id": "zombies-classic-hardcore",
+        "name": "Zombies Classic - Hardcore",
+        "gameType": "zombies",
+        "timeLimited": false,
+        "desc": "This secret is deeply buried in a hidden manual, located in the Underground lab.",
+        "maps": [
+            {
+                "id": "shi-no-numa",
+                "name": "Shi No Numa"
+            }
+        ]
+    },
+    {
+        "id": "zombies-classic-endless",
+        "name": "Zombies Classic - Endless",
+        "gameType": "zombies",
+        "timeLimited": false,
+        "desc": "The zombies' attacks are relentless. Find the right time to retreat.",
+        "maps": [
+            {
+                "id": "shi-no-numa",
+                "name": "Shi No Numa"
+            }
+        ]
+    },
+    {
+        "id": "undead-siege-casual",
+        "name": "Undead Siege - Casual",
+        "gameType": "zombies",
+        "timeLimited": true,
+        "desc": "It's surprising that the giant vortex of Aether has brought us some help. Let's see what these rookies got. -- Dempsey",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated (Limited Time)"
+            },
+            {
+                "id": "blackout",
+                "name": "Blackout (Limited Time)"
+            }
+        ]
+    },
+    {
+        "id": "undead-siege-hard",
+        "name": "Undead Siege - Hard",
+        "gameType": "zombies",
+        "timeLimited": true,
+        "desc": "Teleportation failed. Richtofen seems aware that this is not as simple as it appears. We must fight together to survive the floods of tireless undead. -- Nikolai",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated (Limited Time)"
+            },
+            {
+                "id": "blackout",
+                "name": "Blackout (Limited Time)"
+            }
+        ]
+    },
+    {
+        "id": "undead-siege-nightmare",
+        "name": "Undead Siege - Nightmare",
+        "gameType": "zombies",
+        "timeLimited": true,
+        "desc": "We traced the Aether energy to its source, and Richtofen finally revealed his new plan. This time we will take the fight to them and put an end to the chaos here. -- Nikolai",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated (Limited Time)"
+            },
+            {
+                "id": "blackout",
+                "name": "Blackout (Limited Time)"
+            }
+        ]
+    }
+]

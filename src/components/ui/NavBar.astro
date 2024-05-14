@@ -27,7 +27,28 @@ import logo from "@assets/logos/codm-db-logo.png"
         ))}
     </ul>
 
+    <button id="mobile-nav" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="8" x2="20" y2="8" />
+            <line x1="4" y1="16" x2="20" y2="16" />
+        </svg>
+    </button>
+
+
 </nav>
+
+<div class="mobile-nav">
+    <ul class="nav-links">
+        {navBarPages.map((page) => (
+            <li>
+                <a href={page.path} class="nav-link">
+                    {page.name}
+                </a>
+            </li>
+        ))}
+    </ul>
+</div>
 
 <style>
 
@@ -38,6 +59,7 @@ import logo from "@assets/logos/codm-db-logo.png"
         padding: 1rem 2rem;
         background-color: var(--primary-color);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
     }
 
     .nav-logo {
@@ -60,4 +82,47 @@ import logo from "@assets/logos/codm-db-logo.png"
         text-decoration: underline;
     }
 
+    #mobile-nav {
+        display: none;
+        background-color: transparent;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+        background-color: var(--primary-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+
+        #mobile-nav {
+            display: block;
+        }
+    }
+
 </style>
+
+<script>
+    const mobileNav = document.querySelector(".mobile-nav");
+    const mobileNavButton = document.querySelector("#mobile-nav");
+
+    if (!mobileNav || !mobileNavButton) {
+        throw new Error("Mobile nav elements not found");
+    }
+
+    mobileNavButton.addEventListener("click", () => {
+        (mobileNav as HTMLElement).style.display = (mobileNav as HTMLElement).style.display === "none" ? "block" : "none";
+    });
+
+</script>

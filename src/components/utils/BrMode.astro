@@ -1,0 +1,139 @@
+---
+import { Image } from 'astro:assets'
+
+import br from '@assets/icons/br.svg'
+import rankedBr from '@assets/icons/rankedBr.webp'
+import timeLimitedIcon from '@assets/icons/timeLimited.svg'
+
+
+interface Props {
+    id: string
+    name: string
+    type: string
+    ranked: boolean
+    timeLimited: boolean
+}
+
+const { id, name, type, ranked, timeLimited } = Astro.props
+
+---
+
+<a href={`/modes/${id}`} class={type} data-type="battle-royale">
+
+    <div>
+
+        <div class="image">
+
+            <Image
+                src={`/assets/images/modes/br/${id}.png`}
+                alt={name}
+                width={300}
+                height={300}
+            />
+
+            </div>
+
+            <div class="metadata">
+
+                <h2>{name}</h2>
+
+            </div>
+
+            <Image
+                src={br}
+                alt="Battle Royale"
+                class="br"
+            />
+
+            {ranked && (
+                <Image
+                    src={rankedBr}
+                    alt="Ranked"
+                    class="ranked"
+                />
+            )}
+
+            {timeLimited && (
+                <Image
+                    src={timeLimitedIcon}
+                    alt="Time Limited"
+                    class="time-limited"
+                />
+            )}
+
+    </div>
+
+</a>
+
+<style>
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 1rem;
+        max-width: fit-content;
+        border: 2px solid #fff;
+        position: relative;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .image {
+        flex: 0 0 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 1rem;
+    }
+
+    .metadata {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        margin: 0;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .br {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .ranked {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .time-limited {
+        position: absolute;
+        bottom: .1rem;
+        right: 1rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+</style>

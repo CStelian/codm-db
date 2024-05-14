@@ -1,0 +1,1542 @@
+[
+    {
+        "id": "frontline",
+        "name": "Frontline",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": true,
+        "timeLimited": false,
+        "rules": "Kill enemy players. The first team to reach the specified number of kills wins! Players respawn at a fixed location after each death.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "monastery",
+                "name": "Monastery"
+            },
+            {
+                "id": "oasis",
+                "name": "Oasis"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "cheshire-park",
+                "name": "Cheshire Park"
+            }
+        ]
+    },
+    {
+        "id": "team-deathmatch",
+        "name": "Team Deathmatch",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": true,
+        "timeLimited": false,
+        "rules": "Kill enemy players and take the lead. Be the first to reach the specified number of kills to win.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "monastery",
+                "name": "Monastery"
+            },
+            {
+                "id": "highrise",
+                "name": "Highrise"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "dome",
+                "name": "Dome"
+            },
+            {
+                "id": "suldal-harbor",
+                "name": "Suldal Harbor"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "hovec-sawmill",
+                "name": "Hovec Sawmill"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "icebreaker",
+                "name": "Icebreaker"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "cheshire-park",
+                "name": "Cheshire Park"
+            },
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "reclaim",
+                "name": "Reclaim"
+            }
+        ]
+    },
+    {
+        "id": "domination",
+        "name": "Domination",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": true,
+        "timeLimited": false,
+        "rules": "Two factions compete to capture and hold three locations. Each time an objective is captured, the faction will get 1 point after a period of time; the first team to reach the target score wins.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "highrise",
+                "name": "Highrise"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "dome",
+                "name": "Dome"
+            },
+            {
+                "id": "suldal-harbor",
+                "name": "Suldal Harbor"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "hovec-sawmill",
+                "name": "Hovec Sawmill"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "icebreaker",
+                "name": "Icebreaker"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "kurohana-metropolis",
+                "name": "Kurohana Metropolis"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "cheshire-park",
+                "name": "Cheshire Park"
+            }
+        ]
+    },
+    {
+        "id": "hardpoint",
+        "name": "Hardpoint",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": true,
+        "timeLimited": false,
+        "rules": "Two factions compete to capture a Hardpoint. When there are only players from the same faction inside the Hardpoint zone, this faction will score 1 point each second. The hardpoint will relocate to a new position after a period of time. The faction that reaches the specified score limit wins.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "suldal-harbor",
+                "name": "Suldal Harbor"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "hovec-sawmill",
+                "name": "Hovec Sawmill"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "icebreaker",
+                "name": "Icebreaker"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "kurohana-metropolis",
+                "name": "Kurohana Metropolis"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "cheshire-park",
+                "name": "Cheshire Park"
+            }
+        ]
+    },
+    {
+        "id": "search-and-destroy",
+        "name": "Search & Destroy",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": true,
+        "timeLimited": false,
+        "rules": "Attacker wins when the bomb is planted and detonated at A/B point or when all enemies are eliminated. There are several rounds. Attackers and Defenders will alternate after a certain number of rounds. The first team to win the target number of rounds wins.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "tunisia",
+                "name": "Tunisia"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "coastal",
+                "name": "Coastal"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "dome",
+                "name": "Dome"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "hovec-sawmill",
+                "name": "Hovec Sawmill"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "icebreaker",
+                "name": "Icebreaker"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "kurohana-metropolis",
+                "name": "Kurohana Metropolis"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            },
+            {
+                "id": "cheshire-park",
+                "name": "Cheshire Park"
+            }
+        ]
+    },
+    {
+        "id": "free-for-all",
+        "name": "Free For All",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": false,
+        "timeLimited": false,
+        "rules": "Each player competes against all other players. The first player to reach the specified number of kills wins.",
+        "maps": [
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "hovec-sawmill",
+                "name": "Hovec Sawmill"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "icebreaker",
+                "name": "Icebreaker"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            },
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "cheshire-park",
+                "name": "Cheshire Park"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "highrise",
+                "name": "Highrise"
+            }
+        ]
+    },
+    {
+        "id": "kill-confirmed",
+        "name": "Kill Confirmed",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": false,
+        "timeLimited": false,
+        "rules": "Killed players drop dog tags. Enemy dog tags are outlined in red while friendly dog tags are outlined in blue. Collecting enemy dog tags scores points. The first team to reach target number of dog tags wins. Collecting enemy dog tags confirms the kill. Collecting friendly dog tags denies the enemy's kill.",
+        "maps": [
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "highrise",
+                "name": "Highrise"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "dome",
+                "name": "Dome"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "hovec-sawmill",
+                "name": "Hovec Sawmill"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "icebreaker",
+                "name": "Icebreaker"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "cheshire-park",
+                "name": "Cheshire Park"
+            },
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "reclaim",
+                "name": "Reclaim"
+            }
+        ]
+    },
+    {
+        "id": "gunfight",
+        "name": "Gunfight",
+        "gameType": "mp",
+        "type": "core",
+        "ranked": false,
+        "timeLimited": false,
+        "rules": "The first team to reach 6 points wins. Eliminating all enemies in the first 40 seconds scors 1 point. After 40 seconds, a targeted area will appear for 10 seconds. Capture the location for a second chance at victory.",
+        "maps": [
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "atrium",
+                "name": "Atrium"
+            },
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "saloon",
+                "name": "Saloon"
+            },
+            {
+                "id": "reclaim",
+                "name": "Reclaim"
+            },
+            {
+                "id": "pine",
+                "name": "Pine"
+            },
+            {
+                "id": "king",
+                "name": "King"
+            },
+            {
+                "id": "docks",
+                "name": "Docks"
+            },
+            {
+                "id": "stack",
+                "name": "Stack"
+            }
+        ]
+    },
+    {
+        "id": "payout-search-and-destroy",
+        "name": "Payout Search & Destroy",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "Core gameplay is the same as Search & Destroy. The biggest change in this mode is that weapons and other gear can only be bought with money that players earn. Loadout only contains 1 primary weapon, 1 secondary weapon, 2 tacticals, and 1 lethal grenade. Knife damage adjusted to 75, and it will cause higher damage when jumping. If players survive the last round, and the round will not switch sides, they will keep their loadouts. If they don't, they will lose the loadouts. Both teams play for 5 rounds in each half. After 5 rounds, they switch sides, and their money will reset. The first team to reach 6 scores wins.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "tunisia",
+                "name": "Tunisia"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "coastal",
+                "name": "Coastal"
+            }
+        ]
+    },
+    {
+        "id": "control",
+        "name": "Control",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "All players on the team share a limited number of lives. Annihilate the enemy to win this round. The game is divided into multiple rounds. After each round, the attackers and defenders are swapped. The team that meets the requirements for winning first wins the round. If the attacking team captures points A and B before the limit time is reached, they wil win the round. If the defending team prevents points A and B from being captured, they will win the round.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            }
+        ]
+    },
+    {
+        "id": "patrol",
+        "name": "Patrol",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "Two factions compete to capture a Hardpoint. When there are only players from the same faction inside the Hardpoint zone, this faction will score 1 point each second. A mobile capture point will go around the map along the set route. The faction that reaches the specified score limit wins.",
+        "maps": [
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "dome",
+                "name": "Dome"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            }
+        ]
+    },
+    {
+        "id": "gun-game",
+        "name": "Gun Game",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Each player starts with the same weapon. Every time you kill an enemy with your gun, you're upgraded to the next weapon. The match ends when someone cycles through all twenty weapons.",
+        "maps": [
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "dome",
+                "name": "Dome"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "reclaim",
+                "name": "Reclaim"
+            },
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "highrise",
+                "name": "Highrise"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            }
+        ]
+    },
+    {
+        "id": "gun-game-team-fight",
+        "name": "Gun Game: Team Fight",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Kill players with given weapons. The first team to reach the score limit or kill with each weapon wins!",
+        "maps": [
+            {
+                "id": "highrise",
+                "name": "Highrise"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            }
+        ]
+    },
+    {
+        "id": "snipers-only",
+        "name": "Snipers Only",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Only sniper rifles are allowed in this mode. The first team to reach the score limit wins.",
+        "maps": [
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            }
+        ]
+    },
+    {
+        "id": "sticks-and-stones",
+        "name": "Sticks and Stones",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Players are equipped with a combat knife and a combat axe. The overall rules are the same as Free For All. The first player to reach the score limit wins.",
+        "maps": [
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "reclaim",
+                "name": "Reclaim"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            }
+        ]
+    },
+    {
+        "id": "one-shot-one-kill",
+        "name": "One Shot One Kill",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Players are equipped with a .50 GS pistol, adjusted to one-shot kill. The first player to reach the score limit wins.",
+        "maps": [
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            }
+        ]
+    }
+]

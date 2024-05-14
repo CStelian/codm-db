@@ -1,0 +1,177 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from '@utils/seoData/pages'
+import { Image } from "astro:assets"
+import MpMode from "@components/utils/MpMode.astro"
+import BrMode from "@components/utils/BrMode.astro"
+import ZombiesMode from "@components/utils/ZombiesMode.astro"
+
+import CoDMLogo from "@assets/logos/codm-logo.png"
+
+import type { gameModeType } from "@utils/types"
+import type { zombieModeType } from "@utils/types"
+
+const title = pagesSEO.modes.title
+const desc = pagesSEO.modes.desc
+const image = pagesSEO.modes.image
+const url = pagesSEO.modes.url
+const keywords = pagesSEO.modes.keywords
+
+const mpModesList = await fetch(`${Astro.url.origin}/data/modes/mp.json`).then((res) => res.json())
+
+const brModesList = await fetch(`${Astro.url.origin}/data/modes/br.json`).then((res) => res.json())
+
+const zombieModesList = await fetch(`${Astro.url.origin}/data/modes/zombies.json`).then((res) => res.json())
+
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type="website"
+    keywords={keywords}
+>
+
+<main>
+
+    <h1>
+        Game Modes in Call of Duty®: Mobile
+        <Image
+            src={CoDMLogo}
+            alt="Call of Duty®: Mobile Logo"
+            width="40"
+            height="40"
+        />
+    
+    </h1>
+
+    <form>
+        <select>
+            <option value="all">All</option>
+            <option value="multiplayer">Multiplayer</option>
+            <option value="battle-royale">Battle Royale</option>
+            <option value="zombies">Zombies</option>
+        </select>
+    </form>
+
+    <div class="modes-list">
+        {mpModesList.map((mode: gameModeType) => (
+            <MpMode
+                id={mode.id}
+                name={mode.name}
+                type={mode.type}
+                ranked={mode.ranked}
+                timeLimited={mode.timeLimited}
+            />
+        ))}
+
+        {brModesList.map((mode: gameModeType) => (
+            <BrMode
+                id={mode.id}
+                name={mode.name}
+                type={mode.type}
+                ranked={mode.ranked}
+                timeLimited={mode.timeLimited}
+            />
+        ))}
+
+        {zombieModesList.map((mode: zombieModeType) => (
+            <ZombiesMode
+                id={mode.id}
+                name={mode.name}
+                type={mode.gameType}
+                timeLimited={mode.timeLimited}
+            />
+        ))}
+
+    </div>
+
+</main>
+
+</Layout>
+
+<style>
+
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 1rem;
+        filter: drop-shadow(0 0 0.75rem #000);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input, select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #000;
+        border-radius: 0.25rem;
+    }
+
+    input {
+        margin-bottom: 0.5rem;
+    }
+
+    select {
+        margin-bottom: 1rem;
+    }
+
+    .modes-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+</style>
+
+<script>
+
+    const searchInput = document.querySelector('input')
+    const modesList = document.querySelector('.modes-list')
+
+    const select = document.querySelector('select')
+
+    if (!select || !modesList) {
+        throw new Error('Missing select element')
+    }
+
+    select.addEventListener('change', (e) => {
+        const selectedValue = (e.target as HTMLSelectElement)?.value || 'all';
+
+        const modes = modesList.querySelectorAll('a')
+
+        modes.forEach((mode) => {
+            const modeType = mode.getAttribute('data-type') || '';
+
+            if (selectedValue === 'all') {
+                mode.style.display = 'block'
+            } else if (selectedValue === modeType) {
+                mode.style.display = 'block'
+            } else {
+                mode.style.display = 'none'
+            }
+        })
+    })
+
+</script>

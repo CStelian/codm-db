@@ -1,0 +1,168 @@
+[
+    {
+        "id": "battle-royale",
+        "name": "Classic Battle Royale",
+        "gameType": "br",
+        "type": "permanent",
+        "ranked": true,
+        "timeLimited": false,
+        "rules": "",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            },
+            {
+                "id": "Blackout",
+                "name": "Blackout"
+            }
+        ]
+    },
+    {
+        "id": "alcatraz",
+        "name": "Alcatraz",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "",
+        "maps": [
+            {
+                "id": "alcatraz",
+                "name": "Alcatraz"
+            }
+        ]
+    },
+    {
+        "id": "blitz",
+        "name": "Blitz",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "An accelerated version of classic Battle Royale. Drop into a random portion of the map and win the game within 10 minutes.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            },
+            {
+                "id": "Blackout",
+                "name": "Blackout"
+            }
+        ]
+    },
+    {
+        "id": "sniper-challenge",
+        "name": "Sniper Challenge",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "A time-limited ten minutes of fast-paced experience! Sniper rifles and pistols are the only primary weapons. Loot airdrop with 100% Exotic Arctic .50. From the best sniping squad with your friends!",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            },
+            {
+                "id": "Blackout",
+                "name": "Blackout"
+            }
+        ]
+    },
+    {
+        "id": "warfare",
+        "name": "Warfare",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Fight alongside teammates against twenty enemies. Infinite respawn. Players will keep their equipment upon respawn.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            },
+            {
+                "id": "Blackout",
+                "name": "Blackout"
+            }
+        ]
+    },
+    {
+        "id": "tank-battle",
+        "name": "Tank Battle",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "Collect five components to assemble your favorite tank and use it to decimate your enemies. The last team standing wins.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            }
+        ]
+    },
+    {
+        "id": "solid-gold",
+        "name": "Solid Gold",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "Classic Battle Royale with all legendary weapon blueprints. (The game mode has been removed from the game permanently.)",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            }
+        ]
+    },
+    {
+        "id": "br-prop-hunt",
+        "name": "BR Prop Hunt",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Play Prop Hunt in Isolated to fight for the chance of being the hunter or survive long enough to score the championship.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            }
+        ]
+    },
+    {
+        "id": "escort",
+        "name": "Escort",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Atlas Corporation soldiers are ordered to stop the UAC from escorting the Truck to the targets. But if you're on UAC side, be sure to escort the Truck to the final target.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            }
+        ]
+    },
+    {
+        "id": "ground-war-skirmish",
+        "name": "Ground War: Skirmish",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Ground War: Skirmish is a Battle Royale game type featured in Call of Duty: Mobile, similar to Ground War with 12 players competing against 12 players to capture areas.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            }
+        ]
+    }
+]

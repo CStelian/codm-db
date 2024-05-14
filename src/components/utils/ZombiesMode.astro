@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets'
+
+import zombies from '@assets/icons/zombies.svg'
+import timeLimitedIcon from '@assets/icons/timeLimited.svg'
+
+
+interface Props {
+    id: string
+    name: string
+    type: string
+    timeLimited: boolean
+}
+
+const { id, name, type, timeLimited } = Astro.props
+
+---
+
+<a href={`/modes/zombies/${id}`} data-type="zombies">
+
+    <div>
+
+        <div class="image">
+
+            <Image
+            src={`/assets/images/modes/zombies/${id}.png`}
+            alt={name}
+            width={300}
+            height={300}
+        />
+
+        </div>
+
+        <div class="metadata">
+
+            <h2>{name}</h2>
+
+        </div>
+
+        <Image
+            src={zombies}
+            alt="Multiplayer"
+            class="zombies"
+        />
+
+        {timeLimited && (
+            <Image
+                src={timeLimitedIcon}
+                alt="Time Limited"
+                class="time-limited"
+            />
+        )}
+
+    </div>
+
+</a>
+
+<style>
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 1rem;
+        max-width: fit-content;
+        border: 2px solid #fff;
+        position: relative;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .image {
+        flex: 0 0 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 1rem;
+    }
+
+    .metadata {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        margin: 0;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .zombies {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .time-limited {
+        position: absolute;
+        bottom: .1rem;
+        right: 1rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+</style>

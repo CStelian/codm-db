@@ -1,0 +1,294 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import { pagesSEO } from '@utils/seoData/pages'
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+
+import mp from '@assets/icons/mp.svg'
+import br from '@assets/icons/br.svg'
+import rankedMp from '@assets/icons/rankedMp.webp'
+import rankedBr from '@assets/icons/rankedBr.webp'
+
+import type { gameModeType } from "@utils/types"
+import type { mapType } from "@utils/types"
+
+const { id } = Astro.params
+
+const image = pagesSEO.modes.image
+const url = mainSiteSEO.url
+
+const mpModesList = await fetch(`${Astro.url.origin}/data/modes/mp.json`).then((res) => res.json())
+
+let name = ""
+let gameType = ""
+let type = ""
+let ranked = "" as string | boolean
+let timeLimited = "" as string | boolean
+let rules = ""
+let maps: mapType[] = []
+
+mpModesList.forEach((mode: gameModeType) => {
+  if (mode.id === id) {
+    name = mode.name
+    gameType = mode.gameType
+    type = mode.type
+    ranked = mode.ranked
+    timeLimited = mode.timeLimited
+    rules = mode.rules
+    maps = mode.maps
+  }
+})
+
+const brModesList = await fetch(`${Astro.url.origin}/data/modes/br.json`).then((res) => res.json())
+
+brModesList.forEach((mode: gameModeType) => {
+  if (mode.id === id) {
+    name = mode.name
+    gameType = mode.gameType
+    type = mode.type
+    ranked = mode.ranked
+    timeLimited = mode.timeLimited
+    rules = mode.rules
+    maps = mode.maps
+  }
+})
+
+let modeType = ""
+
+switch(gameType) {
+    case "mp":
+        modeType = "Multiplayer"
+        break
+    case "br":
+        modeType = "Battle Royale"
+        break
+    case "zombies":
+        modeType = "Zombies"
+        break
+    default:
+        modeType = "Unknown"
+}
+
+let typeText = ""
+
+switch(type) {
+    case "core":
+        typeText = "Core"
+        break
+    case "permanent":
+        typeText = "Permanent"
+        break
+    case "limited-time":
+        typeText = "Limited Time"
+        break
+    default:
+        typeText = "Unknown"
+}
+
+
+---
+
+<Layout
+    title={name}
+    desc={`Learn more about the ${name} mode in Call of Duty: Mobile. Find out if it's ranked, time-limited, and what the rules are.`}
+    image={image}
+    type="article"
+    url={`${url}/modes/${id}`}
+>
+
+    <main>
+
+        <div class="title">
+
+            <h1>
+
+                <span class="main-title">
+
+                    {name}
+
+                </span>
+
+                <span class="sub-title">
+
+                    {modeType === "Multiplayer" ? 
+                        <Image src={mp} alt="Multiplayer" class="mode"/> : 
+                        <Image src={br} alt="Battle Royale" class="mode"/>
+                    }
+
+                </span>
+
+            </h1>
+
+        </div>
+
+        <div class="image">
+
+            <Image
+            src={`/assets/images/modes/${gameType}/${id}.png`}
+            alt={name}
+            width={300}
+            height={300}
+        />
+
+        </div>
+
+        <div class="info">
+
+            <p><strong>Mode Type:</strong> {modeType}</p>
+            <p><strong>Mode Category:</strong> {typeText}</p>
+            {ranked === true && gameType === "mp" ? 
+                <p class="ranked">
+                    <Image src={rankedMp} alt="Ranked Multiplayer" class="ranked-icon"/>
+
+                    <span class="ranked-mp">
+                        {timeLimited ? "Limited Time" : null} Ranked Multiplayer Mode
+                    </span>
+                </p> : 
+                null
+            }
+
+            {ranked === true && gameType === "br" ? 
+                <p class="ranked">
+                    <Image src={rankedBr} alt="Ranked Battle Royale" class="ranked-icon"/>
+
+                    <span class="ranked-br">
+                        {timeLimited ? "Limited Time" : null} Ranked Battle Royale Mode
+                    </span>
+                </p> : 
+                null
+            }
+
+        </div>
+
+        <div class="info">
+
+            <h2>Rules</h2>
+
+            <p>{rules}</p>
+
+        </div>
+
+        <div class="info">
+
+            <h2>Maps</h2>
+
+            <ul class="maps-list">
+
+                {maps.map((map) => (
+                    <li>
+                        <a href={`/maps/${map.id}`}>
+
+                            {map.name}
+
+                        </a>
+                    </li>
+                ))}
+
+            </ul>
+
+        </div>
+
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        position: relative;
+        padding: 1rem;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .mode {
+        margin-left: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .maps-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .maps-list li {
+        margin: 0;
+    }
+
+    .maps-list a {
+        text-decoration: none;
+    }
+
+    .maps-list a:hover {
+        text-decoration: underline;
+    }
+
+    .ranked {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .ranked-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .limited {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .limited-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+</style>
