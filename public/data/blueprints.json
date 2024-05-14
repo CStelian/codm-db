@@ -7,7 +7,7 @@
     {
         "id": "type-25",
         "legacy": ["Phoenix Inferno"],
-        "legendary": ["Bloody Vengeance", "Magnetic Engine", "Horseman's Pick", "Hell's Horse"],
+        "legendary": ["Bloody Vengeance", "Magnetic Engine", "Horseman's Pick", "Hell's Horse", "Laser's Edge"],
         "epic": ["Geometry", "Cardboard", "Cyberspace", "Silver Ghoul", "Thermonuclear", "Demise", "Ruby", "Heartbreaker", "Infiltrate", "Defibrillator", "Password Protected", "Iced Out", "Sanguine", "Oni", "Cutting Edge", "Steel Blue", "Jungle Militia", "Summerburst", "Moonlight Rime", "Blight", "Coils", "Cindersmoke", "Bolt Press", "Street Cred India", "Grid Runner", "Last Stand", "Fighting Girl", "Rooster's Dawn", "Summer Coaster", "Tactical Inlay", "Sapphire"]
     },
     {
@@ -155,5 +155,72 @@
         "id": "type-19",
         "mythic": ["Celestial Ink"],
         "epic": ["Imperial Refinement"]
+    },
+    {
+        "id": "xpr-50",
+        "legendary": ["Broken Will"],
+        "epic": ["Geometry", "Sunspot", "Marquis", "Arachnophobia", "Dark Tech", "Ooze", "Dragon Brood", "Dolphins Wink", "Shiver", "Laser Burn"]
+    },
+    {
+        "id": "arctic.50",
+        "legendary": ["Foxfire", "Zodiac Beast", "Foxfire Prestige (purchasing 3 main rewards from draws to unlock, exclusive to the event)", "Venetian Scope"],
+        "epic": ["Black Gold", "Steel Blue", "Heat Stroke", "Hot Spot", "Ruby", "Cannibal", "High Voltage", "Cyberspace", "Zero G", "Visceral", "Winter Metal", "Graveyard Watch", "Koi Pond", "Sakura Storm", "Sprite Ops", "Exosphere", "Regicide", "Tokyo Rain", "Sleet Serpent", "2nd Anniversary Limited", "Paragon Vector", "Private Penguin", "Mile Notch", "Zero Point Action", "Cat Girly", "Dangerous Fangs", "Midnight Beast", "Embers Burning", "Black Horizon", "Storm of the Ancients", "Jungle Maw"]
+    },
+    {
+        "id": "m21-ebr",
+        "legendary": ["Rising Ashes"],
+        "epic": ["Royal Crimson", "Magmacomb", "Oil Spill", "Politician", "Flesh Wound", "Citrine", "Cardboard", "Grim Gold", "Shiver"]
+    },
+    {
+        "id": "dl-q33",
+        "mythic": ["Lotus Flames"],
+        "legendary": ["Holidays", "Zealot", "Advanced Artillery", "Bass Booster", "Dark Void"],
+        "epic": ["Red Action", "Eruption", "Heat Stroke", "Fatigue", "Strafing Run", "Neon Burst", "Dark Glow", "Sweet Sniper", "Blue Screen", "Tiger's Eye", "Black Market", "Surgical Incision", "Geometry", "Action Panel", "Punk Power", "Doomed Chorus", "Space Captain", "Pig Iron", "Dusk Chroma", "Galaxy", "Grim Ending", "Fruity Waters", "Phantom's Reach", "Burning Age"]
+    },
+    {
+        "id": "locus",
+        "legendary": ["Neptune", "Electron", "Demonic Breath", "Metal Whiskers"],
+        "epic": ["Cosmos", "Nuclear Fallout", "Hot Spot", "Junk Punk", "All Business", "Schism", "Carbon Cut", "Revolt", "Floating Lotus", "Saloon Sniper", "Unstoppable", "Ancient Mist", "Tank Wheels", "Plasma Explosion", "Coils", "Moonlaunch", "Street Cred NA", "Side Swindler", "Bleeding Rose", "Blood and Ivory", "Fuzzy Rabbit", "Neon Paint", "Collapse Fluid", "Goldscale", "Radion Burst", "All Business", "Overdrive"]
+    },
+    {
+        "id": "na-45",
+        "legendary": ["Lycanthrope", "Lycanthrope Prestige (purchasing 3 main rewards from draws to unlock, exclusive to the event)"],
+        "epic": ["Insignia", "Munitions", "Frozen Sun", "Sea Deity", "Athletic Soul", "Neon Oni", "Illumination"]
+    },
+    {
+        "id": "outlaw",
+        "legendary": ["High Noon", "Treasured Sands"],
+        "epic": ["Heat Stroke", "Ascending", "Radar", "Arctic Threat", "Breach", "Stampede", "Wire Bead", "Wyrm", "Crash Course", "Bleeding Rose", "Rockin'!", "Cosmos", "Gilded Relic"]
+    },
+    {
+        "id": "rytec-amr",
+        "mythic": ["Nautilus"],
+        "legendary": ["Nito-Ryu", "Gilded Porcelain"],
+        "epic": ["Revati", "Sweaterscape", "Master Plan", "Inner Mechanism", "Occult Mark", "Mine Burst", "RANBING", "Turquoise Griffin", "Neon Oni", "Blossom Breath", "Don't Be Late", "Showcase"]
+    },
+    {
+        "id": "svd",
+        "legendary": ["Toxicant", "Admiral Star"],
+        "epic": ["Black Ironwood", "Venemous Hive", "Strawberry Dreams", "Cosmic Appetite", "Tuning Frequency", "Witch's Grin", "Grinding Gears", "Gilded Past"]
+    },
+    {
+        "id": "koshka",
+        "legendary": ["Wundergewehr"],
+        "epic": ["Skiff Shot", "Underbrush", "Ironclad Enforcer", "Tuning Frequency", "Moment of Truth"]
+    },
+    {
+        "id": "zrg-20mm",
+        "legendary": ["Ticket to Hell", "Coffee Craze"],
+        "epic": ["Jade", "Urban Legend", "Well Suited", "Jade Vibes", "Holy Roman", "Vision in Black"]
+    },
+    {
+        "id": "hdr",
+        "legendary": ["Persuasion"],
+        "epic": ["Iridescent Lines", "Collapse Fluid", "Intimidating Fish", "Infernal Flight", "Sniper's Run", "Juniper Line Express"]
+    },
+    {
+        "id": "lw3-tundra",
+        "legendary": ["Crimson Jaws"],
+        "epic": ["Red Queen's Rebuke", "Immortal Stone", "Bright Night"]
     }
 ]
