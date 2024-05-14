@@ -236,7 +236,7 @@
     {
         "id": "rpd",
         "legendary": ["Practical Joker", "Yellowjacket", "Luxury Carving"],
-        "epic": ["Werewolf Fighter", "Cyberspace", "Mirage", "Orbit", "Carnivorous", "Festive", "Mainframe", "Ghostyard", "Dog Fighter", "Wave Lord", "Emerald Scales", "Smeared Hand", "Gold Elixir", "Nuclear Fallout", "Liquid Portal", "Demon Spawning", "Apex Predator", "Topaz Cavern", "Fire Charge", "Big Comrade", "Side Scroller", "Mermaid's Beckoning", "4th Anno Blammo", "Elemental Aggression"]
+        "epic": ["Werewolf Fighter", "Cyberspace", "Mirage", "Orbit", "Carnivorous", "Festive", "Mainframe", "Ghostyard", "Dog Fighter", "Wave Lord", "Emerald Scales", "Smeared Hand", "Gold Elixir", "Nuclear Fallout", "Liquid Portal", "Demon Spawning", "Apex Predator", "Topaz Cavern", "Fire Charge", "Big Comrade", "Side Scroller", "Mermaid's Beckoning", "4th Anno Blammo", "Elemental Aggression", "Scoreboard!"]
     },
     {
         "id": "m4lmg",
@@ -406,5 +406,48 @@
         "id": "tec-9",
         "legendary": ["Film Noir"],
         "epic": ["The Classic"]
+    },
+    {
+        "id": "hs2126",
+        "epic": ["Ooze", "Party Area", "Pig Dynasty", "Rockin'!", "Battle Hart"]
+    },
+    {
+        "id": "by15",
+        "legendary": ["Boba Blaster"],
+        "epic": ["Red Action", "Eruption", "Pantomime", "Citrine", "Top Dog", "Fool's Gold", "BL4ST3R-01", "Side Scroller", "Rafina Special EX-1", "AMS Pro-Grade", "Scoreboard!"]
+    },
+    {
+        "id": "hs0405",
+        "legendary": ["Songstress"],
+        "epic": ["Tank", "Stone Mason", "Spray Bomb", "Skeletal Ignition", "Eclipse", "Electric Eel", "Empty Shells", "Balloon Trick", "War-Built", "Radar"]
+    },
+    {
+        "id": "striker",
+        "epic": ["New Year '20", "Barricade", "Aeronaut", "Pastel Poison", "Cosmos", "Pastel Poison", "Summer Sunset", "Undying Hands", "Night in Gold", "Death Spiral"]
+    },
+    {
+        "id": "krm-262",
+        "legendary": ["Glorious Blaze"],
+        "epic": ["Lava", "Revolution", "Gold Spade", "Point And Click", "Joy Buzzsaw", "Future Buzz", "Eagle Claw", "Cutting Edge", "Waterproof", "Silent Reaver", "Floating Lotus", "In the Dark", "Jeweled Scales", "Smiling Faces", "Festive Lighting", "Crocodile Tears"]
+    },
+    {
+        "id": "echo",
+        "legendary": ["Natural Causes"],
+        "epic": ["Demon Eyes", "Full Moon", "Cold Air", "Dissension", "Spyware", "Sleeping Dragon", "Steam Clock", "Firestorm", "Reverberation", "Tasty Treat", "Engraven", "Cobra Jungle", "Russian Heart"]
+    },
+    {
+        "id": "r9-0",
+        "legendary": ["Hopper"],
+        "epic": ["Master of Snakes", "Vertebrate Volition", "Far Frontier", "Grinding Gears", "Silver Machines"]
+    },
+    {
+        "id": "jak-12",
+        "legendary": ["Molten Mirror"],
+        "epic": ["Treecutter", "Thousand Fold", "Peggy", "Russian Heart", "Blue Mirage", "Waves of Harmony", "Liquid Light", "Making Waves", "Angelic Depths", "Vault Cracker"]
+    },
+    {
+        "id": "argus",
+        "legendary": ["Carmine Flare"],
+        "epic": ["Death Branch", "Immortal Pattern", "Strong Winter Wind"]
     }
 ]
