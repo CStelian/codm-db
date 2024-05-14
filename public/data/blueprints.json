@@ -512,5 +512,23 @@
     {
         "id": "nail-gun",
         "legendary": ["Dark Experiments"]
+    },
+    {
+        "id": "fhj-18",
+        "epic": ["Living Rust", "Ruby", "Spores", "Tourmaline", "Gold Glitter", "Magnetic Pulse", "Revolt", "Dragon Maw", "Hoard", "Firestorm", "Technophile", "Static Discharge", "Neon Rain", "Quartz", "Ghoulish", "Mine Burst", "Call of the Tropics", "Gunzo Infinity", "Electrified", "Firebird Ray", "Submerged", "Making Waves", "Closing Shot"]
+    },
+    {
+        "id": "smrs",
+        "epic": ["Space Station", "Thermonuclear", "Slagged", "Oil Spill", "Strafing Run", "Artillery", "Tiger's Eye", "Bug Spray", "Azurite", "Supermax", "Citrine", "Noir", "Quartz", "Emergence", "Vagabond", "Cosmos", "Glow Fly", "Murder", "Stampede", "Wicked Whisper", "Patriotic", "Summerburst", "Firestorm", "Down Range", "Deadly Helix", "Flames and Frost", "Good Day", "Peak Light", "Be So Lovely", "Steelmelt", "Ghoulish", "Shield Breaker", "New Game Plus", "Defibrillator", "Final Round", "Apex Predator", "Hell Shredder", "The Chase!"]
+    },
+    {
+        "id": "thumper",
+        "legendary": ["Surprise Party"],
+        "epic": ["Sweaterscape", "Flames and Frost", "Inner Mechanism", "Shield Breaker", "Occult Mark", "Winged Lapis", "Eclipse", "No Man's Land", "Demon Spawning", "Cobra Jungle", "Jacked Frost", "Golden Fox", "Galaxy Fragments", "Cosmos"]
+    },
+    {
+        "id": "d13-sector",
+        "legendary": ["Steam Shredder"],
+        "epic": ["Grid Runner", "Prism", "Sapphire Burst", "Hooved Beast", "Russian Heart", "Persistence", "Sweaterscape", "Dark, Stormy Night"]
     }
 ]
