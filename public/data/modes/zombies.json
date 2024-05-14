@@ -1,7 +1,7 @@
 [
     {
-        "id": "zombies-classic-normal",
-        "name": "Zombies Classic - Normal",
+        "id": "classic-normal",
+        "name": "Classic - Normal",
         "gameType": "zombies",
         "timeLimited": false,
         "desc": "Defend against the zombies and defeat the Ultimate zombies.",
@@ -13,8 +13,8 @@
         ]
     },
     {
-        "id": "zombies-classic-hardcore",
-        "name": "Zombies Classic - Hardcore",
+        "id": "classic-hardcore",
+        "name": "Classic - Hardcore",
         "gameType": "zombies",
         "timeLimited": false,
         "desc": "This secret is deeply buried in a hidden manual, located in the Underground lab.",
@@ -26,8 +26,8 @@
         ]
     },
     {
-        "id": "zombies-classic-endless",
-        "name": "Zombies Classic - Endless",
+        "id": "classic-endless",
+        "name": "Classic - Endless",
         "gameType": "zombies",
         "timeLimited": false,
         "desc": "The zombies' attacks are relentless. Find the right time to retreat.",
