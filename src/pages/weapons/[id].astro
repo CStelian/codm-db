@@ -486,7 +486,7 @@ weaponBlueprints.forEach((weapon: WeaponBlueprint) => {
                 <ul>
                     {epicBlueprints.map((blueprint) => (
                         <li>
-                            {name === "Swordfish" && blueprint === "MK2" ? 
+                            {name === "Swordfish" && blueprint === "MK2" || name === "Chicom" && blueprint === "CQB" ? 
                             `${name} ${blueprint}` : 
                             `${name} - ${blueprint}`
                         }
