@@ -39,7 +39,7 @@ if (distance < 0) {
 
     <div class="hero-content">
         <h1>Call of Duty: Mobile</h1>
-        <p>{season} is out May 22nd 5PM PT.</p>
+        <p>{season} is out {days !== "00" && hours !== "00" && minutes !== "00" && seconds !== "00" ? "May 22nd 5PM PT" : "now"}.</p>
 
        {days !== "00" && hours !== "00" && minutes !== "00" && seconds !== "00" ?
            <Countdown date={new Date("2024-05-23T00:00:00.000Z")} client:load />
