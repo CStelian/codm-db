@@ -124,6 +124,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
