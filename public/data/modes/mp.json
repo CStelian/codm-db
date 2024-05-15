@@ -1538,5 +1538,1277 @@
                 "name": "Rust"
             }
         ]
+    },
+    {
+        "id": "prop-hunt",
+        "name": "Prop Hunt",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "The objective is to eliminate the props as a Hunter or survive until the timer expires as a Prop. The player who is in the Top 3 wins the match.",
+        "maps": [
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "coastal",
+                "name": "Coastal"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "tunisia",
+                "name": "Tunisia"
+            }
+        ]
+    },
+    {
+        "id": "rapid-fire",
+        "name": "Rapid Fire",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "The first team to hit a specified number of kills win. Eliminate the enemy to quickly activate Operator Skills, Scorestreaks, and limitless ammo.",
+        "maps": [
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "highrise",
+                "name": "Highrise"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            }
+        ]
+    },
+    {
+        "id": "1v1-duel",
+        "name": "1v1 Duel",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "In the first rount, players can fight with the weapons in their loadouts. The player who loses the round can designate a weapon type in the next round for both sides. Weapons not within the designated type will be replaced.",
+        "maps": [
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "atrium",
+                "name": "Atrium"
+            },
+            {
+                "id": "saloon",
+                "name": "Saloon"
+            },
+            {
+                "id": "pine",
+                "name": "Pine"
+            },
+            {
+                "id": "king",
+                "name": "King"
+            },
+            {
+                "id": "docks",
+                "name": "Docks"
+            },
+            {
+                "id": "stack",
+                "name": "Stack"
+            }
+        ]
+    },
+    {
+        "id": "capture-the-flag",
+        "name": "Capture the Flag",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Two rounds in total. Changes sides in each round. The team that captures the enemy's flag three times, or has the most flags when the round ends wins. The final battle result will be determined by the total captured flags. Overtime starts if two teams have the same number of flags after two rounds. Only when the flag is in our base can we capture the enemy's flag to score.",
+        "maps": [
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "monastery",
+                "name": "Monastery"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            }
+        ]
+    },
+    {
+        "id": "attack-of-the-undead",
+        "name": "Attack of the Undead",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Survivor: Survive at all costs to win. The last survivor will e given significantly more health and a Death Machine with limited ammunition. (A Survivor will convert to the Undead after death.) \nThe Undead: The Undead have limitless respawns. Signal Flares are set next to the respawn location. Operator skills grand silent movement and increase movement speed.",
+        "maps": [
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "tunisia",
+                "name": "Tunisia"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            }
+        ]
+    },
+    {
+        "id": "super-attack-of-the-undead",
+        "name": "Super Attack of the Undead",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Core gameplay is the same as Attack of the Undead. \nUnique upgrades are available in Super Attack of the Undead, which you can purchase with points. Become Undead to infect others or be a Survivor to struggle to the end! \nEarn points by fighting or opening an airdrop. Consume points to get an upgrade.",
+        "maps": [
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            }
+        ]
+    },
+    {
+        "id": "juggernaut",
+        "name": "Juggernaut",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "The Juggernaut game mode is set up with every other player against one opponent (who is selected by random to be the first juggernaut). Everybody else must try to kill the Juggernaut; the player that ultimately kills the Juggernaut becomes the new Juggernaut. The Juggernaut's goal is to keep their position for as long as possible.",
+        "maps": [
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            }
+        ]
+    },
+    {
+        "id": "ground-war",
+        "name": "Ground War",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Two factions compete to capture and hold multiple locations. The first faction to reach the target score wins. \nYou can choose locations to respawn, drive vehicles, and fight for victory with 12 teammates.",
+        "maps": [
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "crossroads",
+                "name": "Crossroads"
+            },
+            {
+                "id": "armada",
+                "name": "Armada"
+            }
+        ]
+    },
+    {
+        "id": "headquarters",
+        "name": "Headquarters",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Two factions must capture the HQ when it respawns. The faction that successfully captures the HQ needs to hold it until the defending time is over. Each second scores a point. \nThere will be prep time before the next HQ respawns. It will be available when the countdown is complete. \nThe defending faction cannot respawn until the HQ is destroyed or successfully defended.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            }
+        ]
+    },
+    {
+        "id": "hardcore-team-deathmatch",
+        "name": "Hardcore Team Deathmatch",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Kill enemy players and take the lead. Be the first to reach the specified number of kills to win. \nCaution: Low health, no health recovery, no killcam, limited HU and friendly fire damage.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            }
+        ]
+    },
+    {
+        "id": "hardcore-domination",
+        "name": "Hardcore Domination",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Two factions compete to capture and hold three locations. Each time an objective is captured, the faction will get 1 point after a period of time; the first team to reach the target score wins. \nCaution: Low health, no health recovery, no killcam, limited HU and friendly fire damage.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            }
+        ]
+    },
+    {
+        "id": "hardcore-hardpoint",
+        "name": "Hardcore Hardpoint",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Two factions compete to capture a Hardpoint. When there are only players from the same faction inside the Hardpoint zone, this faction will score 1 point each second. The hardpoint will relocate to a new position after a period of time. The faction that reaches the specified score limit wins. \nCaution: Low health, no health recovery, no killcam, limited HU and friendly fire damage.",
+        "maps": [
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "hijacked",
+                "name": "Hijacked"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            }
+        ]
+    },
+    {
+        "id": "cranked",
+        "name": "Cranked",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "The gametype is similar to Team Deathmatch with two teams competing to earn kills. Whenever a player gets a kill, they earn a \"Cranked\" bonus, giving them faster movement speed, reload, and ADS. Upon getting the bonus, the player is given a 30 second timer. After each kill or assist the player earns, the timer will reset. If the player fails to get a kill or assist within the time limit, they will explode and die.",
+        "maps": [
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            },
+            {
+                "id": "cage",
+                "name": "Cage"
+            },
+            {
+                "id": "reclaim",
+                "name": "Reclaim"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+			{
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+			{
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown: Russia"
+            },
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            }
+        ]
+    },
+    {
+        "id": "grind",
+        "name": "Grind",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "5 vs 5. Collect dog tags and deliver them to the objective. Every dog tag delivered successfully scores you one point. The first team to reach the target score wins.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "hardhat",
+                "name": "Hardhat"
+            },
+            {
+                "id": "khandor-hideout",
+                "name": "Khandor Hideout"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            }
+        ]
+    },
+    {
+        "id": "guns-blazing",
+        "name": "Guns Blazing",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "8-player FFA. Each kill earns you 1 point. The first team to reach the target score wins. \nEvery time you kill or die, your rage value increases by 100. At 500, you become a Super Soldier. \nIn the Super Soldier state, you will get a Chopper akimbo weapon that increases your HP to 300.",
+        "maps": [
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            }
+        ]
+    },
+    {
+        "id": "cranked-confirmed",
+        "name": "Cranked Confirmed",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "The core gameplay is the same as Cranked. \nKilled players drop dog tags. Enemy dog tags are outlined in red while friendly dog tags are outlined in blue. Collecting enemy dog tags scores points. The first team to reach target number of dog tags wins. Collecting enemy dog tags confirms the kill. Collecting friendly dog tags denies the enemy's kill.",
+        "maps": [
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "killhouse",
+                "name": "Killhouse"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            },
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "vacant",
+                "name": "Vacant"
+            },
+            {
+                "id": "miami-strike",
+                "name": "Miami Strike"
+            },
+            {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "reclaim",
+                "name": "Reclaim"
+            }
+        ]
+    },
+    {
+        "id": "ground-missions",
+        "name": "Ground Missions",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Two factions compete to capture and hold five locations. Each time an objective is captured, the seizing faction will get 1 point. The first faction to reach the target score wins.",
+        "maps": [
+            {
+                "id": "aniyah-incursion",
+                "name": "Aniyah Incursion"
+            }
+        ]
+    },
+    {
+        "id": "drop-zone",
+        "name": "Drop Zone",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Capture the Drop Zone and open Care Packages.",
+        "maps": [
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "rust",
+                "name": "Rust"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            }
+        ]
+    },
+    {
+        "id": "snowball-scuffle",
+        "name": "Snowball Scuffle",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "10 vs 10. Collect snowmen and deliver them to the objective. Every snowman delivered successfully scores you one point. The first team to reach the target score wins. \nPick up the Gift Boxes randomy scattered on the ground and receive special Operator Skills and Throwables.",
+        "maps": [
+            {
+                "id": "raid-holiday",
+                "name": "Raid - Holiday"
+            },
+            {
+                "id": "nuketown-russia",
+                "name": "Nuketown Russia"
+            }
+        ]
+    },
+    {
+        "id": "big-head-blizzard",
+        "name": "Big Head Blizzard",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "You will always spawn at your base. Watch out for headshots! \nBlizzard Beasts can see the location of all players, but are visible to other players, too. \nWeapon balance adjustment: Headshot damage and the damage of some weapons has been adjusted. \nLevelin up unlocks your passive skills and increases HP. Once max level is reached, you become a Blizzard Beast. The final round starts when a team has 3 Blizzard Beasts or time runs out. The opposing team can also hae 3 Blizzard Beasts if they reach max level during the final round. \nEliminating enemies earns you the most energy. Dealing enemy damage or healing your teammates by shooting them earns you less energy. You will lose energy upon death unless at max level. Once enough players have reached max level, they will transform into Blizzard Beasts. \nDuring the final round, all players only get 1 life. The last surviving team with the most players left is the winner.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "monastery",
+                "name": "Monastery"
+            },
+            {
+                "id": "oasis",
+                "name": "Oasis"
+            },
+            {
+                "id": "scrapyard-2019",
+                "name": "Scrapyard 2019"
+            },
+            {
+                "id": "hovec-sawmill",
+                "name": "Hovec Sawmill"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            }
+        ]
+    },
+    {
+        "id": "goliath-clash",
+        "name": "Goliath Clash!",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Suit up in the Goliath and use your firepower to capture the objectives. This mode is 5v5 and in TPP. \nCapturing points, defeating enemies, and collecting batteries will make your Goliath more powerful. \nChoose the Goliath type that suits your playstyle.",
+        "maps": [
+            {
+                "id": "satellite",
+                "name": "Satellite"
+            },
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            }
+        ]
+    },
+    {
+        "id": "chaos-control",
+        "name": "Chaos Control",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Capture the objectoves to win. You have infinite lives.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "firing-range",
+                "name": "Firing Range"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "slums",
+                "name": "Slums"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "crossroads-strike",
+                "name": "Crossroads Strike"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            },
+            {
+                "id": "rush",
+                "name": "Rush"
+            },
+            {
+                "id": "arsenal",
+                "name": "Arsenal"
+            },
+            {
+                "id": "armada-strike",
+                "name": "Armada Strike"
+            },
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            }
+        ]
+    },
+    {
+        "id": "search-and-rescue",
+        "name": "Search & Rescue",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Core gameplay is the same as Search & Destroy. \nPlayers drop their holo dog tag after their first daeth in each round. \nFind the Holo Dog ags of your teammates, and you can revive them back into the current round. \nRevive your fallen teammates, and get back in the fight.",
+        "maps": [
+            {
+                "id": "crossfire",
+                "name": "Crossfire"
+            },
+            {
+                "id": "standoff",
+                "name": "Standoff"
+            },
+            {
+                "id": "crash",
+                "name": "Crash"
+            },
+            {
+                "id": "tunisia",
+                "name": "Tunisia"
+            },
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "meltdown",
+                "name": "Meltdown"
+            },
+            {
+                "id": "takeoff",
+                "name": "Takeoff"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
+            },
+            {
+                "id": "terminal",
+                "name": "Terminal"
+            },
+            {
+                "id": "hackney-yard",
+                "name": "Hackney Yard"
+            },
+            {
+                "id": "coastal",
+                "name": "Coastal"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
+            {
+                "id": "favela",
+                "name": "Favela"
+            },
+            {
+                "id": "kurohana-metropolis",
+                "name": "Kurohana Metropolis"
+            }
+        ]
+    },
+    {
+        "id": "arena",
+        "name": "Arena",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Players have to earn tokens by defeating enemies and completing objectives to earn tokens. These tokens can then be used to purchase weapons to carry into the map with you.\nThe interesting part of the new mode is that there will be a zone shrinking the map. Players have to take down the other two teams to achieve victory.\nIt’s a round-based game mode and the first team to reach two rounds will achieve victory.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "New Vision City"
+            },
+            {
+                "id": "isolated",
+                "name": "Ecology Lab"
+            }
+        ]
+    },
+    {
+        "id": "safeguard",
+        "name": "Safeguard",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "In Safeguard, there is an offensive and defensive team. The offensive team has to escort a non-combative robot along a predetermined path to a designated objective, typically near the defensive team's spawn point. The defensive team must prevent the robot from entering this objective. \nThe team will get a point if they completed their objective that round (escorted the robot to the objective, or prevented the robot from entering the objective).",
+        "maps": [
+            {
+                "id": "seaside",
+                "name": "Seaside"
+            }
+        ]
+    },
+    {
+        "id": "ground-war-breach",
+        "name": "Ground War: Breach",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "The Objective is the attacker as Phantom Corps needs to push until they conquer the map while the defender as The Tontine needs to defend and reinforce the location.",
+        "maps": [
+            {
+                "id": "memnos-island",
+                "name": "Memnos Island"
+            }
+        ]
+    },
+    {
+        "id": "boost-assault",
+        "name": "Boost Assault",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Kill enemy players and take the lead. Be the first to reach the specified number of kills to win. \nEvery player has exo suits capable of boosting their jump heigh, and sliding speed. Wall-running is also a movement mechanic.",
+        "maps": [
+            {
+                "id": "shoot-house",
+                "name": "Shoot House"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "nuketown-year-of-the-dragon",
+                "name": "Nuketown: Year of the Dragon"
+            }
+        ]
+    },
+    {
+        "id": "dropkick",
+        "name": "Dropkick",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Two teams fight over control of a briefcase and score points by keeping possession of it. \nPlayers of the team currently holding the briefcase will not respawn until it's dropped. \nThe location of the player holding the briefcase is visible to all players. \nPlayers holding the briefcase can only use specific weapons, and cannot use Throwables, Scorestreas, or Operator Skills.",
+        "maps": [
+            {
+                "id": "nuketown",
+                "name": "Nuketown"
+            },
+            {
+                "id": "express",
+                "name": "Express"
+            },
+            {
+                "id": "diesel",
+                "name": "Diesel"
+            }
+        ]
     }
 ]

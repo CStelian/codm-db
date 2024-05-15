@@ -164,7 +164,9 @@ switch(type) {
 
             <h2>Rules</h2>
 
-            <p>{rules}</p>
+            {rules.split('\n').map((rule) => (
+                <p>{rule}</p>
+            ))}
 
         </div>
 
