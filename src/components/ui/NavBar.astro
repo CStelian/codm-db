@@ -27,19 +27,18 @@ import logo from "@assets/logos/codm-db-logo.png"
         ))}
     </ul>
 
-    <button id="mobile-nav" class="btn btn-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <line x1="4" y1="8" x2="20" y2="8" />
-            <line x1="4" y1="16" x2="20" y2="16" />
-        </svg>
+    <button id="mobile-nav" class="btn btn-primary" type="button" title="Mobile Navigation Toggle" data-opened="false">
+        <div class="mobile-nav-icon">
+            <div class="mobile-nav-line" />
+            <div class="mobile-nav-line" />
+        </div>
     </button>
 
 
 </nav>
 
-<div class="mobile-nav">
-    <ul class="nav-links">
+<div class="mobile-nav" style="left: 100%;">
+    <ul class="mobile-nav-links">
         {navBarPages.map((page) => (
             <li>
                 <a href={page.path} class="nav-link">
@@ -59,7 +58,6 @@ import logo from "@assets/logos/codm-db-logo.png"
         padding: 1rem 2rem;
         background-color: var(--primary-color);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        position: relative;
     }
 
     .nav-logo {
@@ -89,16 +87,55 @@ import logo from "@assets/logos/codm-db-logo.png"
         padding: 0.5rem;
         border-radius: 0.5rem;
         cursor: pointer;
+        z-index: 10000;
+    }
+
+    .mobile-nav-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .mobile-nav-line {
+        width: 25px;
+        height: 2px;
+        background-color: black;
+        transition: transform 0.3s;
+    }
+
+    [data-opened="true"] .mobile-nav-line:nth-of-type(1) {
+        transform: rotate(45deg) translateX(15px) translateY(-2px);
+    }
+
+    [data-opened="true"] .mobile-nav-line:nth-of-type(2) {
+        transform: rotate(-45deg) translateX(8px) translateY(8px);
     }
 
     .mobile-nav {
-        display: none;
-        position: absolute;
-        top: 4rem;
-        right: 2rem;
+        display: grid;
+        place-items: center;
         background-color: var(--primary-color);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 0.5rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        transition: left 0.3s;
+    }
+
+    .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        list-style: none;
+        font-size: large;
     }
 
     @media (max-width: 768px) {
@@ -109,6 +146,7 @@ import logo from "@assets/logos/codm-db-logo.png"
         #mobile-nav {
             display: block;
         }
+
     }
 
 </style>
@@ -122,7 +160,12 @@ import logo from "@assets/logos/codm-db-logo.png"
     }
 
     mobileNavButton.addEventListener("click", () => {
-        (mobileNav as HTMLElement).style.display = (mobileNav as HTMLElement).style.display === "none" ? "block" : "none";
+        const opened = (mobileNavButton as HTMLButtonElement).dataset.opened === "true";
+        const mobileNavLeft = (mobileNav as HTMLElement).style.left;
+
+        (mobileNavButton as HTMLButtonElement).dataset.opened = String(!opened);
+        
+        (mobileNav as HTMLElement).style.display = (mobileNav as HTMLElement).style.left = mobileNavLeft === "100%" ? "0" : "100%";
     });
 
 </script>
