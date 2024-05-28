@@ -19,12 +19,8 @@ export const footerPages = [
         path: '/about'
     },
     {
-        name: 'FAQ',
-        path: '/about/faq'
-    },
-    {
         name: 'Bot',
-        path: '/bot'
+        path: 'https://bot.codmdb.com/'
     },
     {
         name: 'Feedback',
