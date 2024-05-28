@@ -28,7 +28,7 @@ export const footerPages = [
     },
     {
         name: 'Feedback',
-        path: 'https://feedback.codmdb.com/'
+        path: 'https://discord.gg/3RrGsMhb37'
     }
 ]
 

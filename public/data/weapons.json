@@ -1200,6 +1200,18 @@
         "ctrl": 79
     },
     {
+        "id": "machine-pistol",
+        "name": "Machine Pistol",
+        "desc": "Vintage-styled automatic pistol with multiple attachments is well-equipped for various combat scenarios.",
+        "type": "pistol",
+        "dmg": 22,
+        "acc": 43,
+        "range": 39,
+        "fireRate": 90,
+        "mobility": 114,
+        "ctrl": 47
+    },
+    {
         "id": "fhj-18",
         "name": "FHJ-18",
         "desc": "Guided sholder-mounted rocket launcher.",

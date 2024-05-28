@@ -514,6 +514,11 @@
         "legendary": ["Dark Experiments"]
     },
     {
+        "id": "machine-pistol",
+        "legendary": ["Illuminous Fragments"],
+        "epic": ["Biometric"]
+    },
+    {
         "id": "fhj-18",
         "epic": ["Living Rust", "Ruby", "Spores", "Tourmaline", "Gold Glitter", "Magnetic Pulse", "Revolt", "Dragon Maw", "Hoard", "Firestorm", "Technophile", "Static Discharge", "Neon Rain", "Quartz", "Ghoulish", "Mine Burst", "Call of the Tropics", "Gunzo Infinity", "Electrified", "Firebird Ray", "Submerged", "Making Waves", "Closing Shot"]
     },
