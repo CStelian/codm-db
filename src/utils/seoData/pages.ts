@@ -20,4 +20,11 @@ export const pagesSEO = {
         url: 'https://www.codmdb.com/perks',
         keywords: 'codm perks, codm perk descriptions, codm perk effects'
     },
+    about: {
+        title: 'About - Call of Duty®: Mobile Database',
+        desc: 'Learn more about the Call of Duty®: Mobile Database, including its history, updates, and more!',
+        image: '/assets/seo/mainSite.jpg',
+        url: 'https://www.codmdb.com/about',
+        keywords: 'codm about, codm database, codm history, codm updates'
+    },
 }

@@ -1,0 +1,187 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import { pagesSEO } from "@utils/seoData/pages"
+
+const title = pagesSEO.about.title
+const desc = pagesSEO.about.desc
+const image = pagesSEO.about.image
+const url = pagesSEO.about.url
+const type = mainSiteSEO.type
+const siteName = mainSiteSEO.siteName
+const twitter = mainSiteSEO.twitter
+const locale = mainSiteSEO.locale
+const keywords = pagesSEO.about.keywords
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type={type}
+    siteName={siteName}
+    twitter={twitter}
+    locale={locale}
+    keywords={keywords}
+>
+    <main>
+        <title-card>
+            <h1 class="main-title">About the Call of Duty®: Mobile Database</h1>
+        </title-card>
+
+        <p class="about-text">
+            The Call of Duty®: Mobile Database is a fan-made database for the popular mobile game Call of Duty®: Mobile. It is a comprehensive resource for information on weapons, modes, and more. The database is updated regularly with new content and features, ensuring that it remains up-to-date and relevant to the community.
+        </p>
+
+        <h2>Changelog</h2>
+
+
+        <changelog-paragraph>
+            <strong>Version 1.1.1</strong>
+        </changelog-paragraph>
+
+        <changelog-list>
+            <changelog-item>
+                <strong>Added Machine Pistol to the Pistol category.</strong>
+            </changelog-item>
+            <changelog-item>
+                <strong>Added a new page for the About section.</strong>
+            </changelog-item>
+            <changelog-item>
+                <strong>Added SEO images.</strong>
+            </changelog-item>
+        </changelog-list>
+
+        <changelog-paragraph>
+            <strong>Version 1.1.0</strong>
+        </changelog-paragraph>
+
+        <changelog-list>
+            <changelog-item>
+                <strong>Added a new page for the Perks section.</strong>
+            </changelog-item>
+            <changelog-item>
+                <strong>Updated the homepage to include a new hero image.</strong>
+            </changelog-item>
+            <changelog-item>
+                <strong>Updated the footer to include a link to the Discord server.</strong>
+            </changelog-item>
+        </changelog-list>
+            
+        <changelog-paragraph>
+            <strong>Version 1.0.1</strong>
+        </changelog-paragraph>
+
+        <changelog-list>
+            <changelog-item>
+                <strong>Added a new page for the Modes section.</strong>
+            </changelog-item>
+        </changelog-list>
+
+        <changelog-paragraph>
+            <strong>Version 1.0</strong>
+        </changelog-paragraph>
+
+        <changelog-list>
+            <changelog-item>
+                <strong>Initial release.</strong>
+            </changelog-item>
+        </changelog-list>
+
+</Layout>
+
+<script>
+
+    class TitleCard extends HTMLElement {
+
+        constructor() {
+            super();
+            if (this.style) {
+                this.style.cssText = `
+                    text-align: center;
+                    padding: 2rem;
+                `;
+            }
+        }
+    }
+
+    class ChangelogParagraph extends HTMLElement {
+
+        constructor() {
+            super();
+            if (this.style) {
+                this.style.cssText = `
+                    display: block;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                `;
+            }
+        }
+
+    }
+
+    class ChangelogList extends HTMLElement {
+
+        constructor() {
+            super();
+
+            if (this.style) {
+                this.style.cssText = `
+                    display: block;
+                    padding: 0;
+                `;
+            }
+        }
+    }
+
+    class ChangelogItem extends HTMLElement {
+
+        constructor() {
+            super();
+            if (this.style) {
+                this.style.cssText = `
+                    display: block;
+                    margin-bottom: 0.5rem;
+                `;
+            }
+        }
+    }
+
+    customElements.define('title-card', TitleCard)
+    customElements.define('changelog-paragraph', ChangelogParagraph)
+    customElements.define('changelog-list', ChangelogList)
+    customElements.define('changelog-item', ChangelogItem)
+
+</script>
+
+<style>
+
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .about-text {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    changelog-paragraph {
+        margin-bottom: 2rem;
+    }
+
+    changelog-item::before {
+        content: "•";
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+</style>
