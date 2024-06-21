@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets"
 import Countdown from "@components/utils/Countdown.tsx"
-const { image,year, season, ctaLink } = Astro.props
 
-let countdownDate = new Date("2024-05-23T00:00:00.000Z").getTime()
+const { image,year, season, ctaLink, releaseDate } = Astro.props
+
 
 let now = new Date().getTime()
 
@@ -12,7 +12,7 @@ let hours = "" as number | string
 let minutes = "" as number | string
 let seconds = "" as number | string
 
-let distance = countdownDate - now
+let distance = releaseDate - now
 
 if (distance < 0) {
     days = "00"
@@ -20,11 +20,22 @@ if (distance < 0) {
     minutes = "00"
     seconds = "00"
 } else {
-    days = Math.floor(distance / (1000 * 60 * 60 * 24))
-    hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-    minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-    seconds = Math.floor((distance % (1000 * 60)) / 1000)
+    days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString()
+    hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString()
+    minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString()
+    seconds = Math.floor((distance % (1000 * 60)) / 1000).toString()
 }
+
+let localizedDate = new Date(releaseDate).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric"
+})
+
+console.log(localizedDate)
+
+let countdownDate = new Date(releaseDate)
 
 ---
 
@@ -39,10 +50,10 @@ if (distance < 0) {
 
     <div class="hero-content">
         <h1>Call of Duty: Mobile</h1>
-        <p>{season} is out {days !== "00" && hours !== "00" && minutes !== "00" && seconds !== "00" ? "May 22nd 5PM PT" : "now"}.</p>
+        <p>{season} is out {days !== "00" && hours !== "00" && minutes !== "00" && seconds !== "00" ? localizedDate : "now"}.</p>
 
        {days !== "00" && hours !== "00" && minutes !== "00" && seconds !== "00" ?
-           <Countdown date={new Date("2024-05-23T00:00:00.000Z")} client:load />
+           <Countdown date={countdownDate} client:load />
         : null}
 
         <a href={ctaLink} class="cta" target="_blank">

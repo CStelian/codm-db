@@ -79,6 +79,7 @@ body {
     color: var(--primary-text-color);
     background-color: var(--tertiary-color);
     margin: 0;
+    background-image: url('images/hero.jpg');
 }
 
 a {
