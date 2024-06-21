@@ -355,6 +355,8 @@ weaponBlueprints.forEach((weapon: WeaponBlueprint) => {
     }
 })
 
+const pathname = Astro.url.pathname
+
 
 ---
 
@@ -365,6 +367,13 @@ weaponBlueprints.forEach((weapon: WeaponBlueprint) => {
     image={`${mainSiteSEO.url}/assets/images/weapons/${id}.webp`}
     type="article"
 >
+
+    {pathname === "/weapons/bp50" ?
+        <div class="warning">
+            <p>This weapon is meant for a future season of the game. Weapon stats and image are not yet available.</p>
+        </div>
+    : null}
+
     <h1>
         <span class="main-title">
             {name}
@@ -568,6 +577,16 @@ weaponBlueprints.forEach((weapon: WeaponBlueprint) => {
     hr {
         margin: 2rem auto;
         width: 90%;
+    }
+
+    .warning {
+        text-align: center;
+        margin: 2rem auto;
+        max-width: 800px;
+        background-color: var(--warning-color);
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 1.5rem;
     }
 
 </style>

@@ -348,6 +348,18 @@
         "ctrl": 50
     },
     {
+        "id": "bp50",
+        "name": "BP50",
+        "desc": "",
+        "type": "ar",
+        "dmg": 0,
+        "acc": 0,
+        "range": 0,
+        "fireRate": 0,
+        "mobility": 0,
+        "ctrl": 0
+    },
+    {
         "id": "xpr-50",
         "name": "XPR-50",
         "desc": "Semi-automatic sniper rifle. Long Range with moderate recoil.",

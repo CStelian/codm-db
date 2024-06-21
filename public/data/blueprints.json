@@ -157,6 +157,11 @@
         "epic": ["Imperial Refinement"]
     },
     {
+        "id": "bp50",
+        "mythic": ["Ion Eruption"],
+        "epic": ["ASH2ASH"]
+    },
+    {
         "id": "xpr-50",
         "legendary": ["Broken Will"],
         "epic": ["Geometry", "Sunspot", "Marquis", "Arachnophobia", "Dark Tech", "Ooze", "Dragon Brood", "Dolphins Wink", "Shiver", "Laser Burn"]
