@@ -350,7 +350,7 @@
     {
         "id": "bp50",
         "name": "BP50",
-        "desc": "",
+        "desc": "This fully automatic assault rifle shows its edge with its high rate of fire, being equally deadly and accurate at long distances.",
         "type": "ar",
         "dmg": 24,
         "acc": 54,
