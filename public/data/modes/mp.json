@@ -2810,5 +2810,20 @@
                 "name": "Diesel"
             }
         ]
+    },
+    {
+        "id": "quick-solo",
+        "name": "Quick Solo",
+        "gameType": "mp",
+        "type": "private",
+        "ranked": false,
+        "timeLimited": false,
+        "rules": "Core gameplay is the same as Team Deathmatch. The only difference is it's only 1v1 and the kill limit is 20. A unique feature is the ability to ban weapon types from being used.",
+        "maps": [
+            {
+                "id": "shipment",
+                "name": "Shipment"
+            }
+        ]
     }
 ]

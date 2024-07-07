@@ -25,6 +25,10 @@ export const footerPages = [
     {
         name: 'Feedback',
         path: 'https://discord.gg/3RrGsMhb37'
+    },
+    {
+        name: 'Random Loadout Generator',
+        path: 'https://generator.codmdb.com/'
     }
 ]
 

@@ -352,12 +352,12 @@
         "name": "BP50",
         "desc": "",
         "type": "ar",
-        "dmg": 0,
-        "acc": 0,
-        "range": 0,
-        "fireRate": 0,
-        "mobility": 0,
-        "ctrl": 0
+        "dmg": 24,
+        "acc": 54,
+        "range": 53,
+        "fireRate": 81,
+        "mobility": 83,
+        "ctrl": 50
     },
     {
         "id": "xpr-50",
