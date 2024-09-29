@@ -2825,5 +2825,25 @@
                 "name": "Shipment"
             }
         ]
+    },
+    {
+        "id": "uplink",
+        "name": "Uplink",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "To be added.",
+        "maps": []
+    },
+    {
+        "id": "hordepoint",
+        "name": "Hordepoint",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "To be added.",
+        "maps": []
     }
 ]

@@ -64,5 +64,11 @@
         "name": "Spycraft",
         "tier": "green",
         "desc": "Hack enemy Field Upgrade including: Trophy System, Trip Mine, SAM Turret, Sentry Turret, Transfrom Shield and Munitions Box. These units can be controlled after manual hack is complete."
+    },
+    {
+        "id": "serpentine",
+        "name": "Serpentine",
+        "tier": "green",
+        "desc": "Reducing incoming bullet damage by 12% while sprinting."
     }
 ]

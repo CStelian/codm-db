@@ -27,4 +27,11 @@ export const pagesSEO = {
         url: 'https://www.codmdb.com/about',
         keywords: 'codm about, codm database, codm history, codm updates'
     },
+    patchNotes: {
+        title: 'Patch Notes - Call of Duty®: Mobile Database',
+        desc: 'Find all the patch notes available in Call of Duty®: Mobile, including the latest and more!',
+        image: '/assets/seo/patchNotes.jpg',
+        url: 'https://www.codmdb.com/patch-notes',
+        keywords: 'codm patch notes, codm patch notes latest, codm patch notes more'
+    },
 }

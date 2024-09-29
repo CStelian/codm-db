@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 
-import zombies from '@assets/icons/zombies.svg'
+import alchemyStars from '@assets/icons/alchemy-stars.png'
 import timeLimitedIcon from '@assets/icons/timeLimited.svg'
 
 
@@ -16,14 +16,14 @@ const { id, name, type, timeLimited } = Astro.props
 
 ---
 
-<a href={`/modes/zombies/${id}`} data-type="zombies">
+<a href={`/modes/events/alchemy-stars/${id}`} data-type="zombies">
 
     <div>
 
         <div class="image">
 
             <Image
-            src={`/assets/images/modes/zombies/${id}.png`}
+            src={`/assets/images/modes/alchemy-stars/${id}.png`}
             alt={name}
             width={300}
             height={300}
@@ -38,8 +38,8 @@ const { id, name, type, timeLimited } = Astro.props
         </div>
 
         <Image
-            src={zombies}
-            alt="Zombies"
+            src={alchemyStars}
+            alt="Alchemy Stars"
             class="zombies"
         />
 
@@ -104,10 +104,10 @@ const { id, name, type, timeLimited } = Astro.props
 
     .zombies {
         position: absolute;
-        top: -1rem;
+        top: 1rem;
         right: 1rem;
-        width: 6rem;
-        height: 6rem;
+        width: 9rem;
+        height: auto;
     }
 
     .time-limited {

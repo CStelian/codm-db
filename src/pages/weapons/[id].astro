@@ -337,6 +337,48 @@ weaponsList.forEach((weapon: WeaponType) => {
     }
 })
 
+let alchemyStarsCamoRequirements = await fetch(`${Astro.url.origin}/data/camos/alchemyStars.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+    let alchemyStars = ""
+
+    weaponsList.forEach((weapon: WeaponType) => {
+        if (weapon.id === id) {
+            switch (weapon.type) {
+            case "ar":
+                alchemyStars = alchemyStarsCamoRequirements.ar
+                break
+            case "sr":
+                alchemyStars = alchemyStarsCamoRequirements.sr
+                break
+            case "lmg":
+                alchemyStars = alchemyStarsCamoRequirements.lmg
+                break
+            case "smg":
+                alchemyStars = alchemyStarsCamoRequirements.smg
+                break
+            case "sg":
+                alchemyStars = alchemyStarsCamoRequirements.sg
+                break
+            case "mr":
+                alchemyStars = alchemyStarsCamoRequirements.mr
+                break
+            case "pistol":
+                alchemyStars = alchemyStarsCamoRequirements.pistol
+                break
+            case "launcher":
+                alchemyStars = alchemyStarsCamoRequirements.launcher
+                break
+            case "melee":
+                alchemyStars = alchemyStarsCamoRequirements.melee
+                break
+            default:
+                alchemyStars = "There is no data for this weapon."
+            }
+        }
+    })
+
 const weaponBlueprints = await fetch(`${Astro.url.origin}/data/blueprints.json`)
     .then((res) => res.json())
     .catch((err) => console.error(err))
@@ -446,6 +488,9 @@ const pathname = Astro.url.pathname
 
         <h2>Aether Crystal Camo Requirements</h2>
         <p>{aether}</p>
+
+        <h2>Alchemy Stars Camo Requirements</h2>
+        <p>{alchemyStars}</p>
 
     </div>
 

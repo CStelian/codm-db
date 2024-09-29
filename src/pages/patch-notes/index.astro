@@ -1,0 +1,110 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from "@utils/seoData/pages"
+import type { PatchNoteType } from "@utils/types"
+
+
+const title = pagesSEO.patchNotes.title
+const desc = pagesSEO.patchNotes.desc
+const image = pagesSEO.patchNotes.image
+const url = pagesSEO.patchNotes.url
+const keywords = pagesSEO.patchNotes.keywords
+
+const patchNotesList = await fetch(`${Astro.url.origin}/data/patch-notes.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+const season9PatchNotes = patchNotesList.filter((patchNote: PatchNoteType) => patchNote.season === 9)
+
+console.log(season9PatchNotes)
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type="website"
+    keywords={keywords}
+>
+    <main>
+        <h1>Patch Notes</h1>
+
+        <div class="legend">
+            <h2>Legend</h2>
+            <ul>
+                <li class="buff">Buff</li>
+                <li class="nerf">Nerf</li>
+                <li class="adjustment">Adjustment</li>
+            </ul>
+        </div>
+
+        <hr />
+
+        <h2 class="season-title">{season9PatchNotes[0].title}</h2>
+
+        <div class="patch-notes-grid">
+            {season9PatchNotes[0].patchNotes.map((patchNote: any) => (
+                <div>
+                    <h3 class={patchNote.type}>{patchNote.item}</h3>
+                    <ul>
+                        {patchNote.changes.map((change: any) => (
+                            <li class={change.type}>{change.title}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    ul {
+        padding: 0;
+        margin-left: 2rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    .buff {
+        color: var(--buff-color);
+    }
+
+    .nerf {
+        color: var(--nerf-color);
+    }
+
+    .adjustment {
+        color: var(--adjustment-color);
+    }
+
+    .season-title {
+        text-align: center;
+    }
+
+    .patch-notes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 1rem;
+    }
+
+</style>

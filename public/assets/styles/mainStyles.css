@@ -25,6 +25,9 @@
     --green-perk: #214A33;
     --blue-perk: #1D3047;
     --warning-color: #c96b00;
+    --buff-color: #00ff00;
+    --nerf-color: #ff0000;
+    --adjustment-color: #e1ff00;
 }
 
 /* Font Face */
@@ -142,4 +145,8 @@ a:hover {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+.no-bullets {
+    list-style: none;
 }

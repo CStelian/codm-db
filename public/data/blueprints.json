@@ -162,6 +162,11 @@
         "epic": ["ASH2ASH"]
     },
     {
+        "id": "lag-53",
+        "legendary": ["Rift Collapse"],
+        "epic": ["Quarkaser"]
+    },
+    {
         "id": "xpr-50",
         "legendary": ["Broken Will"],
         "epic": ["Geometry", "Sunspot", "Marquis", "Arachnophobia", "Dark Tech", "Ooze", "Dragon Brood", "Dolphins Wink", "Shiver", "Laser Burn"]
@@ -413,6 +418,11 @@
         "epic": ["The Classic"]
     },
     {
+        "id": "iso",
+        "legendary": ["Fueled"],
+        "epic": ["Cornerback"]
+    },
+    {
         "id": "hs2126",
         "epic": ["Ooze", "Party Area", "Pig Dynasty", "Rockin'!", "Battle Hart"]
     },
@@ -474,6 +484,11 @@
         "id": "mk2",
         "legendary": ["Helix Grade"],
         "epic": ["Brushstroke", "Patriotic", "Constrictor", "Future Sharpshooter", "Fast Skies", "Persistence", "Majestic Scales", "Floating Lotus"]
+    },
+    {
+        "id": "type-63",
+        "legendary": ["Anchor Weighed"],
+        "epic": ["Deadly Botany"]
     },
     {
         "id": "j358",

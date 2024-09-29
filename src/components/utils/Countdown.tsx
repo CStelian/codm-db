@@ -1,61 +1,49 @@
-import React from 'react'
+import React from 'react';
 
 export default function Countdown({ date }: { date: Date }) {
-    const [days, setDays] = React.useState(0)
-    const [hours, setHours] = React.useState(0)
-    const [minutes, setMinutes] = React.useState(0)
-    const [seconds, setSeconds] = React.useState(0)
+  const now = new Date().getTime();
+  const initialTime = new Date(date).getTime();
+  const timeRemaining = initialTime - now;
 
-    React.useEffect(() => {
-        const interval = setInterval(() => {
-            const now = new Date().getTime()
-            const distance = date.getTime() - now
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24))
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+  const [days, setDays] = React.useState(0);
+  const [hours, setHours] = React.useState(0);
+  const [minutes, setMinutes] = React.useState(0);
+  const [seconds, setSeconds] = React.useState(0);
 
-            setDays(days)
-            setHours(hours)
-            setMinutes(minutes)
-            setSeconds(seconds)
-        }, 1000)
-
-        return () => clearInterval(interval)
-    }, [date])
+  React.useEffect(() => {
+    const timerInterval = setInterval(() => {
+      setDays(Math.floor(timeRemaining / (1000 * 60 * 60 * 24)));
+      setHours(
+        Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      );
+      setMinutes(Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60)));
+      setSeconds(Math.floor((timeRemaining % (1000 * 60)) / 1000));
+    }, 1000);
+    return () => clearInterval(timerInterval);
+  }, [timeRemaining]);
 
   return (
-    <div className="countdown">
+    <div className='countdown'>
+      <div className='days'>
+        <p>DAYS</p>
+        <p>{days}</p>
+      </div>
 
-        <div className="days">
+      <div className='hours'>
+        <p>HOURS</p>
+        <p>{hours}</p>
+      </div>
 
-            <p>DAYS</p>
-            <p>{days}</p>
+      <div className='minutes'>
+        <p>MINUTES</p>
+        <p>{minutes}</p>
+      </div>
 
-        </div>
-
-        <div className="hours">
-
-            <p>HOURS</p>
-            <p>{hours}</p>
-
-        </div>
-
-        <div className="minutes">
-
-            <p>MINUTES</p>
-            <p>{minutes}</p>
-
-        </div>
-
-        <div className="seconds">
-
-            <p>SECONDS</p>
-            <p>{seconds}</p>
-
-        </div>
-
+      <div className='seconds'>
+        <p>SECONDS</p>
+        <p>{seconds}</p>
+      </div>
     </div>
-
-  )
+  );
 }
+

@@ -1,0 +1,304 @@
+[
+    {
+        "season": 9,
+        "title": "Season 9: Orbital Raiders",
+        "patchNotes": [
+            {
+                "item": "Type 25",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Changed the Sprint-to-Fire Time from 170ms to 140ms.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Changed the Hit Flinch from 0.9 to 0.8.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Kilo 141",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "OWC Marksman: Changed the Aiming Movement Speed from 2.41m/s to 2.69m/s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Grau 5.56",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "ZLR Drifter A-08: Changed the Fire Interval from 82ms to 77.1ms.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "BP50",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": ".30 Russian Short 60 Round Drums: Changed the Bullet Speed from 855m/s to 765m/s.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": ".30 Russian Short 60 Round Drums: Changed the Aiming Movement Speed from 3.4m/s to 2.98m/s.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "LAG 53",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "13.0''OSW Para: Changed the Fire Interval from 150ms to 139.5ms.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "13.0''OSW Para: Changed the Headshot Damage Multiplier from 1.5 to 2.3.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Pharo",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased recoil recovery speed, reduced recovery delay.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Ranger Foregrip: Changed the Horizontal Recoil reduction from 3.7% to 16.0%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "GKS",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage Profile Changed from 33-32-24-19 to 34-32-25-19.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Changed Aiming Time from 240ms to 220ms.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "AGR 556",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "Changed Aiming Time from 236ms to 216ms.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Changed Damage profile from 25-21-17-15 to 25-23-19-17.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "30 Round 5.56mm Mag: Removed damage bonus.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "30 Round 5.56mm Mag: Changed headshot damage multiplier from 1.1 to 1.6.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "30 Round 5.56mm Mag: Changed chest damage multiplier from 1.1 to 1.3.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "30 Round 5.56mm Mag: Changed arm damage multiplier from 1.1 to 1.2.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "30 Round 5.56mm Mag: Changed stomach damage multiplier from 1.1 to 1.2.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "60 Round 5.56mm Mag: Removed damage bonus.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "60 Round 5.56mm Mag: Changed headshot damage multiplier from 1.1 to 1.4.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "60 Round 5.56mm Mag: Changed chest damage multiplier from 1.1 to 1.2.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "60 Round 5.56mm Mag: Changed arm damage multiplier from 1.1 to 1.2.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "60 Round 5.56mm Mag: Changed stomach damage multiplier from 1.1 to 1.2.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "SKS",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Changed Upper Arm Damage Multiplier from 0.8 to 0.9.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Changed Hit Flinch from 2 to 1.4.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "MK2",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Changed Aiming time from 380ms to 330ms.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Changed Hit Flinch from 2.4 to 1.6.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Machine Pistol",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Base Damage Range increased from 8-15 to 11-18.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "D13 Sector",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Projectile Speed increased.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased the number of bounces.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "TAK-5",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Health Boost increased from 50 to 60.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Havoc",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased effective range.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased effective radius from 90 degrees to 180 degrees.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased points obtained.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Disables scorestreaks using Havoc: Score increase from 25 to 50.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "Havoc asssits: Score increase from 10 to 30.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "MQ-27 Dragonfire",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Decreased ammo capacity from 4 to 3.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "Decreased the duraction of the enemy reveal from 15 seconds to 10 seconds.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Cryo Bomb",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Effective radius increased from 5m to 6m.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Recon (Multiplayer)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased the radius in which enemies are revealed from 9m to 12m.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Serpentine (Multiplayer)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased the damage reduction percentage from 10% to 12%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Refitter (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Slightly increased the bullet damage reduction.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Trap Master (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Slightly decreased Energy required for activation.",
+                        "type": "buff"
+                    }
+                ]
+            }
+        ]
+    }
+]

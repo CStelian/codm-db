@@ -45,6 +45,18 @@ export type zombieModeType = {
     }>
 }
 
+export type alchemyStarsModeType = {
+    id: string
+    name: string
+    gameType: string
+    timeLimited: boolean
+    desc: string
+    maps: Array<{
+        id: string
+        name: string
+    }>
+}
+
 export type mapType = {
     id: string
     name: string
@@ -57,4 +69,17 @@ export type perkType = {
     name: string
     tier: string
     desc: string
+}
+
+export type PatchNoteType = {
+    season: number
+    type: string
+    title: string
+    patchNotes: Array<{
+        item: string
+        changes: Array<{
+            title: string
+            type: string
+        }>
+    }>
 }

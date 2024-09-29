@@ -360,6 +360,18 @@
         "ctrl": 50
     },
     {
+        "id": "lag-53",
+        "name": "LAG 53",
+        "desc": "Low fire rate Assault Rifle with significant suppression in mid-range and long-range combat.",
+        "type": "ar",
+        "dmg": 45,
+        "acc": 54,
+        "range": 53,
+        "fireRate": 45,
+        "mobility": 83,
+        "ctrl": 50
+    },
+    {
         "id": "xpr-50",
         "name": "XPR-50",
         "desc": "Semi-automatic sniper rifle. Long Range with moderate recoil.",
@@ -948,6 +960,18 @@
         "ctrl": 98
     },
     {
+        "id": "iso",
+        "name": "ISO",
+        "desc": "Steady sub-machine gun with high fire rate.",
+        "type": "smg",
+        "dmg": 25,
+        "acc": 39,
+        "range": 44,
+        "fireRate": 88,
+        "mobility": 100,
+        "ctrl": 33
+    },
+    {
         "id": "hs2126",
         "name": "HS2126",
         "desc": "Fully automatic shotgun with high rate of fire and reload speed.",
@@ -1102,6 +1126,18 @@
         "fireRate": 28,
         "mobility": 43,
         "ctrl": 36
+    },
+    {
+        "id": "type-63",
+        "name": "Type 63",
+        "desc": "Classical Marksma Rifle that can be enhanced adaptability with different attachment sets.",
+        "type": "mr",
+        "dmg": 63,
+        "acc": 70,
+        "range": 60,
+        "fireRate": 42,
+        "mobility": 63,
+        "ctrl": 60
     },
     {
         "id": "j358",

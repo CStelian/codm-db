@@ -1,0 +1,15 @@
+[
+    {
+        "id": "dark-infiltration",
+        "name": "Dark Infiltration",
+        "gameType": "alchemyStars",
+        "timeLimited": true,
+        "desc": "Collab time-limited PvE game mode. Alchemy Stars is a product offered by Proxima Beta Pte.Limited, a Singaporean company. Includes the Alchemy Stars camo as reward.",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated"
+            }
+        ]
+    }
+]

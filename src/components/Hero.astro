@@ -12,7 +12,11 @@ let hours = "" as number | string
 let minutes = "" as number | string
 let seconds = "" as number | string
 
-let distance = releaseDate - now
+let countdownDate = new Date(releaseDate)
+
+let seasonDate = countdownDate.getTime()
+
+let distance = seasonDate - now
 
 if (distance < 0) {
     days = "00"
@@ -35,7 +39,9 @@ let localizedDate = new Date(releaseDate).toLocaleDateString(undefined, {
 
 console.log(localizedDate)
 
-let countdownDate = new Date(releaseDate)
+
+
+console.log(distance)
 
 ---
 
@@ -50,7 +56,10 @@ let countdownDate = new Date(releaseDate)
 
     <div class="hero-content">
         <h1>Call of Duty: Mobile</h1>
-        <p>{season} is out now.</p>
+        {distance > 0 ? 
+            <p>{season} will be releasing on {localizedDate}</p>
+            <Countdown date={releaseDate} client:load />
+        : <p>{season} is out now.</p>}
 
         <a href={ctaLink} class="cta" target="_blank">
             Learn More
@@ -140,3 +149,26 @@ let countdownDate = new Date(releaseDate)
     }
 
 </style>
+
+<script is:inline>
+
+    const days = document.querySelector('#days') 
+    const hours = document.querySelector('#hours') 
+    const minutes = document.querySelector('#minutes')
+    const seconds = document.querySelector('#seconds')
+
+    if (!days || !hours || !minutes || !seconds) {
+        throw new Error('Missing DOM elements')
+    }
+
+    const now = new Date().getTime()
+    const initialTime = new Date('2024-10-03T00:00:00.000Z').getTime()
+    const timeRemaining = initialTime - now
+
+    setInterval(() => {
+        days.innerHTML = Math.floor(timeRemaining / (1000 * 60 * 60 * 24))
+        hours.innerHTML = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+        minutes.innerHTML = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60))
+        seconds.innerHTML = Math.floor((timeRemaining % (1000 * 60)) / 1000)
+    }, 1000)
+</script>

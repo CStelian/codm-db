@@ -10,6 +10,10 @@ export const navBarPages = [
     {
         name: 'Perks',
         path: '/perks'
+    },
+    {
+        name: 'Patch Notes',
+        path: '/patch-notes'
     }
 ]
 

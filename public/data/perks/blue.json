@@ -70,5 +70,11 @@
         "name": "Survival Training",
         "tier": "blue",
         "desc": "Immune to the negative effects of a single hostile tactical item. 30 second cooldown."
+    },
+    {
+        "id": "assassin",
+        "name": "Assassin",
+        "tier": "blue",
+        "desc": "After 90 secs in a match, high-threat enemies are marked on the mini-map and extro score bonuses are given for eliminating them, except in Search & Destroy. These enemies are ones who have activated 3 Scorestreaks or have a K-D ratio of over 4 without dying."
     }
 ]

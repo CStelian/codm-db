@@ -5,11 +5,13 @@ import { Image } from "astro:assets"
 import MpMode from "@components/utils/MpMode.astro"
 import BrMode from "@components/utils/BrMode.astro"
 import ZombiesMode from "@components/utils/ZombiesMode.astro"
+import AlchemyStarsMode from "@components/utils/AlchemyStarsMode.astro"
 
 import CoDMLogo from "@assets/logos/codm-logo.png"
 
 import type { gameModeType } from "@utils/types"
 import type { zombieModeType } from "@utils/types"
+import type { alchemyStarsModeType } from "@utils/types"
 
 const title = pagesSEO.modes.title
 const desc = pagesSEO.modes.desc
@@ -22,6 +24,8 @@ const mpModesList = await fetch(`${Astro.url.origin}/data/modes/mp.json`).then((
 const brModesList = await fetch(`${Astro.url.origin}/data/modes/br.json`).then((res) => res.json())
 
 const zombieModesList = await fetch(`${Astro.url.origin}/data/modes/zombies.json`).then((res) => res.json())
+
+const alchemyStarsModesList = await fetch(`${Astro.url.origin}/data/modes/alchemyStars.json`).then((res) => res.json())
 
 
 ---
@@ -80,6 +84,15 @@ const zombieModesList = await fetch(`${Astro.url.origin}/data/modes/zombies.json
 
         {zombieModesList.map((mode: zombieModeType) => (
             <ZombiesMode
+                id={mode.id}
+                name={mode.name}
+                type={mode.gameType}
+                timeLimited={mode.timeLimited}
+            />
+        ))}
+
+        {alchemyStarsModesList.map((mode: alchemyStarsModeType) => (
+            <AlchemyStarsMode
                 id={mode.id}
                 name={mode.name}
                 type={mode.gameType}
