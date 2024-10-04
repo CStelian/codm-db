@@ -1,0 +1,129 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+
+import mpIcon from '@assets/icons/mp.svg'
+import brIcon from '@assets/icons/br.svg'
+import zombiesIcon from '@assets/icons/zombies.svg'
+
+import type { MapType } from "@utils/types"
+
+const { id } = Astro.params
+
+async function getMaps(type: string) {
+    return await fetch(`${Astro.url.origin}/data/maps/${type}.json`).then(res => res.json())
+}
+const mpMaps = await getMaps('mp')
+const brMaps = await getMaps('br')
+
+
+const mapsList = [mpMaps,brMaps]
+
+let name = ""
+let type = ""
+let releaseYear = 0
+let released = false
+let pointsOfInterest: string[] = []
+
+mapsList.map((maps: MapType[]) => {
+    maps.forEach((map: MapType) => {
+        if (map.id === id) {
+            name = map.name
+            type = map.type
+            releaseYear = map.releaseYear
+            released = map.released
+            pointsOfInterest = map.pointsOfInterest
+        }
+    })
+})
+
+const pathname = Astro.url.pathname
+
+---
+
+<Layout
+    title={name}
+    desc={name}
+    url={`${mainSiteSEO.url}/maps/${id}`}
+    image={`${mainSiteSEO.url}/assets/images/maps/${id}.webp`}
+    type="article"
+>
+
+    {!released && (
+        <div class="warning">
+            <p>This map has not been released yet.</p>
+        </div>
+    )}
+
+    <main>
+        <h1>
+            <span class="main-title">
+                {name}
+            </span>
+            <span class="map-type">
+                {type === "mp" ? <Image src={mpIcon} alt="mp" width="24" height="24" /> : type === "br" ? <Image src={brIcon} alt="br" width="24" height="24" /> : <Image src={zombiesIcon} alt="zombies" width="24" height="24" />}
+            </span>
+        </h1>
+        <Image
+            src={`/assets/images/maps/${id}.webp`}
+            alt={name}
+            width={800}
+            height={400}
+        />
+        <div class="map-metadata">
+            {!released ? <p>This map has not been released yet.</p> : <p>Released in {releaseYear}</p>}
+        </div>
+        <div class="map-stats">
+            <div class="map-stats-item">
+                {!pointsOfInterest ? null : <h2>Points of Interest</h2>
+                    <ul>
+                        {pointsOfInterest.map((point) => (
+                            <li>{point}</li>
+                        ))}
+                    </ul>
+                }
+        </div>
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .map-metadata {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .map-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .warning {
+        text-align: center;
+        margin: 2rem auto;
+        max-width: 800px;
+        background-color: var(--warning-color);
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 1.5rem;
+    }
+
+</style>

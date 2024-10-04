@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Map from '@components/utils/Map.astro'
+
+import type { MapType } from '@utils/types'
+
+async function getMaps(type: string) {
+    return await fetch(`${Astro.url.origin}/data/maps/${type}.json`).then(res => res.json())
+}
+
+const mpMaps = await getMaps('mp')
+const brMaps = await getMaps('br')
+
+---
+
+<Layout title="Maps" desc="Maps" image="yes" type="page" url="yes">
+
+    <h1>Maps</h1>
+
+    <form>
+        <label for="search">Search for a Map:</label>
+        <input type="text" id="search" name="search" placeholder="Type a Map name..." />
+        <select>
+            <option value="all">All</option>
+            <option value="mp">Multiplayer</option>
+            <option value="br">Battle Royale</option>
+            <option value="zombies">Zombies</option>
+        </select>
+    </form>
+
+    <div class="maps">
+        {mpMaps.map((map: MapType) => <Map map={map} />)}
+        {brMaps.map((map: MapType) => <Map map={map} />)}
+    </div>
+
+</Layout>
+
+<style>
+
+    .maps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-block: 2rem;
+        padding-inline: 1rem;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input, select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #000;
+        border-radius: 0.25rem;
+    }
+
+    input {
+        margin-bottom: 0.5rem;
+    }
+
+    select {
+        margin-bottom: 1rem;
+    }
+
+</style>
+
+<script>
+
+    const maps = document.querySelectorAll("[data-type='map']")
+    const search = document.querySelector("input")
+    const select = document.querySelector("select")
+
+    if(!search || !select || !maps) {
+        throw new Error("Couldn't find the search, select or maps elements")
+    }
+
+    search.addEventListener("input", () => {
+        const searchValue = search.value.toLowerCase()
+
+        maps.forEach((map) => {
+            const mapName = map.querySelector("h2")?.textContent?.toLowerCase() || '';
+
+            if(mapName.includes(searchValue)) {
+                const mapElement = map as HTMLElement
+                mapElement.style.display = "flex"
+            } else {
+                const mapElement = map as HTMLElement
+                mapElement.style.display = "none"
+            }
+        })
+    })
+
+    select.addEventListener("change", () => {
+        const selectValue = select.value
+
+        maps.forEach((map) => {
+
+            if(selectValue === "all" || map.classList.contains(selectValue)) {
+                const mapElement = map as HTMLElement
+                mapElement.style.display = "flex"
+            } else {
+                const mapElement = map as HTMLElement
+                mapElement.style.display = "none"
+            }
+        })
+    })
+
+</script>

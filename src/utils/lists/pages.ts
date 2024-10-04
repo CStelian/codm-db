@@ -1,11 +1,15 @@
 export const navBarPages = [
     {
-        name: 'Weapons',
-        path: '/weapons'
-    },
-    {
         name: 'Modes',
         path: '/modes'
+    },
+    {
+        name: 'Maps',
+        path: '/maps'
+    },
+    {
+        name: 'Weapons',
+        path: '/weapons'
     },
     {
         name: 'Perks',

@@ -83,3 +83,12 @@ export type PatchNoteType = {
         }>
     }>
 }
+
+export type MapType = {
+    id: string
+    name: string    
+    type: string
+    releaseYear: number
+    released: boolean
+    pointsOfInterest: string[]
+}

@@ -1,0 +1,380 @@
+[
+    {
+        "id": "standoff",
+        "name": "Standoff",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "killhouse",
+        "name": "Killhouse",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "nuketown",
+        "name": "Nuketown",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "raid",
+        "name": "Raid",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "crossfire",
+        "name": "Crossfire",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "crash",
+        "name": "Crash",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "hijacked",
+        "name": "Hijacked",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "firing-range",
+        "name": "Firing Range",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "takeoff",
+        "name": "Takeoff",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "standoff-halloween",
+        "name": "Standoff Halloween",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "summit",
+        "name": "Summit",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "winter-raid",
+        "name": "Winter Raid",
+        "type": "mp",
+        "releaseYear": 2019,
+        "released": true
+    },
+    {
+        "id": "scrapyard",
+        "name": "Scrapyard",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "cage",
+        "name": "Cage",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "meltdown",
+        "name": "Meltdown",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "rust",
+        "name": "Rust",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "saloon",
+        "name": "Saloon",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "tunisia",
+        "name": "Tunisia",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "gulag",
+        "name": "Gulag",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "highrise",
+        "name": "Highrise",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "shipment-1944",
+        "name": "Shipment 1944",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "terminal",
+        "name": "Terminal",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "pine",
+        "name": "Pine",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "king",
+        "name": "King",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "hackney-yard",
+        "name": "Hackney Yard",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "nuketown-russia",
+        "name": "Nuketown Russia",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
+    },
+    {
+        "id": "reclaim",
+        "name": "Reclaim",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "shoot-house",
+        "name": "Shoot House",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "shipment",
+        "name": "Shipment",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "oasis",
+        "name": "Oasis",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "coastal",
+        "name": "Coastal",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "dome",
+        "name": "Dome",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "suldal-harbor",
+        "name": "Suldal Harbor",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "docks",
+        "name": "Docks",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "aniyah-incursion",
+        "name": "Aniyah Incursion",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "slums",
+        "name": "Slums",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "stack",
+        "name": "Stack",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "scrapyard-2019",
+        "name": "Scrapyard 2019",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "monastery",
+        "name": "Monastery",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "hovec-sawmill",
+        "name": "Hovec Sawmill",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "vacant",
+        "name": "Vacant",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "icebreaker",
+        "name": "Icebreaker",
+        "type": "mp",
+        "releaseYear": 2021,
+        "released": true
+    },
+    {
+        "id": "nuketown-temple",
+        "name": "Nuketown Temple",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "hacienda",
+        "name": "Hacienda",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "hardhat",
+        "name": "Hardhat",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "miami-strike",
+        "name": "Miami Strike",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "satellite",
+        "name": "Satellite",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "khandor-hideout",
+        "name": "Khandor Hideout",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "apocalypse",
+        "name": "Apocalypse",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "favela",
+        "name": "Favela",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "express",
+        "name": "Express",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "haunted-hacienda",
+        "name": "Haunted Hacienda",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "crossroads-strike",
+        "name": "Crossroads Strike",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    },
+    {
+        "id": "crossroads",
+        "name": "Crossroads",
+        "type": "mp",
+        "releaseYear": 2022,
+        "released": true
+    }
+]

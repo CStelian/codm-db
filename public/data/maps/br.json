@@ -1,0 +1,36 @@
+[
+    {
+        "id": "isolated",
+        "name": "Isolated",
+        "type": "br", 
+        "releaseYear": 2019,
+        "released": true,
+        "pointsOfInterest": ["New Vision City", "Pier", "Dock", "Pipeline", "Circus", "Estate", "Standoff", "Farm", "Nuclear Plant", "Bus Station", "Launch Base", "Crash Site", "Military Research Institute", "Football Field", "Ecology Lab", "T-3 Refinery", "Killhouse", "Sakura", "Overgrown", "Heat", "Dormitory", "Ski Town", "Outpost", "Sanitarium", "Frigid Wetland", "Black Market", "Harbor", "Radar Base", "Downtown"]
+    },
+    {
+        "id": "alcatraz",
+        "name": "Alcatraz",
+        "type": "br",
+        "releaseYear": 2020,
+        "released": true,
+        "pointsOfInterest": ["Power House", "Officer's Club", "New Industries", "Model Industries", "Cellhouse", "Warden's House", "Docks", "Parade Grounds", "Ruins"]
+    },
+    {
+        "id": "blackout",
+        "name": "Blackout",
+        "type": "br",
+        "releaseYear": 2021,
+        "released": true,
+        "pointsOfInterest": ["Nuketown Island", "Hijacked", "Construction Site", "Array", "Cargo Docks", "Lighthouse", "Estates", "Firing Range", "Fracking Tower", "Factory", "Train Station", "Rivertown", "Houseboat", "Hydro Dam", "Asylum", "Turbine", "Ghost Town"]
+    },
+    {
+        "id": "krai",
+        "name": "Krai",
+        "type": "br",
+        "releaseYear": 2024,
+        "released": false,
+        "pointsOfInterest": [
+            "Principia Sanatorium", "Safari Land Animal Play Park", "Knight Station", "Industrial Park", "Tranquility Parish"
+        ]
+    }
+]
