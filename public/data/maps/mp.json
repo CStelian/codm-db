@@ -376,5 +376,125 @@
         "type": "mp",
         "releaseYear": 2022,
         "released": true
+    },
+    {
+        "id": "diesel",
+        "name": "Diesel",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "rush",
+        "name": "Rush",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "arsenal",
+        "name": "Arsenal",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "armada-strike",
+        "name": "Armada Strike",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "armada",
+        "name": "Armada",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "seaside",
+        "name": "Seaside",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "kurohana-metropolis",
+        "name": "Kurohana Metropolis",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "memnos-island",
+        "name": "Memnos Island",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true,
+        "pointsOfInterest": ["Tholos Asteron", "Lighthouse", "Amytis Hotel", "Templar Crypt Ruins"]
+    },
+    {
+        "id": "miami-blitz",
+        "name": "Miami Blitz",
+        "type": "mp",
+        "releaseYear": 2023,
+        "released": true
+    },
+    {
+        "id": "atrium",
+        "name": "Atrium",
+        "type": "mp",
+        "releaseYear": 2024,
+        "released": true
+    },
+    {
+        "id": "nuketown-year-of-the-dragon",
+        "name": "Nuketown: Year of the Dragon",
+        "type": "mp",
+        "releaseYear": 2024,
+        "released": true
+    },
+    {
+        "id": "cheshire-park",
+        "name": "Cheshire Park",
+        "type": "mp",
+        "releaseYear": 2024,
+        "released": true
+    },
+    {
+        "id": "frequency",
+        "name": "Frequency",
+        "type": "mp",
+        "releaseYear": 2024,
+        "released": true
+    },
+    {
+        "id": "collateral-strike",
+        "name": "Collateral Strike",
+        "type": "mp",
+        "releaseYear": 2024,
+        "released": true
+    },
+    {
+        "id": "collateral",
+        "name": "Collateral",
+        "type": "mp",
+        "releaseYear": 2024,
+        "released": true
+    },
+    {
+        "id": "combine",
+        "name": "Combine",
+        "type": "mp",
+        "releaseYear": 2024,
+        "released": true
+    },
+    {
+        "id": "firing-range-training",
+        "name": "Firing Range (Training)",
+        "type": "mp",
+        "releaseYear": 2020,
+        "released": true
     }
 ]

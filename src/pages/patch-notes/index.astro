@@ -46,7 +46,7 @@ console.log(season9PatchNotes)
 
         <div class="patch-notes-grid">
             {season9PatchNotes[0].patchNotes.map((patchNote: any) => (
-                <div>
+                <div class="patch-note">
                     <h3 class={patchNote.type}>{patchNote.item}</h3>
                     <ul>
                         {patchNote.changes.map((change: any) => (
@@ -105,6 +105,12 @@ console.log(season9PatchNotes)
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .patch-notes-grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
     }
 
 </style>

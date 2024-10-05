@@ -32,5 +32,12 @@
         "pointsOfInterest": [
             "Principia Sanatorium", "Safari Land Animal Play Park", "Knight Station", "Industrial Park", "Tranquility Parish"
         ]
+    },
+    {
+        "id": "training-grounds",
+        "name": "Training Grounds",
+        "type": "br",
+        "releaseYear": 2023,
+        "released": true
     }
 ]

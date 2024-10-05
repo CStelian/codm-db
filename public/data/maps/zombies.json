@@ -1,0 +1,23 @@
+[
+    {
+        "id": "green-run",
+        "name": "Green Run",
+        "type": "zombies",
+        "releaseYear": 2018,
+        "released": false
+    },
+    {
+        "id": "shi-no-numa",
+        "name": "Shi no Numa",
+        "type": "zombies",
+        "releaseYear": 2019,
+        "released": true   
+    },
+    {
+        "id": "nacht-der-untoten",
+        "name": "Nacht der Untoten",
+        "type": "zombies",
+        "releaseYear": 2025,
+        "released": false
+    }
+]

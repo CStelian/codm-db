@@ -10,6 +10,7 @@ async function getMaps(type: string) {
 
 const mpMaps = await getMaps('mp')
 const brMaps = await getMaps('br')
+const zombiesMaps = await getMaps('zombies')
 
 ---
 
@@ -31,6 +32,7 @@ const brMaps = await getMaps('br')
     <div class="maps">
         {mpMaps.map((map: MapType) => <Map map={map} />)}
         {brMaps.map((map: MapType) => <Map map={map} />)}
+        {zombiesMaps.map((map: MapType) => <Map map={map} />)}
     </div>
 
 </Layout>

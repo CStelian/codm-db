@@ -16,9 +16,10 @@ async function getMaps(type: string) {
 }
 const mpMaps = await getMaps('mp')
 const brMaps = await getMaps('br')
+const zombiesMaps = await getMaps('zombies')
 
 
-const mapsList = [mpMaps,brMaps]
+const mapsList = [mpMaps, brMaps, zombiesMaps]
 
 let name = ""
 let type = ""
@@ -124,6 +125,11 @@ const pathname = Astro.url.pathname
         padding: 1rem;
         border-radius: 10px;
         font-size: 1.5rem;
+    }
+
+    [alt="zombies"] {
+        height: 20px;
+        width: auto;
     }
 
 </style>
