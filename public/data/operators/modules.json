@@ -1,0 +1,67 @@
+[
+    {
+        "id": "trap-master-module",
+        "name": "Trap Master",
+        "mode": "zombies",
+        "active": {
+            "title": "Electric Trip Wire",
+            "desc": "Routes a high voltage current line. Enemies passing through willl take damage and movement speed will decrease."
+        },
+        "passive": {
+            "title": "Territorial Effect",
+            "desc": "increases team backup ammo and Sniper/LMG damage by 25%."
+        }
+    },
+    {
+        "id": "medic-module",
+        "name": "Medic",
+        "mode": "zombies",
+        "active": {
+            "title": "Medical Station",
+            "desc": "Instantly rescue all downed teammates and continously heal allies in proximity."
+        },
+        "passive": {
+            "title": "Medic",
+            "desc": "Increases team HP and Shotgun/SMG damage by 25%."
+        }
+    },
+    {
+        "id": "poltergeist-module",
+        "name": "Poltergeist",
+        "mode": "zombies",
+        "active": {
+            "title": "Active Camo",
+            "desc": "Become invisible and increase movement speed."
+        },
+        "passive": {
+            "title": "Voidwalker",
+            "desc": "Increases team movement speed while also raising Shotgun damage by 25% and doubling Pistol damage."
+        }
+    },
+    {
+        "id": "sentry-gun-module",
+        "name": "Sentry Gun",
+        "mode": "zombies",
+        "active": {
+            "title": "Sentry Gun",
+            "desc": "Place a sentry gun that automatically attacks enemies within range."
+        },
+        "passive": {
+            "title": "Firepower",
+            "desc": "Increases team fire rate and Sniper/Assault damage by 25%."
+        }
+    },
+    {
+        "id": "ravager-launcher-module",
+        "name": "Ravager Launcher",
+        "mode": "zombies",
+        "active": {
+            "title": "Ravager Launcher",
+            "desc": "Deploy a Ravager Launcher that automatically locks onto enemy soldiers and vehicles within range."
+        },
+        "passive": {
+            "title": "Demo Expert",
+            "desc": "Increases the damage of explosives by 100%."
+        }
+    }
+]

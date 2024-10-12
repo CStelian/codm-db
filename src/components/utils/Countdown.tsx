@@ -1,14 +1,14 @@
 import React from 'react';
 
 export default function Countdown({ date }: { date: Date }) {
-  const now = new Date().getTime();
-  const initialTime = new Date(date).getTime();
-  const timeRemaining = initialTime - now;
+  const now = new Date().getTime()
+  const initialTime = new Date(date).getTime()
+  const timeRemaining = initialTime - now
 
-  const [days, setDays] = React.useState(0);
-  const [hours, setHours] = React.useState(0);
-  const [minutes, setMinutes] = React.useState(0);
-  const [seconds, setSeconds] = React.useState(0);
+  const [days, setDays] = React.useState(0)
+  const [hours, setHours] = React.useState(0)
+  const [minutes, setMinutes] = React.useState(0)
+  const [seconds, setSeconds] = React.useState(0)
 
   React.useEffect(() => {
     const timerInterval = setInterval(() => {
@@ -18,8 +18,8 @@ export default function Countdown({ date }: { date: Date }) {
       );
       setMinutes(Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60)));
       setSeconds(Math.floor((timeRemaining % (1000 * 60)) / 1000));
-    }, 1000);
-    return () => clearInterval(timerInterval);
+    }, 1000)
+    return () => clearInterval(timerInterval)
   }, [timeRemaining]);
 
   return (
@@ -44,6 +44,6 @@ export default function Countdown({ date }: { date: Date }) {
         <p>{seconds}</p>
       </div>
     </div>
-  );
+  )
 }
 

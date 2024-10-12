@@ -1,0 +1,90 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from "@utils/seoData/pages"
+
+const title = pagesSEO.roadmap.title
+const desc = pagesSEO.roadmap.desc
+const image = pagesSEO.roadmap.image
+const url = pagesSEO.roadmap.url
+const keywords = pagesSEO.roadmap.keywords
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type="website"
+    keywords={keywords}
+>
+    <main>
+        <h1>Roadmap</h1>
+        <p>This page will be updated as the project progresses.</p>
+
+        <h2>Legend</h2>
+        <ul>
+            <li class="completed">Completed</li>
+            <li class="confirmed">Confirmed Release</li>
+            <li class="in-progress">In Progress</li>
+            <li class="cancelled">Cancelled</li>
+            <li class="not-started">Not Started</li>
+        </ul>
+
+        <hr />
+
+        <h2>Planned Changes</h2>
+        <ul>
+            <li class="not-started">Weapon Detailed Stats</li>
+            <li class="in-progress">Scorestreaks</li>
+            <li class="in-progress">Throwables</li>
+        </ul>
+
+        <h2>Other</h2>
+        <ul>
+            <li class="not-started">Mobile App</li>
+        </ul>
+    </main>
+</Layout>
+
+<style>
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding: 0;
+        margin-left: 2rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    .completed {
+        color: var(--completed);
+    }
+
+    .confirmed {
+        color: var(--confirmed);
+    }
+
+    .in-progress {
+        color: var(--in-progress);
+    }
+
+    .cancelled {
+        color: var(--cancelled);
+    }
+
+    .not-started {
+        color: var(--not-started);
+    }
+</style>

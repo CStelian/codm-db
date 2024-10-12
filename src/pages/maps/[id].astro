@@ -1,6 +1,8 @@
 ---
 import Layout from "@layouts/Layout.astro"
 import { Image } from "astro:assets"
+import Countdown from "@components/utils/Countdown"
+
 import { mainSiteSEO } from "@utils/seoData/mainSite"
 
 import mpIcon from '@assets/icons/mp.svg'
@@ -24,6 +26,7 @@ const mapsList = [mpMaps, brMaps, zombiesMaps]
 let name = ""
 let type = ""
 let releaseYear = 0
+let releaseDate = new Date()
 let released = false
 let pointsOfInterest: string[] = []
 
@@ -33,6 +36,7 @@ mapsList.map((maps: MapType[]) => {
             name = map.name
             type = map.type
             releaseYear = map.releaseYear
+            releaseDate = map.releaseDate
             released = map.released
             pointsOfInterest = map.pointsOfInterest
         }
@@ -52,8 +56,11 @@ const pathname = Astro.url.pathname
 >
 
     {!released && (
-        <div class="warning">
-            <p>This map has not been released yet.</p>
+        <div class="countdown-box">
+            <p>This map will be released in</p>
+            <div class="count-down">
+                <Countdown date={releaseDate} client:load />
+            </div>
         </div>
     )}
 
@@ -73,7 +80,10 @@ const pathname = Astro.url.pathname
             height={400}
         />
         <div class="map-metadata">
-            {!released ? <p>This map has not been released yet.</p> : <p>Released in {releaseYear}</p>}
+            {!released ? <p>This map is set to release on {new Date(releaseDate).toLocaleDateString(
+                'en-US',
+                { year: 'numeric', month: 'long', day: 'numeric' }
+            )}.</p> : <p>Released in {releaseYear}</p>}
         </div>
         <div class="map-stats">
             <div class="map-stats-item">
@@ -117,16 +127,17 @@ const pathname = Astro.url.pathname
         gap: 1rem;
     }
 
-    .warning {
-        text-align: center;
-        margin: 2rem auto;
-        max-width: 800px;
-        background-color: var(--warning-color);
-        padding: 1rem;
-        border-radius: 10px;
-        font-size: 1.5rem;
+    .countdown-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    .count-down {
+        margin-top: -2rem;
+    }
+    
     [alt="zombies"] {
         height: 20px;
         width: auto;

@@ -1,0 +1,352 @@
+[
+    {
+        "id": "trickster",
+        "name": "Trickster",
+        "mode": "br",
+        "type": "disrupt",
+        "active": {
+            "title": "Psychosis",
+            "desc": "Use two holographic decoys and a major speed boost to confuse your enemies."
+        },
+        "passive": {
+            "title": "Disrupt",
+            "desc": "After activating skill, movement speed is increased."
+        }
+    },
+    {
+        "id": "trap-master",
+        "name": "Trap Master",
+        "mode": "br",
+        "type": "disrupt",
+        "active": {
+            "title": "Electric Trip Wire",
+            "desc": "Places a high voltage current line that reduces the speed of enemies passing through and incrementally hurts those who stand in the trap."
+        },
+        "passive": {
+            "title": "Disrupt",
+            "desc": "After activating skill, movement speed is increased."
+        }
+    },
+    {
+        "id": "smoke-bomber",
+        "name": "Smoke Bomber",
+        "mode": "br",
+        "type": "disrupt",
+        "active": {
+            "title": "Cluster Smoke Grenade",
+            "desc": "Generates smoke to a target area that can mark enemies."
+        },
+        "passive": {
+            "title": "Disrupt",
+            "desc": "After activating skill, movement speed is increased."
+        }
+    },
+    {
+        "id": "hacker",
+        "name": "Hacker",
+        "mode": "br",
+        "type": "disrupt",
+        "active": {
+            "title": "Ice Pick",
+            "desc": "Disrupt the minimaps of all nearby enemies and prevent them from using gadgets. Passive: Immune to Hacker class."
+        },
+        "passive": {
+            "title": "Disrupt",
+            "desc": "After activating skill, movement speed is increased."
+        }
+    },
+    {
+        "id": "rewind",
+        "name": "Rewind",
+        "mode": "br",
+        "type": "disrupt",
+        "active": {
+            "title": "Glitch",
+            "desc": "Allows players to teleport to a location from 6 seconds prior. Movement speed will be reset."
+        },
+        "passive": {
+            "title": "Disrupt",
+            "desc": "After activating skill, movement speed is increased."
+        }
+    },
+    {
+        "id": "shock-wave",
+        "name": "Shock Wave",
+        "mode": "br",
+        "type": "disrupt",
+        "active": {
+            "title": "Shock Wave",
+            "desc": "Releases a shock wave that pushes away and damages nearby hostiles while also briefly blocking nearby projectiles."
+        },
+        "passive": {
+            "title": "Disrupt",
+            "desc": "After activating skill, movement speed is increased."
+        }
+    },
+    {
+        "id": "misdirection",
+        "name": "Misdirection",
+        "mode": "br",
+        "type": "disrupt",
+        "active": {
+            "title": "Misdirection Device",
+            "desc": "Emits special sound waves that impair auditory functions, completely hiding the user's sound and causing enemies in range to hear fake noise sources."
+        },
+        "passive": {
+            "title": "Disrupt",
+            "desc": "After activating skill, movement speed is increased."
+        }
+    },
+    {
+        "id": "ninja",
+        "name": "Ninja",
+        "mode": "br",
+        "type": "stealth",
+        "active": {
+            "title": "Grapple Hook",
+            "desc": "Shoot a grapple hook that pulls you to the target."
+        },
+        "passive": {
+            "title": "Stealth",
+            "desc": "Reduces movement noises."
+        }
+    },
+    {
+        "id": "poltergeist",
+        "name": "Poltergeist",
+        "mode": "br",
+        "type": "stealth",
+        "active": {
+            "title": "Active Camo",
+            "desc": "Become near-invisible for a short duration."
+        },
+        "passive": {
+            "title": "Stealth",
+            "desc": "Reduces movement noises."
+        }
+    },
+    {
+        "id": "pumped",
+        "name": "Pumped",
+        "mode": "br",
+        "type": "stealth",
+        "active": {
+            "title": "Power Jump",
+            "desc": "Gain power jumping ability and gain more nitrogen after activating the skill."
+        },
+        "passive": {
+            "title": "Stealth",
+            "desc": "Reduces movement noises."
+        }
+    },
+    {
+        "id": "quick-strike",
+        "name": "Quick Strike",
+        "mode": "br",
+        "type": "stealth",
+        "active": {
+            "title": "Quick Strike",
+            "desc": "Block incoming bullets from the front and then slash to damage enemies."
+        },
+        "passive": {
+            "title": "Stealth",
+            "desc": "Reduces movement noises."
+        }
+    },
+    {
+        "id": "jet-boost",
+        "name": "Jet Boost",
+        "mode": "br",
+        "type": "stealth",
+        "active": {
+            "title": "Jet Boost",
+            "desc": "Activate Jet Boost to Wall Run, Jet-Jump and Jet-Slide."
+        },
+        "passive": {
+            "title": "Stealth",
+            "desc": "Reduces movement noises."
+        }
+    },
+    {
+        "id": "medic",
+        "name": "Medic",
+        "mode": "br",
+        "type": "support",
+        "active": {
+            "title": "Medical Station",
+            "desc": "Place a medical station that heals you and allies continuously."
+        },
+        "passive": {
+            "title": "Support",
+            "desc": "Reduces recovery time."
+        }
+    },
+    {
+        "id": "refitter",
+        "name": "Refitter",
+        "mode": "br",
+        "type": "support",
+        "active": {
+            "title": "Armor Pack",
+            "desc": "Drop armor packs that can be picked up by yourself and teammates. Passive: Automatically repairs the vehicle being ridden in."
+        },
+        "passive": {
+            "title": "Support",
+            "desc": "Reduces recovery time."
+        }
+    },
+    {
+        "id": "kinetic-station",
+        "name": "Kinetic Station",
+        "mode": "br",
+        "type": "support",
+        "active": {
+            "title": "Kinetic Station",
+            "desc": "Deploy a Kinetci Station to support your team with limited-time armor that can partially reduce bullet damage."
+        },
+        "passive": {
+            "title": "Support",
+            "desc": "Reduces recovery time."
+        }
+    },
+    {
+        "id": "revive",
+        "name": "Revive",
+        "mode": "br",
+        "type": "support",
+        "active": {
+            "title": "Revive",
+            "desc": "Deploy a drone that can automatically search and revive your teammates."
+        },
+        "passive": {
+            "title": "Support",
+            "desc": "Reduces recovery time."
+        }
+    },
+    {
+        "id": "defender",
+        "name": "Defender",
+        "mode": "br",
+        "type": "defense",
+        "active": {
+            "title": "Transform Shield",
+            "desc": "Place a transforming shield that causes a flashbang effect on surrounding hostiles."
+        },
+        "passive": {
+            "title": "Defense",
+            "desc": "Reduces explosive damage and the impact of negative statuses."
+        }   
+    },
+    {
+        "id": "desperado",
+        "name": "Desperado",
+        "mode": "br",
+        "type": "defense",
+        "active": {
+            "title": "Shield Turret",
+            "desc": "Place a shileded turret. Passive: Fight with a pistol when downed. Killing an enemy in this state revives you."
+        },
+        "passive": {
+            "title": "Defense",
+            "desc": "Reduces explosive damage and the impact of negative statuses."
+        }
+    },
+    {
+        "id": "spotter",
+        "name": "Spotter",
+        "mode": "br",
+        "type": "defense",
+        "active": {
+            "title": "Cluster Strike",
+            "desc": "Launch a cluster air strike to a designated area."
+        },
+        "passive": {
+            "title": "Defense",
+            "desc": "Reduces explosive damage and the impact of negative statuses."
+        }
+    },
+    {
+        "id": "igniter",
+        "name": "Igniter",
+        "mode": "br",
+        "type": "defense",
+        "active": {
+            "title": "Tinder Bag",
+            "desc": "A bag that continuously spaws tar."
+        },
+        "passive": {
+            "title": "Defense",
+            "desc": "Reduces explosive damage and the impact of negative statuses."
+        }
+    },
+    {
+        "id": "scout",
+        "name": "Scout",
+        "mode": "br",
+        "type": "tracker",
+        "active": {
+            "title": "Sensor Dart",
+            "desc": ""
+        },
+        "passive": {
+            "title": "Tracker",
+            "desc": "Enemy footsteps can be heard from a distance."
+        }
+    },
+    {
+        "id": "clown",
+        "name": "Clown",
+        "mode": "br",
+        "type": "tracker",
+        "active": {
+            "title": "Toy Bomb",
+            "desc": ""
+        },
+        "passive": {
+            "title": "Tracker",
+            "desc": "Enemy footsteps can be heard from a distance."
+        }
+    },
+    {
+        "id": "mechanic",
+        "name": "Mechanic",
+        "mode": "br",
+        "type": "tracker",
+        "active": {
+            "title": "EMP Drone",
+            "desc": ""
+        },
+        "passive": {
+            "title": "Tracker",
+            "desc": "Enemy footsteps can be heard from a distance."
+        }
+    },
+    {
+        "id": "airborne",
+        "name": "Airborne",
+        "mode": "br",
+        "type": "tracker",
+        "active": {
+            "title": "Ejection Device",
+            "desc": "Deploy a catapult that flings your team into the air and triggers wingsuit gliding. Passive. Gliding lasts longer."
+        },
+        "passive": {
+            "title": "Tracker",
+            "desc": "Enemy footsteps can be heard from a distance."
+        }
+    },
+    {
+        "id": "ravager-launcher",
+        "name": "Ravager Launcher",
+        "mode": "br",
+        "type": "tracker",
+        "active": {
+            "title": "Ravager Launcher",
+            "desc": "Deploy a Ravager Launcher that automatically locks onto enemy soldiers and vehicles within range."
+        },
+        "passive": {
+            "title": "Tracker",
+            "desc": "Enemy footsteps can be heard from a distance."
+        }
+    }
+]

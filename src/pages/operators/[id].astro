@@ -1,0 +1,173 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from "@utils/seoData/pages"
+import type { OperatorType } from "@utils/types"
+
+const { id } = Astro.params
+
+async function getOperators(type: string) {
+    return await fetch(`${Astro.url.origin}/data/operators/${type}.json`).then(res => res.json())
+}
+
+let name = ""
+let mode = ""
+let desc = ""
+let type = "" as string | undefined
+let activeTitle = "" as string | undefined
+let activeDesc = "" as string | undefined
+let passiveTitle = "" as string | undefined
+let passiveDesc = "" as string | undefined
+
+const mpOperators: OperatorType[] = await getOperators('skills')
+
+const brOperators: OperatorType[] = await getOperators('classes')
+
+const zombiesOperators: OperatorType[] = await getOperators('modules')
+
+mpOperators.map((operator: OperatorType) => {
+    if (operator.id === id) {
+        name = operator.name
+        mode = operator.mode
+        desc = operator.desc
+    }
+})
+
+brOperators.map((operator: OperatorType) => {
+    if (operator.id === id) {
+        name = operator.name
+        mode = operator.mode
+        switch(operator.type) {
+            case "disrupt":
+                type = "Disrupt"
+                break
+            case "stealth":
+                type = "Stealth"
+                break
+            case "tracker":
+                type = "Tracker"
+                break
+            case "support":
+                type = "Support"
+                break
+            case "defense":
+                type = "Defense"
+                break
+            default:
+                type = "Unknown"
+                break
+        }
+        activeTitle = operator.active?.title
+        activeDesc = operator.active?.desc
+        passiveTitle = operator.passive?.title
+        passiveDesc = operator.passive?.desc
+    }
+})
+
+zombiesOperators.map((operator: OperatorType) => {
+    if (operator.id === id) {
+        name = operator.name
+        mode = operator.mode
+        activeTitle = operator.active?.title
+        activeDesc = operator.active?.desc
+        passiveTitle = operator.passive?.title
+        passiveDesc = operator.passive?.desc
+    }
+})
+
+---
+
+<Layout
+    title={name}
+    desc={desc}
+    url={`${pagesSEO.operators.url}/${id}`}
+    image={`${pagesSEO.operators.image}`}
+    type="article"
+>
+    <main>
+        <img class="operator-image" src={`/assets/images/operators/${id}.webp`} alt={name} />
+        <h1>
+            <span class="main-title">
+                {name}
+            </span>
+            <span class="operator-mode">
+                ({mode === "mp" ? "Operator Skill" : mode === "br" ? "Operator Class" : "Module"})
+            </span>
+        </h1>
+        <p>{desc}</p>
+
+        {type ? (
+            <div class="operator-type">
+                <h2>Type</h2>
+                <p>{type}</p>
+            </div>
+        ) : null}
+
+        <div class="abilties">
+            {activeTitle ? <div class="operator-active">
+                <p class="title">{activeTitle}</p>
+                <p>{activeDesc}</p>
+            </div> : null}
+            {passiveTitle ? <div class="operator-passive">
+                <p class="title">{passiveTitle}</p>
+                <p>{passiveDesc}</p>
+            </div> : null}
+        </div>
+    </main>
+    
+</Layout>
+
+<style>
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-block: 2rem;
+    }
+    
+    h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .operator-image {
+        height: 320px;
+        width: auto;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
+
+    .operator-mode {
+        font-size: 0.8rem;
+        color: #4f4f4f;
+        margin-block: 0.5rem;
+    }
+
+    .operator-type {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .abilties {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    .operator-active {
+        margin-bottom: 1rem;
+    }
+
+    .operator-passive {
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+</style>

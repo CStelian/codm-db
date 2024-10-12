@@ -89,6 +89,23 @@ export type MapType = {
     name: string    
     type: string
     releaseYear: number
+    releaseDate?: Date | undefined
     released: boolean
     pointsOfInterest: string[]
+}
+
+export type OperatorType = {
+    id: string
+    name: string
+    mode: string
+    type?: string
+    active?:  {
+        title: string
+        desc: string
+    }
+    passive?: {
+        title: string
+        desc: string
+    }
+    desc: string
 }

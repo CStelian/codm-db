@@ -34,4 +34,25 @@ export const pagesSEO = {
         url: 'https://www.codmdb.com/patch-notes',
         keywords: 'codm patch notes, codm patch notes latest, codm patch notes more'
     },
+    maps: {
+        title: 'Maps - Call of Duty®: Mobile Database',
+        desc: 'Find all the maps available in Call of Duty®: Mobile, including stats, points of interest, and more!',
+        image: '/assets/seo/maps.jpg',
+        url: 'https://www.codmdb.com/maps',
+        keywords: 'codm maps, codm map stats, codm map points of interest, codm map more'
+    },
+    operators: {
+        title: 'Operators - Call of Duty®: Mobile Database',
+        desc: 'Find all the operators available in Call of Duty®: Mobile, including skills, perks, and more!',
+        image: '/assets/seo/operators.jpg',
+        url: 'https://www.codmdb.com/operators',
+        keywords: 'codm operators, codm operator skills, codm operator perks, codm operator more'
+    },
+    roadmap : {
+        title: 'Roadmap - Call of Duty®: Mobile Database',
+        desc: 'Find out what\'s coming next for Call of Duty®: Mobile Database!',
+        image: '/assets/seo/roadmap.jpg',
+        url: 'https://www.codmdb.com/about/roadmap',
+        keywords: 'codm roadmap, codm roadmap latest, codm roadmap more'
+    }
 }

@@ -28,6 +28,11 @@
     --buff-color: #00ff00;
     --nerf-color: #ff0000;
     --adjustment-color: #e1ff00;
+    --completed: #00ff00;
+    --confirmed: #009100;
+    --in-progress: #ff8000;
+    --cancelled: #ff0000;
+    --not-started: #808080;
 }
 
 /* Font Face */
@@ -149,4 +154,8 @@ a:hover {
 
 .no-bullets {
     list-style: none;
+}
+
+.days, .hours, .minutes, .seconds {
+    text-align: center;
 }

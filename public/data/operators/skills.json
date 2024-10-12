@@ -2,8 +2,145 @@
     {
         "id": "purifier",
         "name": "Purifier",
+        "mode": "mp",
+        "desc": "Blast a close-range stream of fire at your enemies."
     },
-    {},
-    {},
-    {}
+    {
+        "id": "death-machine",
+        "name": "Death Machine",
+        "mode": "mp",
+        "desc": "A handheld minigun that slowly increases accuracy over time. Press and hold the fire button conitnously to increase the firing speed."
+    },
+    {
+        "id": "war-machine",
+        "name": "War Machine",
+        "mode": "mp",
+        "desc": "Fully automatic grenade launcher with a devastating payload."
+    },
+    {
+        "id": "tempest",
+        "name": "Tempest",
+        "mode": "mp",
+        "desc": "Hold the fire button to build up power and send a bolt of lightning at the target. Hits up to nine nearby targets."
+    },
+    {
+        "id": "transform-shield",
+        "name": "Transform Shield",
+        "mode": "mp",
+        "desc": "Places an expandable shield. Microwave radiation continuously generates from the front, causing damage and slowing enemies within the area."
+    },
+    {
+        "id": "sparrow",
+        "name": "Sparrow",
+        "mode": "mp",
+        "desc": "Draw the Sparrow back for longer amounts of time to increase range and unleash powerful, blasting arrows."
+    },
+    {
+        "id": "gravity-spikes",
+        "name": "Gravity Spikes",
+        "mode": "mp",
+        "desc": "Jump up and slam down to create an energy wave that will deal fatal damage to nearby enemies."
+    },
+    {
+        "id": "hive",
+        "name": "H.I.V.E",
+        "mode": "mp",
+        "desc": "Launch a trap of proximity mines that, when triggered, will release a swarm of nano drones that kill nearby enemies."
+    },
+    {
+        "id": "annihilator",
+        "name": "Annihilator",
+        "mode": "mp",
+        "desc": "High material penetration ammo at the cost of accuracy."
+    },
+    {
+        "id": "shadow-blade",
+        "name": "Shadow Blade",
+        "mode": "mp",
+        "desc": "Swiftly kill enemies at close range, while also detecting hostiles within the shroud of any smoke grenade."
+    },
+    {
+        "id": "equalizer",
+        "name": "Equalizer",
+        "mode": "mp",
+        "desc": "Dual integrated machine guns with built-in suppressors for close quarters combat."
+    },
+    {
+        "id": "ballistic-shield",
+        "name": "Ballistic Shield",
+        "mode": "mp",
+        "desc": "Durable, transforming defensive shield with a built-in machine pistol."
+    },
+    {
+        "id": "gravity-vortex-gun",
+        "name": "Gravity Vortex Gun",
+        "mode": "mp",
+        "desc": "Launcher that fires vortex projectiles that distort gravity. When the vortex disappears, it causes explosive damage to everything in its path."
+    },
+    {
+        "id": "bull-charge",
+        "name": "Bull Charge",
+        "mode": "mp",
+        "desc": "Charge forward and level all enemies in your path."
+    },
+    {
+        "id": "k9-unit",
+        "name": "K9 Unit",
+        "mode": "mp",
+        "desc": "Call in a military dog to track an enemy by scent and attack them automatically."
+    },
+    {
+        "id": "kinetic-armor",
+        "name": "Kinetic Armor",
+        "mode": "mp",
+        "desc": "Reactive armor that deflects enemy bullets away from the body. It does not protect against melee, headshot, incendiary or explosive damage. It will be disabled after deflecting a certain amount of damage."
+    },
+    {
+        "id": "tak-5",
+        "name": "TAK-5",
+        "mode": "mp",
+        "desc": "Heals and grants the allied team 50 extra HP."
+    },
+    {
+        "id": "munitions-box",
+        "name": "Munitions Box",
+        "mode": "mp",
+        "desc": "Deploy a box of ammo and throwables for you and your teammates. Shoot at your own risk."
+    },
+    {
+        "id": "reactor-core",
+        "name": "Reactor Core",
+        "mode": "mp",
+        "desc": "Emits a damaging radiation field that burns enemies, temporarily reducing their max health and preventing healing. The player using Reactor Core will also gain a defensive buff, reducing damage taken but using Reactor Core for too long will cause damage to the user."
+    },
+    {
+        "id": "claw",
+        "name": "Claw",
+        "mode": "mp",
+        "desc": "Rapid fire spread shot firearm with ricochet ballistic rounds. Aim down sights for more focused damage."
+    },
+    {
+        "id": "ballista-em3",
+        "name": "Ballista EM3",
+        "mode": "mp",
+        "desc": "An electromagnetic projectile launcher with high penetration capability. After equipped, the enemy will be outlined in red. Estimate the enemy's movement pattern and hold the fire button to build up power to deal fatal damage."
+    },
+    {
+        "id": "tac-deploy",
+        "name": "Tac-Deploy",
+        "mode": "mp",
+        "desc": "Deployable beacon that allows your teammates to redeploy to the surrounding area."
+    },
+    {
+        "id": "misdirection-device",
+        "name": "Misdirection Device",
+        "mode": "mp",
+        "desc": "Emits special sound waves that impair auditory functions, completely hiding the user's sound and causing enemies in range to hear fake noise sources."
+    },
+    {
+        "id": "havoc",
+        "name": "Havoc",
+        "mode": "mp",
+        "desc": "Generate an electronic wave to destroy enemy deployable projectiles, disrupt enemies' mini-map information and some Scorestreaks."
+    }
 ]

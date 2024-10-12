@@ -2844,6 +2844,11 @@
         "ranked": false,
         "timeLimited": true,
         "rules": "To be added.",
-        "maps": []
+        "maps": [
+            {
+                "id": "rush",
+                "name": "Rush"
+            }
+        ]
     }
 ]

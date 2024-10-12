@@ -1,8 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import { Image } from 'astro:assets'
 import Map from '@components/utils/Map.astro'
 
 import type { MapType } from '@utils/types'
+
+import CoDMLogo from "@assets/logos/codm-logo.png"
 
 async function getMaps(type: string) {
     return await fetch(`${Astro.url.origin}/data/maps/${type}.json`).then(res => res.json())
@@ -16,7 +19,15 @@ const zombiesMaps = await getMaps('zombies')
 
 <Layout title="Maps" desc="Maps" image="yes" type="page" url="yes">
 
-    <h1>Maps</h1>
+    <h1 class="main-title">
+        Maps in Call of Duty®: Mobile
+        <Image
+            src={CoDMLogo}
+            alt="Call of Duty®: Mobile Logo"
+            width="40"
+            height="40"
+        />
+    </h1>
 
     <form>
         <label for="search">Search for a Map:</label>
@@ -51,6 +62,7 @@ const zombiesMaps = await getMaps('zombies')
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
     }
 
     form {

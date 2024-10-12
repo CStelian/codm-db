@@ -1,7 +1,7 @@
 {
   "name": "codm-db",
   "type": "module",
-  "version": "1.5",
+  "version": "1.6",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

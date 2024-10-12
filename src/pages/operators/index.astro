@@ -1,0 +1,107 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import { pagesSEO } from "@utils/seoData/pages"
+import type { OperatorType } from "@utils/types"
+import Operator from "@components/utils/Operator.astro"
+
+
+import CoDMLogo from "@assets/logos/codm-logo.png"
+
+const title = pagesSEO.operators.title
+const desc = pagesSEO.operators.desc
+const image = pagesSEO.operators.image
+const url = pagesSEO.operators.url
+const type = mainSiteSEO.type
+const siteName = mainSiteSEO.siteName
+const twitter = mainSiteSEO.twitter
+const locale = mainSiteSEO.locale
+
+async function getOperators(type: string) {
+    return await fetch(`${Astro.url.origin}/data/operators/${type}.json`).then(res => res.json())
+}
+
+const operatorSkills = await getOperators('skills')
+const operatorClasses = await getOperators('classes')
+const operatorModules = await getOperators('modules')
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type={type}
+    siteName={siteName}
+    twitter={twitter}
+    locale={locale}
+>
+    <main>
+        <h1 class="main-title">
+            Operators in Call of Duty®: Mobile
+            <Image
+                src={CoDMLogo}
+                alt="Call of Duty®: Mobile Logo"
+                width="40"
+                height="40"
+            />
+        </h1>
+        
+        <h2>Operator Skills ({operatorSkills.length})</h2>
+        <div class="operators">
+            {operatorSkills.map((operator: OperatorType) => (
+                <Operator operator={operator} />
+            ))}
+        </div>
+
+        <h2>Operator Classes ({operatorClasses.length})</h2>
+        <div class="operators">
+            {operatorClasses.map((operator: OperatorType) => (
+                <Operator operator={operator} />
+            ))}
+        </div>
+
+        <h2>Operator Modules ({operatorModules.length})</h2>
+        <div class="operators">
+            {operatorModules.map((operator: OperatorType) => (
+                <Operator operator={operator} />
+            ))}
+        </div>
+    </main>
+</Layout>
+
+<style>
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .main-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .operators {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-block: 2rem;
+        padding-inline: 1rem;
+    }
+
+</style>

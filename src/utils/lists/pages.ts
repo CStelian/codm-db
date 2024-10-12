@@ -12,6 +12,18 @@ export const navBarPages = [
         path: '/weapons'
     },
     {
+        name: 'Operators',
+        path: '/operators'
+    },
+    // {
+    //     name: 'Scorestreks',
+    //     path: '/scorestreks'
+    // },
+    // {
+    //     name: 'Throwables',
+    //     path: '/throwables'
+    // },
+    {
         name: 'Perks',
         path: '/perks'
     },
@@ -26,10 +38,18 @@ export const footerPages = [
         name: 'About',
         path: '/about'
     },
+    // {
+    //     name: 'FAQ',
+    //     path: '/faq'
+    // },
     {
-        name: 'Bot',
-        path: 'https://bot.codmdb.com/'
+        name: 'Roadmap',
+        path: '/about/roadmap'
     },
+    // {
+    //    name: 'Bot',
+    //    path: 'https://bot.codmdb.com/'
+    // },
     {
         name: 'Feedback',
         path: 'https://discord.gg/3RrGsMhb37'
