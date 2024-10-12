@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function Countdown({ date }: { date: Date }) {
+export default function Countdown({ date }: { date: Date | undefined }) {
+  if (!date) {
+    return null
+  }
+  
   const now = new Date().getTime()
   const initialTime = new Date(date).getTime()
   const timeRemaining = initialTime - now

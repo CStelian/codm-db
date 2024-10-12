@@ -80,7 +80,7 @@ const pathname = Astro.url.pathname
             height={400}
         />
         <div class="map-metadata">
-            {!released ? <p>This map is set to release on {new Date(releaseDate).toLocaleDateString(
+            {!released ? <p>This map is set to release on {new Date(releaseDate as Date).toLocaleDateString(
                 'en-US',
                 { year: 'numeric', month: 'long', day: 'numeric' }
             )}.</p> : <p>Released in {releaseYear}</p>}
