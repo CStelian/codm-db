@@ -1,0 +1,174 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import Throwable from "@components/utils/Throwable.astro"
+
+import type { ThrowableType } from "@utils/types"
+
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import { pagesSEO } from "@utils/seoData/pages"
+
+import CoDMLogo from "@assets/logos/codm-logo.png"
+
+const title = pagesSEO.throwables.title
+const desc = pagesSEO.throwables.desc
+const img = pagesSEO.throwables.image
+const keywords = pagesSEO.throwables.keywords
+const url = pagesSEO.throwables.url
+
+async function getThrowables() {
+    const throwables = await fetch(`${Astro.url.origin}/data/throwables.json`)
+    return await throwables.json()
+}
+
+const throwables = await getThrowables()
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={img}
+    keywords={keywords}
+    url={url}
+    type="website"
+>
+    <main>
+        <h1>
+            Throwables in Call of Duty®: Mobile
+            <Image
+                src={CoDMLogo}
+                alt="Call of Duty®: Mobile Logo"
+                width="40"
+                height="40"
+            />
+        </h1>
+        <form>
+            <label for="throwable">Throwable</label>
+            <input type="text" id="throwable" name="throwable" placeholder="Type a Throwable name..." />
+            <label for="type">Type</label>
+            <select id="type" name="type">
+                <option value="all">All</option>
+                <option value="lethal">Lethal</option>
+                <option value="tactical">Tactical</option>
+            </select>
+        </form>
+        <div class="throwables">
+            {throwables.map((throwable: ThrowableType) => (
+                <Throwable
+                    throwable={throwable}
+                />
+            ))}
+        </div>
+    </main>
+</Layout>
+
+<style>
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        font-size: 1.25rem;
+    }
+
+    input, select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #000;
+        border-radius: 0.25rem;
+    }
+
+    input {
+        margin-bottom: 0.5rem;
+    }
+
+    select {
+        margin-bottom: 1rem;
+    }
+
+    .throwables {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+</style>
+
+<script>
+
+    const searchBar = document.querySelector("[name='throwable']") as HTMLInputElement
+    const type = document.querySelector("select") as HTMLSelectElement
+    const throwables = document.querySelectorAll(".throwable-link") as NodeListOf<HTMLAnchorElement>
+
+    if (!searchBar || !type) {
+        throw new Error("Couldn't find the search bar or type element")
+    }
+
+    if (!throwables || !throwables.length) {
+        throw new Error("Couldn't find the throwables or throwables are empty")
+    }
+
+    function searchThrowables() {
+        const searchValue = searchBar.value.toLowerCase()
+
+        throwables.forEach((throwable) => {
+            const throwableName = throwable.querySelector("h2")?.textContent?.toLowerCase() || '';
+
+            if (throwableName.includes(searchValue)) {
+                const throwableElement = throwable as HTMLElement
+                throwableElement.style.display = "block"
+            } else {
+                const throwableElement = throwable as HTMLElement
+                throwableElement.style.display = "none"
+            }
+        })
+    }
+
+    searchBar.addEventListener("input", searchThrowables)
+
+    function filterThrowables() {
+        const typeValue = (type as HTMLSelectElement)?.value || 'all';
+
+        if (typeValue === "all") {
+            throwables.forEach((throwable) => {
+                const throwableElement = throwable as HTMLElement
+                throwableElement.style.display = "block"
+            })
+        } else {
+            throwables.forEach((throwable) => {
+                if (throwable.getAttribute('data-type') === typeValue) {
+                    const throwableElement = throwable as HTMLElement
+                    throwableElement.style.display = "block"
+                } else {
+                    const throwableElement = throwable as HTMLElement
+                    throwableElement.style.display = "none"
+                }
+            })
+        }
+    }
+
+    type.addEventListener("change", filterThrowables)
+
+</script>

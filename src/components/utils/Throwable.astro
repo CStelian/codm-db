@@ -1,0 +1,68 @@
+---
+import type { ThrowableType } from "@utils/types"
+
+interface Props {
+    throwable: ThrowableType
+}
+
+const { throwable } = Astro.props
+
+---
+
+<a class="throwable-link" href={`/throwables/${throwable.id}`} data-type={throwable.type}>
+
+    <div class="throwable">
+
+        <div class="throwable-name">
+            <h2>{throwable.name}</h2>
+        </div>
+
+        <div class="throwable-thumbnail">
+            <img class="throwable-image" src={`/assets/images/throwables/${throwable.id}.jpg`} alt={throwable.name} />
+        </div>
+
+    </div>
+
+</a>
+
+<style>
+
+    .throwable-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .throwable {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: 0.5rem;
+    }
+
+    .throwable-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .throwable-thumbnail {
+        height: 320px;
+        width: auto;
+        border-radius: 1rem;
+    }
+
+    .throwable-image {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+</style>

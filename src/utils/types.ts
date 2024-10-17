@@ -137,3 +137,10 @@ export type KillstreakType = {
     kills: number
     desc: string
 }
+
+export type ThrowableType = {
+    id: string
+    name: string
+    type: string
+    desc: string
+}

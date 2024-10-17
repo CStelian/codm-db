@@ -1,0 +1,119 @@
+---
+import Layout from "@layouts/Layout.astro"
+
+import type { ThrowableType } from "@utils/types"
+
+const { id } = Astro.params
+
+async function getThrowable() {
+    const throwable = await fetch(`${Astro.url.origin}/data/throwables.json`)
+    return await throwable.json()
+}
+
+const throwable = await getThrowable()
+
+const throwableData = throwable.find((throwable: ThrowableType) => throwable.id === id)
+
+if (!throwableData) {
+    throw new Error(`Couldn't find the throwable with the id of ${id}`)
+}
+
+const title = throwableData.name
+const desc = throwableData.desc
+let type = ""
+const image = `/assets/images/throwables/${id}.jpg`
+const keywords = throwableData.name
+const url = `/throwables/${id}`
+
+switch (throwableData.type) {
+    case "lethal":
+        type = "Lethal"
+        break
+    case "tactical":
+        type = "Tactical"
+        break
+    default:
+        type = "Unknown"
+}
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    keywords={keywords}
+    url={url}
+    type="article"
+>
+    <main>
+        <div class="throwable-image">
+            <img src={image} alt={title} />
+        </div>
+
+        <div class="throwable-metadata">
+            <h1>{title}</h1>
+            <p>{desc}</p>
+        </div>
+
+        <div class="throwable-type">
+            <h2>Type</h2>
+            <p>{type}</p>
+        </div>
+    </main>
+</Layout>
+
+<style>
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .throwable-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .throwable-image img {
+        border-radius: 1rem;
+    }
+
+    .throwable-metadata {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .throwable-type {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+</style>
+
+---

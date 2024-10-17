@@ -1,4 +1,8 @@
 export const navBarPages = [
+    // {
+    //     name: 'Characters',
+    //     path: '/characters'
+    // },
     {
         name: 'Modes',
         path: '/modes'
@@ -11,10 +15,10 @@ export const navBarPages = [
         name: 'Weapons',
         path: '/weapons'
     },
-    // {
-    //     name: 'Throwables',
-    //     path: '/throwables'
-    // },
+    {
+        name: 'Throwables',
+        path: '/throwables'
+    },
     {
         name: 'Operators',
         path: '/operators'

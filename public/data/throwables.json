@@ -1,0 +1,140 @@
+[
+    {
+        "id": "frag-grenade",
+        "name": "Frag Grenade",
+        "type": "lethal",
+        "desc": "Explodes after a short delay."
+    },
+    {
+        "id": "sticky-grenade",
+        "name": "Sticky Grenade",
+        "type": "lethal",
+        "desc": "A grenade that sticks to surfaces before detonating."
+    },
+    {
+        "id": "trip-mine",
+        "name": "Trip Mine",
+        "type": "lethal",
+        "desc": "Magnetic mine that launches into the air and detonates when an enemy interrupts the beam."
+    },
+    {
+        "id": "cluster-grenade",
+        "name": "Cluster Grenade",
+        "type": "lethal",
+        "desc": "A Sticky grenade that explodes in a series of smaller explosions."
+    },
+    {
+        "id": "combat-axe",
+        "name": "Combat Axe",
+        "type": "lethal",
+        "desc": "Retrievable axe that kills instantly on impact."
+    },
+    {
+        "id": "thermite",
+        "name": "Thermite",
+        "type": "lethal",
+        "desc": "Sticks to any surface of an object. Burns enemies violently for a short period upon impact."
+    },
+    {
+        "id": "molotov-cocktail",
+        "name": "Molotov Cocktail",
+        "type": "lethal",
+        "desc": "Explodes on impact, setting the affected area on fire."
+    },
+    {
+        "id": "contact-grenade",
+        "name": "Contact Grenade",
+        "type": "lethal",
+        "desc": "A grenade that explodes immediately upon contact with any surface."
+    },
+    {
+        "id": "c4",
+        "name": "C4",
+        "type": "lethal",
+        "desc": "Explosive that sticks to surfaces and can be detonated remotely."
+    },
+    {
+        "id": "smoke-grenade",
+        "name": "Smoke Grenade",
+        "type": "tactical",
+        "desc": "Grenade that creates a smokescreen when detonated."
+    },
+    {
+        "id": "flashbang-grenade",
+        "name": "Flashbang Grenade",
+        "type": "tactical",
+        "desc": "Device that blinds and deafens the target when detonated."
+    },
+    {
+        "id": "concussion-grenade",
+        "name": "Concussion Grenade",
+        "type": "tactical",
+        "desc": "Disorients and slows enemy movement speed."
+    },
+    {
+        "id": "emp",
+        "name": "EMP",
+        "type": "tactical",
+        "desc": "Damages and disables nearby mechanized enemy units and equipment."
+    },
+    {
+        "id": "trophy-system",
+        "name": "Trophy System",
+        "type": "tactical",
+        "desc": "A deployable autonomous defense system that destroys incoming explosives."
+    },
+    {
+        "id": "cryo-bomb",
+        "name": "Cryo Bomb",
+        "type": "tactical",
+        "desc": "Releases a surge of freezing air that slows the enemy."
+    },
+    {
+        "id": "heartbeat-sensor",
+        "name": "Heartbeat Sensor",
+        "type": "tactical",
+        "desc": "A tablet that displays rough information about nearby enemies."
+    },
+    {
+        "id": "gas-grenade",
+        "name": "Gas Grenade",
+        "type": "tactical",
+        "desc": "Detonates after collision and releases continuous tear gas, causing deceleration, blurred vision and coughing."
+    },
+    {
+        "id": "storm-ball",
+        "name": "Storm Ball",
+        "type": "tactical",
+        "desc": "A spherical barrier is generated at a designated location to block the enemy's line of sight. Enemies inside the barrier will not recover health."
+    },
+    {
+        "id": "flash-drone",
+        "name": "Flash Drone",
+        "type": "tactical",
+        "desc": "Releases a flash drone that blocks enemies' vision."
+    },
+    {
+        "id": "echo-grenade",
+        "name": "Echo Grenade",
+        "type": "tactical",
+        "desc": "A grenade that uses soud waves to detect enemy locations."
+    },
+    {
+        "id": "stim-shot",
+        "name": "Stim Shot",
+        "type": "tactical",
+        "desc": "Increases health regen and movement speed for a short duration."
+    },
+    {
+        "id": "decoy-grenade",
+        "name": "Decoy Grenade",
+        "type": "tactical",
+        "desc": "It simulates fake gunfire and radar signatures to confuse enemies."
+    },
+    {
+        "id": "trip-sensor",
+        "name": "Trip Sensor",
+        "type": "tactical",
+        "desc": "Sticky explosive that attaches to surfaces and detonates upon enemy proximity, slows the enemies down and reveals enemy positions on the mini-map."
+    }
+]

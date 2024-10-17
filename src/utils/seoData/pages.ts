@@ -44,14 +44,14 @@ export const pagesSEO = {
     operators: {
         title: 'Operators - Call of Duty®: Mobile Database',
         desc: 'Find all the operators available in Call of Duty®: Mobile, including skills, perks, and more!',
-        image: '/assets/seo/operators.jpg',
+        image: '/assets/seo/operators.png',
         url: 'https://www.codmdb.com/operators',
         keywords: 'codm operators, codm operator skills, codm operator perks, codm operator more'
     },
     scorestreaks: {
         title: 'Scorestreaks - Call of Duty®: Mobile Database',
         desc: 'Find all the scorestreaks available in Call of Duty®: Mobile, including descriptions and more!',
-        image: '/assets/seo/scorestreaks.jpg',
+        image: '/assets/seo/scorestreaks.png',
         url: 'https://www.codmdb.com/scorestreaks',
         keywords: 'codm scorestreaks, codm scorestreak descriptions, codm scorestreak effects'
     },
@@ -61,5 +61,12 @@ export const pagesSEO = {
         image: '/assets/seo/roadmap.jpg',
         url: 'https://www.codmdb.com/about/roadmap',
         keywords: 'codm roadmap, codm roadmap latest, codm roadmap more'
-    }
+    },
+    throwables: {
+        title: 'Throwables - Call of Duty®: Mobile Database',
+        desc: 'Find all the throwables available in Call of Duty®: Mobile, including stats, attachments, and more!',
+        image: '/assets/seo/throwables.jpg',
+        url: 'https://www.codmdb.com/throwables',
+        keywords: 'codm throwables, codm throwable stats, codm throwable attachments, codm throwable camos'
+    },
 }
