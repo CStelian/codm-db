@@ -48,6 +48,13 @@ export const pagesSEO = {
         url: 'https://www.codmdb.com/operators',
         keywords: 'codm operators, codm operator skills, codm operator perks, codm operator more'
     },
+    scorestreaks: {
+        title: 'Scorestreaks - Call of Duty®: Mobile Database',
+        desc: 'Find all the scorestreaks available in Call of Duty®: Mobile, including descriptions and more!',
+        image: '/assets/seo/scorestreaks.jpg',
+        url: 'https://www.codmdb.com/scorestreaks',
+        keywords: 'codm scorestreaks, codm scorestreak descriptions, codm scorestreak effects'
+    },
     roadmap : {
         title: 'Roadmap - Call of Duty®: Mobile Database',
         desc: 'Find out what\'s coming next for Call of Duty®: Mobile Database!',

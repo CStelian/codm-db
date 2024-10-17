@@ -1,0 +1,137 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from "@utils/seoData/pages"
+import type { ScorestreakType } from "@utils/types"
+import type { KillstreakType } from "@utils/types"
+
+const { id } = Astro.params
+
+async function getScorestreaks() {
+    return await fetch(`${Astro.url.origin}/data/scorestreaks.json`).then(res => res.json())
+}
+
+async function getKillstreaks() {
+    return await fetch(`${Astro.url.origin}/data/killstreaks.json`).then(res => res.json())
+}
+
+const scorestreaksList = await getScorestreaks()
+const killstreaksList = await getKillstreaks()
+
+function getScorestreak(id: string) {
+    return scorestreaksList.find((scorestreak: ScorestreakType) => scorestreak.id === id)
+}
+
+function getKillstreak(id: string) {
+    return killstreaksList.find((killstreak: KillstreakType) => killstreak.id === id)
+}
+
+if(!id) {
+    throw new Error(`ID parameter is missing`)
+}
+
+const scorestreak = getScorestreak(id)
+const killstreak = getKillstreak(id)
+
+if(!scorestreak && !killstreak) {
+    throw new Error(`Couldn't find the scorestreak or killstreak with the id of ${id}`)
+}
+
+let name = scorestreak ? scorestreak.name : killstreak.name
+let desc = scorestreak ? scorestreak.desc : killstreak.desc
+let persistenceTierNumber = scorestreak ? scorestreak.persistenceTier : null
+let persistenceTier = "" as string | null
+let score = scorestreak ? scorestreak.score : killstreak.kills
+
+if(persistenceTierNumber) {
+    switch(persistenceTierNumber) {
+        case 'I':
+            persistenceTier = "Tier I"
+            break
+        case 'II':
+            persistenceTier = "Tier II"
+            break
+        case 'III':
+            persistenceTier = "Tier III"
+            break
+        default:
+            persistenceTier = "Unknown"
+            break
+    }
+}
+
+---
+
+<Layout
+    title={name}
+    desc={desc}
+    url={`${pagesSEO.scorestreaks.url}/${id}`}
+    image={`/assets/images/scorestreaks/${id}.webp`}
+    type="article"
+>
+    <main>
+        <img class="scorestreak-image" src={`/assets/images/scorestreaks/${id}.webp`} alt={name} />
+
+        <h1>
+            {name}
+        </h1>
+
+        <p>{desc}</p>
+
+        <div class="scorestreak-stats">
+            <div class="scorestreak-stats-item">
+                <h2>{scorestreak ? "Score" : "Kills"}</h2>
+                <p>{score}</p>
+            </div>
+            {persistenceTier ? <div class="scorestreak-stats-item">
+                <h2>Tier</h2>
+                <p>{persistenceTier}</p>
+            </div>
+            : null}
+        </div>
+    </main>
+</Layout>
+
+<style>
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-block: 2rem;
+    }
+    
+    h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .scorestreak-image {
+        height: 320px;
+        width: auto;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
+
+    .scorestreak-stats {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .scorestreak-stats-item {
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+
+</style>

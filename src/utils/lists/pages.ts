@@ -11,18 +11,18 @@ export const navBarPages = [
         name: 'Weapons',
         path: '/weapons'
     },
-    {
-        name: 'Operators',
-        path: '/operators'
-    },
-    // {
-    //     name: 'Scorestreks',
-    //     path: '/scorestreks'
-    // },
     // {
     //     name: 'Throwables',
     //     path: '/throwables'
     // },
+    {
+        name: 'Operators',
+        path: '/operators'
+    },
+    {
+        name: 'Scorestreaks',
+        path: '/scorestreaks'
+    },
     {
         name: 'Perks',
         path: '/perks'

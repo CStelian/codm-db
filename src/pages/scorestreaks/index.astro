@@ -1,0 +1,200 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import Scorestreak from "@components/utils/Scorestreak.astro"
+
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import { pagesSEO } from "@utils/seoData/pages"
+
+
+import type { ScorestreakType } from "@utils/types"
+import type { KillstreakType } from "@utils/types"
+
+import CoDMLogo from "@assets/logos/codm-logo.png"
+
+const title = pagesSEO.scorestreaks.title
+const desc = pagesSEO.scorestreaks.desc
+const image = pagesSEO.scorestreaks.image
+const url = pagesSEO.scorestreaks.url
+const keywords = pagesSEO.scorestreaks.keywords
+
+const scorestreaksList: ScorestreakType[] = await fetch(`${Astro.url.origin}/data/scorestreaks.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+const killstreaksList: KillstreakType[] = await fetch(`${Astro.url.origin}/data/killstreaks.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type="website"
+    keywords={keywords}
+>
+    <main>
+        <h1 class="main-title">
+            Scorestreaks & Killstreaks in Call of Duty®: Mobile
+            <Image
+                src={CoDMLogo}
+                alt="Call of Duty®: Mobile Logo"
+                width="40"
+                height="40"
+            />
+        </h1>
+
+        <form>
+            <label for="search">Search for a Scorestreak or Killstreak:</label>
+            <input type="text" id="search" name="search" placeholder="Type a Scorestreak name..." />
+            <select>
+                <option value="all">All</option>
+                <option value="I">Tier I</option>
+                <option value="II">Tier II</option>
+                <option value="III">Tier III</option>
+                <option value="killstreak">Killstreak</option>
+            </select>
+            <!--
+            <label for="min-score">Minimum Score:</label>
+            <input type="number" id="min-score" name="min-score" min="300" placeholder="300" />
+            <label for="max-score">Maximum Score:</label>
+            <input type="number" id="max-score" name="max-score" max="1900" placeholder="1900" />
+            -->
+        </form>
+
+        <div class="scorestreaks">
+            {scorestreaksList.map((scorestreak: ScorestreakType) => (
+                <Scorestreak
+                    scorestreak={scorestreak}
+                />
+            ))}
+            {killstreaksList.map((killstreak: KillstreakType) => (
+                <Scorestreak
+                    scorestreak={killstreak}
+                />
+            ))}
+        </div>
+    </main>
+</Layout>
+
+<style>
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .main-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input, select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #000;
+        border-radius: 0.25rem;
+    }
+
+    input {
+        margin-bottom: 0.5rem;
+    }
+
+    select {
+        margin-bottom: 1rem;
+    }
+
+    .scorestreaks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+</style>
+
+<script>
+
+    const scorestreaks = document.querySelectorAll(".scorestreak-link") as NodeListOf<HTMLAnchorElement>
+    const search = document.querySelector("[name='search']") as HTMLInputElement
+    const persistenceTier = document.querySelector("select") as HTMLSelectElement
+
+    if (!search || !persistenceTier || !scorestreaks || !scorestreaks.length) {
+        throw new Error("Couldn't find the search, persistence tier, min score, max score, or scorestreaks elements or scorestreaks are empty")
+    }
+
+    function searchScorestreaks() {
+        const searchValue = search.value.toLowerCase()
+        
+        scorestreaks.forEach((scorestreak) => {
+            const scorestreakName = scorestreak.querySelector("h2")?.textContent?.toLowerCase() || '';
+            
+            if(scorestreakName.includes(searchValue)) {
+                const scorestreakElement = scorestreak as HTMLElement
+                scorestreakElement.style.display = "block"
+            } else {
+                const scorestreakElement = scorestreak as HTMLElement
+                scorestreakElement.style.display = "none"
+            }
+        })
+    }
+
+    function filterScorestreaks() {
+        const persistenceTierValue = (persistenceTier as HTMLSelectElement)?.value || 'all';
+
+        if(persistenceTierValue === "all") {
+            scorestreaks.forEach((scorestreak) => {
+                const scorestreakElement = scorestreak as HTMLElement
+                scorestreakElement.style.display = "block"
+            })
+        } else if(persistenceTierValue === "killstreak") {
+            scorestreaks.forEach((scorestreak) => {
+                if(scorestreak.getAttribute('data-type') === "killstreak") {
+                    const scorestreakElement = scorestreak as HTMLElement
+                    scorestreakElement.style.display = "block"
+                } else {
+                    const scorestreakElement = scorestreak as HTMLElement
+                    scorestreakElement.style.display = "none"
+                }
+            })
+        } else {
+            scorestreaks.forEach((scorestreak) => {
+                if(scorestreak.getAttribute('data-persistence-tier') === persistenceTierValue) {
+                    const scorestreakElement = scorestreak as HTMLElement
+                    scorestreakElement.style.display = "block"
+                } else {
+                    const scorestreakElement = scorestreak as HTMLElement
+                    scorestreakElement.style.display = "none"
+                }
+
+            })
+        }
+    }
+
+    search.addEventListener("input", searchScorestreaks)
+    persistenceTier.addEventListener("change", filterScorestreaks)
+    
+
+</script>

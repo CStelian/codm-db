@@ -1,0 +1,205 @@
+[
+    {
+        "id": "shield-turret",
+        "name": "Shield Turret",
+        "score": 300,
+        "persistenceTier": "I",
+        "desc": "A manual shielded turret that can be deployed on most surfaces."
+    },
+    {
+        "id": "uav",
+        "name": "UAV",
+        "score": 400,
+        "persistenceTier": "I",
+        "desc": "Unmanned Aerial Vehicle that reveals enemy locations on the minimap."
+    },
+    {
+        "id": "rc-xd",
+        "name": "RC-XD",
+        "score": 420,
+        "persistenceTier": "I",
+        "desc": "Remote-controlled car strapped with explosives."
+    },
+    {
+        "id": "shock-rc",
+        "name": "Shock RC",
+        "score": 490,
+        "persistenceTier": "I",
+        "desc": "Detects nearby enemies and paralyzes them in a continuous electric shock."
+    },
+    {
+        "id": "hunter-killer-drone",
+        "name": "Hunter Killer Drone",
+        "score": 500,
+        "persistenceTier": "I",
+        "desc": "Infantry deployed drone that seeks out an enemy or vehicle."
+    },
+    {
+        "id": "care-package",
+        "name": "Care Package",
+        "score": 550,
+        "persistenceTier": "I",
+        "desc": "Call in a care pacakge containing one random scorestreak."
+    },
+    {
+        "id": "counter-uav",
+        "name": "Counter UAV",
+        "score": 600,
+        "persistenceTier": "I",
+        "desc": "Jams enemy reconnaissance by temporarily disabling the enemy minimap."
+    },
+    {
+        "id": "sam-turret",
+        "name": "SAM Turret",
+        "score": 620,
+        "persistenceTier": "II",
+        "desc": "The SAM Turret is an unmanned weapon that uses missiles to automatically lock onto and destroy hostile aircraft Scorestreaks."
+    },
+    {
+        "id": "mq-27-dragonfire",
+        "name": "MQ-27 Dragonfire",
+        "score": 650,
+        "persistenceTier": "II",
+        "desc": "Use a drone to detect and eliminate enemies while it has power and ammo. It carries 3 infrared explosive probes."
+    },
+    {
+        "id": "guardian",
+        "name": "Guardian",
+        "score": 650,
+        "persistenceTier": "II",
+        "desc": "A deployable device that projects a cone of microwave radiation that slows enemies and dleas a small amount of damage."
+    },
+    {
+        "id": "predator-missile",
+        "name": "Predator Missile",
+        "score": 700,
+        "persistenceTier": "II",
+        "desc": "Remote-controlled Predator Missile with a cluster bomb payload."
+    },
+    {
+        "id": "wheelson",
+        "name": "Wheelson",
+        "score": 750,
+        "persistenceTier": "II",
+        "desc": "A remote controlled ground drone with impressive firepower."
+    },
+    {
+        "id": "sentry-gun",
+        "name": "Sentry Gun",
+        "score": 800,
+        "persistenceTier": "II",
+        "desc": "An unmanned weapon capable of autonomously acquiring and firing upon enemy targets through thermal detection."
+    },
+    {
+        "id": "strafe-run",
+        "name": "Strafe Run",
+        "score": 800,
+        "persistenceTier": "II",
+        "desc": "Calls in aerial support to strafe across a marked area with air-to-air firepower."
+    },
+    {
+        "id": "hawk-x3",
+        "name": "Hawk X3",
+        "score": 830,
+        "persistenceTier": "II",
+        "desc": "Manually controlled drone with a machine gun as the weapon."
+    },
+    {
+        "id": "lightning-strike",
+        "name": "Lightning Strike",
+        "score": 850,
+        "persistenceTier": "II",
+        "desc": "Launch a coordinated Lightning Strike on three locations."
+    },
+    {
+        "id": "xs1-goliath",
+        "name": "XS1 Goliath",
+        "score": 900,
+        "persistenceTier": "III",
+        "desc": "Call in an XS1 Goliath to equip powerful armor and a minigun with limitless ammo."
+    },
+    {
+        "id": "flamenaut",
+        "name": "Flamenaut",
+        "score": 900,
+        "persistenceTier": "III",
+        "desc": "Equip a heavily armored suit capable of unleashing hellfire on the battlefield with a powerful flamethrower."
+    },
+    {
+        "id": "cluster-strike",
+        "name": "Cluster Strike",
+        "score": 980,
+        "persistenceTier": "III",
+        "desc": "Bears down continuous missile bombardment to a designated location."
+    },
+    {
+        "id": "orbital-laser",
+        "name": "Orbital Laser",
+        "score": 990,
+        "persistenceTier": "III",
+        "desc": "A powerful orbital laser that shoots down from the sky and moves along the route specified by the player. The laser can penetrate roofed structures and buildings if enemies try to hide inside."
+    },
+    {
+        "id": "napalm",
+        "name": "Napalm",
+        "score": 1020,
+        "persistenceTier": "III",
+        "desc": "Scorch nearby enemies and fill the battlefield with smoke."
+    },
+    {
+        "id": "stealth-chopper",
+        "name": "Stealth Chopper",
+        "score": 1080,
+        "persistenceTier": "III",
+        "desc": "Call in an attacking helicopter to the battlefield for armed support."
+    },
+    {
+        "id": "emergency-airdrop",
+        "name": "Emergency Airdrop",
+        "score": 1100,
+        "persistenceTier": "III",
+        "desc": "Call in three Airdrop supplies to your location."
+    },
+    {
+        "id": "emp-systems",
+        "name": "EMP Systems",
+        "score": 1150,
+        "persistenceTier": "III",
+        "desc": "Disables all enemy electronics. All items in enemy HUD will be removed and field of vision will be affected. Enemies affected cannot use throwables, Scorestreaks or Operator Skills."
+    },
+    {
+        "id": "advanced-uav",
+        "name": "Advanced UAV",
+        "score": 1200,
+        "persistenceTier": "III",
+        "desc": "Orbital UAV that reveals the enemy's direction on the mini-map."
+    },
+    {
+        "id": "swarm",
+        "name": "Swarm",
+        "score": 1280,
+        "persistenceTier": "III",
+        "desc": "Call in a swarm of lethal Hunter Killer drones."
+    },
+    {
+        "id": "chopper-gunner",
+        "name": "Chopper Gunner",
+        "score": 1280,
+        "persistenceTier": "III",
+        "desc": "Fire from the skies in a chopper with a gun that has unlimited ammo. Careful not to overheat!"
+    },
+    {
+        "id": "vtol",
+        "name": "VTOL",
+        "score": 1600,
+        "persistenceTier": "III",
+        "desc": "Call in a VTOL gunship to provide air support."
+    },
+    {
+        "id": "gunship",
+        "name": "Gunship",
+        "score": 1900,
+        "persistenceTier": "III",
+        "desc": "A heavy assault gunship equipped with 3 different types of weapons."
+    }
+]

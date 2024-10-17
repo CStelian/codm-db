@@ -109,3 +109,31 @@ export type OperatorType = {
     }
     desc: string
 }
+
+export type ApiData = {
+    definitions: Record<
+      string,
+      {
+        description?: string
+        origin?: string
+        options?: { value: any; label?: string }[]
+      }
+    >
+    hints?: { key: string; text: string }[]
+    overrideEncryptionMode?: "plaintext" | "encrypted"
+}
+
+export type ScorestreakType = {
+    id: string
+    name: string
+    score: number
+    persistenceTier: string
+    desc: string
+}
+
+export type KillstreakType = {
+    id: string
+    name: string
+    kills: number
+    desc: string
+}

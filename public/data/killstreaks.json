@@ -1,0 +1,8 @@
+[
+    {
+        "id": "nuclear-bomb",
+        "name": "Nuclear Bomb",
+        "kills": 20,
+        "desc": "Get 20 kills with a weapon without dying and earn a Nuclear Bomb. Unlocks at Level 20."
+    }
+]

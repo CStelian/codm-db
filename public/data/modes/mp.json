@@ -2843,8 +2843,16 @@
         "type": "limited-time",
         "ranked": false,
         "timeLimited": true,
-        "rules": "To be added.",
+        "rules": "Zombies will spawn near the Hardpoint. Killing them, and capturing the Hardpoint, will unlock buffs for you and your team. \nThe buff progression meter is shared across your team. Advancing the meter will unlock various buffs. \nKilling different types of zombies reward various levels of progression. \nThe final buff unlocks Explosive Zombies you can summon.",
         "maps": [
+            {
+                "id": "raid",
+                "name": "Raid"
+            },
+            {
+                "id": "hacienda",
+                "name": "Hacienda"
+            },
             {
                 "id": "rush",
                 "name": "Rush"

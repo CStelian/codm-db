@@ -1,0 +1,71 @@
+---
+import type { ScorestreakType } from '@utils/types'
+import type { KillstreakType } from '@utils/types'
+
+interface Props {
+    scorestreak: ScorestreakType | KillstreakType
+}
+
+const { scorestreak } = Astro.props
+
+function isScorestreak(scorestreak: ScorestreakType | KillstreakType): scorestreak is ScorestreakType {
+    return (scorestreak as ScorestreakType).persistenceTier !== undefined
+        && (scorestreak as ScorestreakType).score !== undefined
+}
+
+function isKillstreak(scorestreak: ScorestreakType | KillstreakType): scorestreak is KillstreakType {
+    return (scorestreak as KillstreakType).kills !== undefined
+}
+---
+
+<a class="scorestreak-link" href={`/scorestreaks/${scorestreak.id}`} data-type={isScorestreak(scorestreak) ? "scorestreaks" : "killstreak"} data-persistence-tier={isScorestreak(scorestreak) ? scorestreak.persistenceTier : "None"} data-score={isScorestreak(scorestreak) ? scorestreak.score : 0} data-kills={isKillstreak(scorestreak) ? scorestreak.kills : 0}>
+    <div class="scorestreak">
+        <div class="scorestreak-name">
+            <h2>{scorestreak.name}</h2>
+        </div>
+        <div class="scorestreak-thumbnail">
+            <img class="scorestreak-image" src={`/assets/images/scorestreaks/${scorestreak.id}.webp`} alt={scorestreak.name} />
+        </div>
+    </div>
+</a>
+
+<style>
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border-radius: 1rem;
+    }
+
+    .scorestreak {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: 0.5rem;
+    }
+
+    .scorestreak-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .scorestreak-thumbnail {
+        height: 320px;
+        width: auto;
+        border-radius: 1rem;
+    }
+
+    .scorestreak-image {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+</style>
