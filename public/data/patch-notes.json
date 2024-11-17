@@ -480,7 +480,7 @@
                 ]
             },
             {
-                "title": "Death Machine",
+                "item": "Death Machine",
                 "type": "buff",
                 "changes": [
                     {
