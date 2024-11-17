@@ -168,6 +168,20 @@
         }
     },
     {
+        "id": "teleporter",
+        "name": "Teleporter",
+        "mode": "br",
+        "type": "stealth",
+        "active": {
+            "title": "Teleporter",
+            "desc": "Deploy a beacon that allows multiple teleports, but entering combat will interrupt the teleportation."
+        },
+        "passive": {
+            "title": "Stealth",
+            "desc": "Reduces movement noises."
+        }
+    },
+    {
         "id": "medic",
         "name": "Medic",
         "mode": "br",

@@ -300,5 +300,383 @@
                 ]
             }
         ]
+    },
+    {
+        "season": 10,
+        "title": "Season 10: 5th Anniversary",
+        "patchNotes": [
+            {
+                "item": "BP50 (Battle Royale)",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Damage Decreased: 24-22-20 to 22-20-17.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "Leg Multiplier Decreased: 1 to 0.9x.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Type 63 (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reduced camera shake while firing in ADS mode.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "LAG 53",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "XRK Marksman Barrel: Movement speed debuff reduced: -8% to -4%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "30-Round Mag: Movement speed debuff reduced: -6% to -3%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "ISO",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "FSS Nightshade barrel: Damage range buff increased: +10% to +30%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "FSS Nightshade barrel: Horizontal recoil control buff increased: -6% to -9%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "FSS Nightshade barrel: Bullet speed buff increased: +15% to +25%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Reload time reduced: 1.45s to 1.26s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.33s to 1.14s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "HS0405 (Multiplayer)",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "Damage increased: 26-19-11 to 26-25-11.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Damage range decreased: 6-11-14 to 6-10-14.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "BY15",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased reload speed: 1.90s to 1.80s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "500gr Slug: Damage range buff increased: +15% to +30%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Holger 26",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "ADS Bullet Spread reduced: 20(11) to 20(8).",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Mag Capacity increased: 100 to 110.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Bruen MK9",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Lower Torso multiplier increased: 1 to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "PKM",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "ADS Bullet Spread reduced: 18(8) to 17(8).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "UL736",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "ADS Bullet Spread reduced: 21(10) to 21(8).",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "ADS Movement Speed increased: 2.5m/s to 2.8m/s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "RPD",
+                "type": "buff", 
+                "changes": [
+                    {
+                        "title": "Upper chest multiplier increased: 1 to 1.1x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "ADS Bullet Spread reduced: 21(10) to 17(10).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Bull Charge",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Optimised controls and colision logic.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Shadow Blade",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Activation Energy reduced: 100 to 80.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "title": "Death Machine",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage reduction increased: 10% to 25%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Misdirection Device",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Points gained from energy kills decreased: 225 to 125.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Flamenaut",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Maximum duration decreased: 180s to 40s.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "Activation score increased: 900 to 1000.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "Adjusted UI during continuous healing.",
+                        "type": "adjustment"
+                    }
+                ]
+            },
+            {
+                "item": "Molotov Cocktail",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Burning radius decreased: 3.5m to 3m.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Combat Axe",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Base equipment amount increased: 1 to 2.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "All the SMGs (Multiplayer)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased weapon switching speed (SMGs to Other Weapons).",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Reduced switch-to-fire delay after switching back to the weapon.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "RUS-79U",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.76s to 1.44s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.68s to 1.26s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Chicom",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.71s to 1.24s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.68s to 1.18s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "PDW-57",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.95s to 1.66s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.83s to 1.54s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Razorback",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.43s to 1.34s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.43s to 1.26s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "HG-40",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.68s to 1.28s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.82s to 1.52s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Pharo",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.84s to 1.47s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.89s to 1.54s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Cordite",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.84s to 1.36s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.95s to 1.49s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "QQ9",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.38s to 1.18s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.62s to 1.34s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "PPSh-41",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reload time reduced: 1.89s to 1.42s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Empty reload time reduced: 1.54s to 1.32s.",
+                        "type": "buff"
+                    }
+                ]
+            }
+        ]
     }
 ]

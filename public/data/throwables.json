@@ -136,5 +136,11 @@
         "name": "Trip Sensor",
         "type": "tactical",
         "desc": "Sticky explosive that attaches to surfaces and detonates upon enemy proximity, slows the enemies down and reveals enemy positions on the mini-map."
+    },
+    {
+        "id": "douser-grenade",
+        "name": "Douser Grenade",
+        "type": "tactical",
+        "desc": "Nulifies the negative effects brought by Molotov Cocktail, Gas Grenade, Thermite, etc."
     }
 ]

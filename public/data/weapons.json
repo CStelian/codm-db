@@ -972,6 +972,18 @@
         "ctrl": 33
     },
     {
+        "id": "uss-9",
+        "name": "USS 9",
+        "desc": "Well-balanced sub-machine gun with superior mobility and steady control.",
+        "type": "smg",
+        "dmg": 34,
+        "acc": 68,
+        "range": 45,
+        "fireRate": 60,
+        "mobility": 99,
+        "ctrl": 69
+    },
+    {
         "id": "hs2126",
         "name": "HS2126",
         "desc": "Fully automatic shotgun with high rate of fire and reload speed.",

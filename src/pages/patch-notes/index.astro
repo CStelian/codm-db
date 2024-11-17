@@ -14,6 +14,8 @@ const patchNotesList = await fetch(`${Astro.url.origin}/data/patch-notes.json`)
     .then((res) => res.json())
     .catch((err) => console.error(err))
 
+const season10PatchNotes = patchNotesList.filter((patchNote: PatchNoteType) => patchNote.season === 10)
+
 const season9PatchNotes = patchNotesList.filter((patchNote: PatchNoteType) => patchNote.season === 9)
 
 console.log(season9PatchNotes)
@@ -38,6 +40,23 @@ console.log(season9PatchNotes)
                 <li class="nerf">Nerf</li>
                 <li class="adjustment">Adjustment</li>
             </ul>
+        </div>
+
+        <hr />
+
+        <h2 class="season-title">Season 10: 5th Anniversary</h2>
+
+        <div class="patch-notes-grid">
+            {season10PatchNotes[0].patchNotes.map((patchNote: any) => (
+                <div class="patch-note">
+                    <h3 class={patchNote.type}>{patchNote.item}</h3>
+                    <ul>
+                        {patchNote.changes.map((change: any) => (
+                            <li class={change.type}>{change.title}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </div>
 
         <hr />

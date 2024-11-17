@@ -116,6 +116,14 @@ weaponsList.forEach((weapon: WeaponType) => {
             jungle = goldCamoRequirements.sg.jungle
             reptile = goldCamoRequirements.sg.reptile
             break
+        case "mr":
+            sand = goldCamoRequirements.mr.sand
+            dragon = goldCamoRequirements.mr.dragon
+            splinter = goldCamoRequirements.mr.splinter
+            tiger = goldCamoRequirements.mr.tiger
+            jungle = goldCamoRequirements.mr.jungle
+            reptile = goldCamoRequirements.mr.reptile
+            break
         case "pistol":
             sand = goldCamoRequirements.pistol.sand
             dragon = goldCamoRequirements.pistol.dragon
@@ -202,6 +210,9 @@ weaponsList.forEach((weapon: WeaponType) => {
         case "sg":
             platinum = platinumCamoRequirements.sg
             break
+        case "mr":
+            platinum = platinumCamoRequirements.mr
+            break
         case "pistol":
             platinum = platinumCamoRequirements.pistol
             break
@@ -238,6 +249,9 @@ weaponsList.forEach((weapon: WeaponType) => {
         case "sg":
             damascus = damascusCamoRequirements.sg
             break
+        case "mr":
+            damascus = damascusCamoRequirements.mr
+            break
         case "pistol":
             damascus = damascusCamoRequirements.pistol
             break
@@ -273,6 +287,9 @@ weaponsList.forEach((weapon: WeaponType) => {
             break
         case "sg":
             diamond = diamondCamoRequirements.sg
+            break
+        case "mr":
+            diamond = diamondCamoRequirements.mr
             break
         case "pistol":
             diamond = diamondCamoRequirements.pistol
@@ -324,6 +341,9 @@ weaponsList.forEach((weapon: WeaponType) => {
             break
         case "sg":
             aether = aetherCrystalCamoRequirements.sg
+            break
+        case "mr":
+            aether = aetherCrystalCamoRequirements.mr
             break
         case "pistol":
             aether = aetherCrystalCamoRequirements.pistol
@@ -489,8 +509,8 @@ const pathname = Astro.url.pathname
         <h2>Aether Crystal Camo Requirements</h2>
         <p>{aether}</p>
 
-        <h2>Alchemy Stars Camo Requirements</h2>
-        <p>{alchemyStars}</p>
+        {id === "uss-9" ? null :<h2>Alchemy Stars / Dream Aurora Camo Requirements</h2>
+        <p>{alchemyStars}</p>}
 
     </div>
 

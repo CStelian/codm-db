@@ -43,6 +43,10 @@ export const footerPages = [
         path: '/about'
     },
     // {
+    //     name: 'Blog',
+    //     path: '/blog'
+    // },
+    // {
     //     name: 'FAQ',
     //     path: '/faq'
     // },
@@ -68,5 +72,9 @@ export const legalPages = [
     {
         name: 'Fair Use',
         path: '/legal/fair-use'
+    },
+    {
+        name: 'Privacy',
+        path: '/legal/privacy'
     }
 ]
