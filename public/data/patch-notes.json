@@ -678,5 +678,509 @@
                 ]
             }
         ]
+    },
+    {
+        "season": 11,
+        "title": "Season 11: Winter War II",
+        "patchNotes": [
+            {
+                "item": "Oden",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Colossus Supressor: Reduced range boost from 40% to 30%.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "Light Stock: Reduced strafe boost from 20% to 15%.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "BP50",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "LEROY 438mm Rapid Barrel: Added -15% range penalty.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "LEROY 438mm Rapid Barrel: Reduced stomach/leg multiplier by 0.1x.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "7.62mm 30-R Mag: Increased stomach multiplier by 0.1x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "7.62mm 30-R Mag: Increased range boost from 5% to 20%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "MG42",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Increased ADS time from 350ms to 380ms.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Type 19",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Agile Stock: Reduced strafe boost from 30% to 20%.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "LW3-Tundra",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Airborne Elastic Wrap: Reduced flinch reduction from 35% to 20%.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "QXR",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Enhanced Bolt: Removed BSA penalty.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "AGR 556",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reduced reload time.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Switchblade X9",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Extended Light Barrel: Increased range boost from 15% to 25%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Extended Mag: Removed STF penalty.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Hades",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "Damage profile changed from 29 (32m) / 19 to 31 (16m) / 29 (32m) / 19.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased chest multiplier to 1.1x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Rapid Fire Barrel: Reduces chest multiplier by 0.1x.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "HG40",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Range profile increased from 15m / 20m / 25m to 15m / 25m / 35m.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Multiplayer: BSA improved from 24(12) to 20(10).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "ASM10",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased head multiplier from 1.2x to 1.5x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "M13 (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage profile improved from 24 / 19 / 18 to 24 / 20 / 19.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "TEC-9 (Battle Royale)",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Reduced leg multiplier from 1.1x to 1.0x.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Bull Charge",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Charge requirement increased energy consumption on kill.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Napalm",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Cost decreased from 1020 to 950.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Gunship",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Cost decreased from 1900 to 1800.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Storm Ball",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Duration increased from 12s to 14s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Echo Grenade",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Radius increased from 9m to 11m.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Serpentine",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage reduction increased from 12% to 18%.",
+                        "type": "buff"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "season": 1,
+        "title": "Season 1: Wings of Vengeance",
+        "patchNotes": [
+            {
+                "item": "KRM-262",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Mag size reduced from 8 to 6.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "TEC-9 (Battle Royale)",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Burst Fire Repeater: Added a +30% hip fire spread penalty.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "RAAL MG",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased stomach multiplier from 1x to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Holger 26",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Holger-26C Lightweight Mag: Added a -5% vertical recoil buff.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Holger-26C Lightweight Mag: Increased ADS time reduction from -30% to -44%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Holger-26K Double-Stack Carbine Mag: Added a -12% vertical recoil buff.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Holger-26K Double-Stack Carbine Mag: Increased ADS time reduction from -28% to -36%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "LAG 53",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage profile changed from 45 (24m) / 36 to 46 (20m) / 45 (30m) / 36.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "HS0405 (Multiplayer)"  ,
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Hip fire spread reduced from 275(200) to 250(100)",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Choke: Removed movement speed penalty.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "CBR4",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage profile changed from 24/23/18/16 to 24/23/19/16.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "ADS movement speed increased: 3.94m/s to 4.09m/s.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Hip fire spread reduced from 208(120) to 188(100).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Hades",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Rapid Fire Barrel: Removed chest multiplier penalty.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "GKS",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Multiplayer: BSA improved from 24(10) to 20(6).",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Bullet impact increased  from 1.1(0.33) to 1.3(0.78).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "EM2",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage profile changed from 37/32/23 to 37/32/24.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased chest multipler from 1x to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Holger 26",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Holger-26C Lightweight Mag: Added a -5% vertical recoil buff.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Holger-26C Lightweight Mag: Increased ADS time reduction from -30% to -44%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Holger-26K Double-Stack Carbine Mag: Added a -12% vertical recoil buff.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Holger-26K Double-Stack Carbine Mag: Increased ADS time reduction from -28% to -36%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "LAPA",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Battle Royale: Hip fire spread reduced from 84(24) to 60(20).",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "12.4'' Cavalry Lancer: Added a +33% bullet speed buff.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Chicom (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage profile changed from 32/25/20/17 to 32/27/22/17.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Hip fire spread reduced from 84(24) to 50(15).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Bull Charge",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Reduced recharge speed.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Gravity Vortex Gun",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased capacity from 3 to 4.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Tempest",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "It now uses ADS Sensitivity.",
+                        "type": "adjustment"
+                    }
+                ]
+            },
+            {
+                "item": "Death Machine",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Improved movement speed.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Improved sprint speed.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Improved ADS movement speed.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Gravity Spikes",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Improved recharge speed.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Douser Grenade",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased amount carried upon spawning from 1 to 2.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Storm Ball",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased amount carried upon spawning from 1 to 2.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Flamenaut",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Increased score requirement from 1000 to 1200.",
+                        "type": "nerf"
+                    }
+                ]
+            }
+        ]
     }
 ]

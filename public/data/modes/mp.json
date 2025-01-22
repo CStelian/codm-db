@@ -2858,5 +2858,20 @@
                 "name": "Rush"
             }
         ]
+    },
+    {
+        "id": "tank-battleground",
+        "name": "Tank Battleground",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "Kill players on the opposing team. You always spawn at your base. The first team to reach the score limit wins! \nCommand your tank: Epic Steel-on-Steel Battles await! \nThere are Battle Buffs scattered around the battleground, pick them up to boost your Tank",
+        "maps": [
+            {
+                "id": "collateral",
+                "name": "Tank Battleground"
+            }
+        ]
     }
 ]

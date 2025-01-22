@@ -372,6 +372,18 @@
         "ctrl": 50
     },
     {
+        "id": "xm4",
+        "name": "XM4",
+        "desc": "Full-auto assault rifle. Reliable damage with improved fire rate. Fair weapon control when sustaining fire.",
+        "type": "ar",
+        "dmg": 28,
+        "acc": 53,
+        "range": 47,
+        "fireRate": 75,
+        "mobility": 68,
+        "ctrl": 50
+    },
+    {
         "id": "xpr-50",
         "name": "XPR-50",
         "desc": "Semi-automatic sniper rifle. Long Range with moderate recoil.",
@@ -658,6 +670,18 @@
         "fireRate": 103,
         "mobility": 49,
         "ctrl": 40
+    },
+    {
+        "id": "raal-mg",
+        "name": "RAAL MG",
+        "desc": "The Reconnaissance Auxiliary Assault Lightweight Machine Gun uses a low fire rate and a reciprocating barrel to mitigate the powerful .338 Norma Mag recoil. Advanced titanium construction keeps the weight manageable.",
+        "type": "lmg",
+        "dmg": 34,
+        "acc": 72,
+        "range": 68,
+        "fireRate": 57,
+        "mobility": 32,
+        "ctrl": 65
     },
     {
         "id": "rus-79u",

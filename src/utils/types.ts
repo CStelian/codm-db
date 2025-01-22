@@ -72,7 +72,7 @@ export type perkType = {
 }
 
 export type PatchNoteType = {
-    season: number
+    season: number | string
     type: string
     title: string
     patchNotes: Array<{

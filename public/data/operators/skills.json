@@ -142,5 +142,11 @@
         "name": "Havoc",
         "mode": "mp",
         "desc": "Generate an electronic wave to destroy enemy deployable projectiles, disrupt enemies' mini-map information and some Scorestreaks."
+    },
+    {
+        "id": "control-field",
+        "name": "Control Field",
+        "mode": "mp",
+        "desc": "It helps soldiers capture the objectives and heal teammates within the range."
     }
 ]

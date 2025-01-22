@@ -14,11 +14,13 @@ const patchNotesList = await fetch(`${Astro.url.origin}/data/patch-notes.json`)
     .then((res) => res.json())
     .catch((err) => console.error(err))
 
+const season1PatchNotes = patchNotesList.filter((patchNote: PatchNoteType) => patchNote.season === 1)
+
+const season11PatchNotes = patchNotesList.filter((patchNote: PatchNoteType) => patchNote.season === 11)
+
 const season10PatchNotes = patchNotesList.filter((patchNote: PatchNoteType) => patchNote.season === 10)
 
 const season9PatchNotes = patchNotesList.filter((patchNote: PatchNoteType) => patchNote.season === 9)
-
-console.log(season9PatchNotes)
 
 ---
 
@@ -44,7 +46,41 @@ console.log(season9PatchNotes)
 
         <hr />
 
-        <h2 class="season-title">Season 10: 5th Anniversary</h2>
+        <h2 class="season-title">{season1PatchNotes[0].title}</h2>
+
+        <div class="patch-notes-grid">
+            {season1PatchNotes[0].patchNotes.map((patchNote: any) => (
+                <div class="patch-note">
+                    <h3 class={patchNote.type}>{patchNote.item}</h3>
+                    <ul>
+                        {patchNote.changes.map((change: any) => (
+                            <li class={change.type}>{change.title}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
+
+        <hr />
+
+        <h2 class="season-title">{season11PatchNotes[0].title}</h2>
+
+        <div class="patch-notes-grid">
+            {season11PatchNotes[0].patchNotes.map((patchNote: any) => (
+                <div class="patch-note">
+                    <h3 class={patchNote.type}>{patchNote.item}</h3>
+                    <ul>
+                        {patchNote.changes.map((change: any) => (
+                            <li class={change.type}>{change.title}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
+
+        <hr />
+
+        <h2 class="season-title">{season10PatchNotes[0].title}</h2>
 
         <div class="patch-notes-grid">
             {season10PatchNotes[0].patchNotes.map((patchNote: any) => (
