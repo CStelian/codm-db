@@ -2884,7 +2884,7 @@
         "rules": "To be added.",
         "maps": [
             {
-                "id": "shoot-zone",
+                "id": "chase-zone",
                 "name": "Shoot Zone"
             }
         ]

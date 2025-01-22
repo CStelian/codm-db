@@ -496,5 +496,13 @@
         "type": "mp",
         "releaseYear": 2020,
         "released": true
+    },
+    {
+        "id": "chase-zone",
+        "name": "Chase Zone",
+        "type": "mp",
+        "releaseYear": 2025,
+        "releaseDate": "2025-01-28",
+        "released": false
     }
 ]
