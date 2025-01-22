@@ -2873,5 +2873,35 @@
                 "name": "Tank Battleground"
             }
         ]
+    },
+    {
+        "id": "carnival-shootout",
+        "name": "Carnival Shootout",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "To be added.",
+        "maps": [
+            {
+                "id": "shoot-zone",
+                "name": "Shoot Zone"
+            }
+        ]
+    },
+    {
+        "id": "chase",
+        "name": "Chase",
+        "gameType": "mp",
+        "type": "limited-time",
+        "ranked": false,
+        "timeLimited": true,
+        "rules": "To be added.",
+        "maps": [
+            {
+                "id": "chase-zone",
+                "name": "Chase Zone"
+            }
+        ]
     }
 ]
