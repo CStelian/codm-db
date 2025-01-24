@@ -17,7 +17,7 @@
     },
     {
         "id": "ak117",
-        "mythic": ["Grim Ending"],
+        "mythic": ["Grim Ending", "Lava Remix"],
         "legendary": ["Holidays", "Meltdown", "Platinum Raider (exclusive to the Garena & Chinese versions)", "Aesir", "Dazzling Rhythm", "Meltdown Prestige"],
         "epic": ["Medieval", "Year of the Rat", "Smart Rifle", "Cyberspace", "Magmacomb", "Bengal", "Fighter Aircraft", "Barricade", "Kit Bag", "Snake Bite", "Armor Plated", "Subtropic", "Neon Lotus", "BiSH", "Outcast", "Ice Crystal", "Moonstone", "Sprite Ops", "Revolt", "Emergence", "Calligraphy", "VHS Glitch", "Munitions", "Rhinestone", "Nightwind", "Nightwind Red", "Nightwind Silver", "Nightwind Black", "Un-Official Merch", "Tank Wheels", "Sakura Storm", "Wrapped", "Archtoxin", "Bolted Steel", "Black Rose", "Eclipse", "Winged Lapis", "Admiral's Pick", "Future Apollo", "School's Out", "Pop Idol", "Iron Flight", "Jeweled Scales", "Resonant Frequency", "Corporate Issue", "Engraved Longevity", "Floating Lotus", "Vintage Roadster", "Savaged Fate"]
     },
@@ -167,6 +167,11 @@
         "epic": ["Quarkaser"]
     },
     {
+        "id": "xm4",
+        "mythic": ["Luminescent Jade"],
+        "epic": ["Imperial Defender"]
+    },
+    {
         "id": "xpr-50",
         "legendary": ["Broken Will"],
         "epic": ["Geometry", "Sunspot", "Marquis", "Arachnophobia", "Dark Tech", "Ooze", "Dragon Brood", "Dolphins Wink", "Shiver", "Laser Burn"]
@@ -288,6 +293,11 @@
         "id": "mg42",
         "mythic": ["The Campaign"],
         "epic": ["Rubble Maker"]
+    },
+    {
+        "id": "raal-mg",
+        "legendary": ["Frostfire"],
+        "epic": ["Frozen Fortress"]
     },
     {
         "id": "rus-79u",
