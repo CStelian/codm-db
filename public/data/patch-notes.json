@@ -1182,5 +1182,293 @@
                 ]
             }
         ]
+    },
+    {
+        "season": 2,
+        "title": "Season 2: Digital Dawn",
+        "patchNotes": [
+            {
+                "item": "XM4",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reduced visual recoil",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Reduced horizontal recoil.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Agency Suppressor: Now reduces vertical recoil by 15%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "HBRa3",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased upper arm multiplier from 1x to 1.2x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Thunderbolt Sling: Increased horizontal recoil reduction from 5% to 15%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "M13",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Lower arm multiplier increased from 1x to 1.06x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Chest multiplier inrecreased from 1.06x to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "M16",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Stomach multiplier increased from 1x to 1.1x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Decreased hit flinch from 0.6 to 0.5.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "PP19 Bizon (Multiplayer)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Improved Bullet Spread Accuracy from 20(15) to 18(10).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "CBR4 (Multiplayer)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Improved Bullet Spread Accuracy from 24(16) to 20(16).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "ISO",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Arm multiplier increased from 1x to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "PPSh-41 (Multiplayer)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Hip fire spread reduced from 208(120) to 180(100).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "CX-9",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Hit flinch reduced from 1.2 to 1.1.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "CX-38E: Increased range and bullet speed buffs from 25% to 30%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "MG42",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "VDD Skeletal: Increased hip fire spread penalty from from 5% to 20%.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "RAAL MG",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Head multiplier increased from 1.4x to 1.5x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Chopper",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased chest multipler from 1x to 1.17x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Argus",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "Choke: Increased Bullet Spread Accuracy buff from 10% to 18%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Choke: Increased hip fire spread buff from 10% to 12%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Choke: Reduced movement speed penalty 5% to 1%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Choke: Added a -3% ADS movement speed penalty.",
+                        "type": "nerf"
+                    },
+                    {
+                        "title": "Choke: Added a +5% ADS time penalty.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Kilo Bolt-Action",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "ADS time reduced from 330ms to 300ms.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Control Field",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reduced energy requirement.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Sparrow",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reduced energy requirement.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Death Machine",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased damage resistance from 25% to 30%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased all body multipliers to 1.2x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Gravity Spikes",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased radius from 4.5m to 5m..",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased recharge speed.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Douser Grenade",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased radius from 4.5m to 5m..",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Increased recharge speed.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Echo Grenade",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "Optimised throwing animation.",
+                        "type": "adjustment"
+                    }
+                ]
+            },
+            {
+                "item": "SAM Turret",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reduced score from 620 to 560.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Restock",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Reduced throwable recovery time from 20s to 15s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Overclock",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased Operator Skill charge speed buff from 30% to 40%.",
+                        "type": "buff"
+                    }
+                ]
+            }
+        ]
     }
 ]

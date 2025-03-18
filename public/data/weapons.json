@@ -1116,6 +1116,18 @@
         "ctrl": 42
     },
     {
+        "id": "vlk-rogue",
+        "name": "VLK Rogue",
+        "desc": "A 12-gauge, mag-fed shotgun with strong close-range firepower and excellent handling. It offers a variety of ammunition types, making it adaptable to different combat scenarios.",
+        "type": "sg",
+        "dmg": 224,
+        "acc": 85,
+        "range": 34,
+        "fireRate": 31,
+        "mobility": 85,
+        "ctrl": 32
+    },
+    {
         "id": "kilo-bolt-action",
         "name": "Kilo Bolt-Action",
         "desc": "Bolt-action rifle. A vintage classic that is still extremely lethal in the hands of a skilled marksman.",

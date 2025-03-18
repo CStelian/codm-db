@@ -481,6 +481,11 @@
         "epic": ["Death Branch", "Immortal Pattern", "Strong Winter Wind"]
     },
     {
+        "id": "vlk-rogue",
+        "legendary": ["Evolutionary"],
+        "epic": ["Ransomware"]
+    },
+    {
         "id": "kilo-bolt-action",
         "legendary": ["Rail Gun", "Scarlet Shot"],
         "epic": ["Lazarus", "Dealer", "Digital Death", "Trap Shooter", "Constable", "Pane", "Mystical Crown", "Stalk", "In the Dark", "Rex Mortem", "Symphony"]

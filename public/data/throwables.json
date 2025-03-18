@@ -142,5 +142,11 @@
         "name": "Douser Grenade",
         "type": "tactical",
         "desc": "Nulifies the negative effects brought by Molotov Cocktail, Gas Grenade, Thermite, etc."
+    },
+    {
+        "id": "flash-strike",
+        "name": "Flash Strike",
+        "type": "tactical",
+        "desc": "A special tactical that can cause flashes by drilling through cover. The tip is fragile and easily destroyed."
     }
 ]

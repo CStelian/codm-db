@@ -164,5 +164,20 @@
                 "name": "Isolated"
             }
         ]
+    },
+    {
+        "id": "krai",
+        "name": "Krai",
+        "gameType": "br",
+        "type": "limited-time",
+        "ranked": true,
+        "timeLimited": true,
+        "rules": "",
+        "maps": [
+            {
+                "id": "krai",
+                "name": "Krai"
+            }
+        ]
     }
 ]
