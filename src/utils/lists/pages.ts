@@ -78,3 +78,14 @@ export const legalPages = [
         path: '/legal/privacy'
     }
 ]
+
+export const socialPages = [
+    {
+        name: 'X (formerly Twitter)',
+        path: 'https://x.com/CoDMobileDB'
+    },
+    {
+        name: 'Discord',
+        path: 'https://discord.gg/3RrGsMhb37'
+    }
+]
