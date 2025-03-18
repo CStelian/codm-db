@@ -3,6 +3,7 @@ import { Image } from "astro:assets"
 import logo from '@assets/logos/codm-db-logo.png'
 import { footerPages } from "@utils/lists/pages"
 import { legalPages } from "@utils/lists/pages"
+import { socialPages } from "@utils/lists/pages"
 
 const currentYear = new Date().getFullYear()
 ---
@@ -35,6 +36,14 @@ const currentYear = new Date().getFullYear()
                     </li>
                 ))}
             </ul>
+            <h3>Socials</h3>
+            <ul>
+                {socialPages.map(page => (
+                    <li>
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                ))}
+            </ul>
         </div>
     </div>
 
@@ -44,7 +53,7 @@ const currentYear = new Date().getFullYear()
             © Activision Publishing, Inc. CALL OF DUTY and the stylized letter M are trademarks of Activision Publishing, Inc. This website is not affiliated or sponsored by Activision Blizzard.
         </p>
 
-        <p>&copy; {currentYear} CoD: Mobile Database</p>
+        <p>&copy; {currentYear} CoD: Mobile Database. The CoDM DB is a project owned and maintained by <a href="https://playcia.com">Playcia</a>.</p>
     </div>
 
 </footer>
@@ -98,6 +107,14 @@ const currentYear = new Date().getFullYear()
     .copyright p {
         margin: 0;
         font-size: 0.8rem;
+    }
+
+    .copyright a {
+        color: #000;
+    }
+
+    .copyright a:hover, .copyright a:focus-visible {
+        text-decoration: underline;
     }
 
     @media (max-width: 768px) {
