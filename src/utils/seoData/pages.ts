@@ -69,4 +69,25 @@ export const pagesSEO = {
         url: 'https://www.codmdb.com/throwables',
         keywords: 'codm throwables, codm throwable stats, codm throwable attachments, codm throwable camos'
     },
+    ranked: {
+        title: 'Ranked System - Call of Duty®: Mobile Database',
+        desc: 'Learn more about the Ranked system in Call of Duty Mobile, across multiplayer and Battle Royale.',
+        image: '/assets/seo/ranked.jpg',
+        url: 'https://www.codmdb.com/ranked/',
+        keywords: 'CODM ranked, Call of Duty Mobile ranked, CODM ranked system, CODM competitive, CODM ranked rewards, CODM ranked tiers, CODM ranked multiplayer, CODM ranked battle royale, CODM ranked seasons, CODM ranked points, CODM ranked leagues, CODM ranked progression, CODM ranked matchmaking, CODM ranked tips, CODM ranked guide'
+    },
+    secretCaches: {
+        title: "Secret Caches - Call of Duty®: Mobile Database",
+        desc: "Learn more about the Secret Caches in Call of Duty: Mobile.",
+        image: '/assets/seo/secret-caches.jpg',
+        url: 'https://www.codmdb.com/secret-caches/',
+        keywords: 'CODM secret caches, CODM loot boxes, CODM epic caches, CODM legendary caches, CODM mythic caches, CODM daily challenges, CODM mission rewards, CODM weapon blueprints, CODM Power Nova camos, CODM legendary blueprints, CODM mythic blueprints, CODM cache rewards, CODM cache system, CODM cache drops, CODM cache guide'
+    },
+    wildcards: {
+        title: "Wildcards - Call of Duty®: Mobile Database",
+        desc: "Learn more about the Wildcards in Call of Duty: Mobile.",
+        image: '/assets/seo/wildcards.jpg',
+        url: 'https://www.codmdb.com/wildcards/',
+        keywords: 'CODM wildcards, CODM new weapons, CODM new camos, CODM new operators, CODM new perks, CODM new scorestreaks, CODM new throwables'
+    }
 }

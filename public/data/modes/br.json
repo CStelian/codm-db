@@ -110,7 +110,7 @@
         "name": "Solid Gold",
         "gameType": "br",
         "type": "limited-time",
-        "ranked": true,
+        "ranked": false,
         "timeLimited": true,
         "rules": "Classic Battle Royale with all legendary weapon blueprints. (The game mode has been removed from the game permanently.)",
         "maps": [

@@ -11,6 +11,10 @@ interface Props {
 
 const { id, name, desc, type } = Astro.props
 
+const imageExists = await fetch(`${Astro.url.origin}/assets/images/weapons/${id}.png`)
+    .then(res => res.ok)
+    .catch(() => false)
+
 ---
 
 <a href={`/weapons/${id}`} class={type} id="weapon">
@@ -19,12 +23,21 @@ const { id, name, desc, type } = Astro.props
 
         <div class="image">
 
-            <Image
-            src={`/assets/images/weapons/${id}.png`}
-            alt={name}
-            width={300}
-            height={300}
-        />
+            {imageExists ? (
+                <Image
+                    src={`/assets/images/weapons/${id}.png`}
+                    alt={name}
+                    width={300}
+                    height={300}
+                />
+            ) : (
+                <Image
+                    src="/assets/images/weapons/weapon-placeholder.png"
+                    alt={`${name} placeholder`}
+                    width={300}
+                    height={300}
+                />
+            )}
 
         </div>
 

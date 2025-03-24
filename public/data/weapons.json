@@ -1188,6 +1188,18 @@
         "ctrl": 60
     },
     {
+        "id": "m1-garand",
+        "name": "M1 Garand",
+        "desc": "Versatile rilfe offering effective accuracy and stopping power at all ranges.",
+        "type": "mr",
+        "dmg": 48,
+        "acc": 54,
+        "range":53,
+        "fireRate": 50,
+        "mobility": 83,
+        "ctrl": 50
+    },
+    {
         "id": "j358",
         "name": "J358",
         "desc": "Semi-automatic pistol; powerful and stable.",

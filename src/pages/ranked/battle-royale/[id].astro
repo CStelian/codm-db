@@ -1,0 +1,159 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+
+import type { gameRankType } from "@utils/types"
+
+const { id } = Astro.params
+
+const ranksList = await fetch(`${Astro.url.origin}/data/ranks/br.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+const rank = ranksList.find((rank: gameRankType) => rank.id === id)
+
+const title = rank?.name
+const desc = `Learn more about the ${title} rank in Call of Duty®: Mobile Battle Royale.`
+const image = `${Astro.url.origin}/assets/images/ranked/battle-royale/${id}.png`
+const url = `${Astro.url.origin}/ranked/battle-royale/${id}`
+const type = mainSiteSEO.type
+const siteName = mainSiteSEO.siteName
+const twitter = mainSiteSEO.twitter
+const locale = mainSiteSEO.locale
+const keywords = rank?.keywords
+
+const imageExists = await fetch(`${Astro.url.origin}/assets/images/ranked/battle-royale/${id}.png`)
+    .then(res => res.ok)
+    .catch(() => false)
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type={type}
+    siteName={siteName}
+    twitter={twitter}
+    locale={locale}
+    keywords={keywords}
+>
+
+    <main>
+        <h1>
+            {title}
+        </h1>
+        
+        {imageExists ? (
+            <Image
+                src={image}
+                alt={title}
+                width={400}
+                height={100}
+            />
+        ) : (
+            <Image
+                src={"/assets/images/ranks/placeholder.png"}
+                alt={title}
+                width={400}
+                height={100}
+            />
+        )}
+        <h2>
+            Sub-Ranks
+        </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ranks</th>
+                    <th>Rank XP</th>
+                </tr>
+            </thead>
+            <tbody>
+                {rank?.subRanks.map((subRank: gameRankType) => (    
+                    <tr>
+                        <td>{subRank.name}</td>
+                        {subRank.minPoints && subRank.maxPoints ? (
+                            <td>{subRank.minPoints} - {subRank.maxPoints}</td>
+                        ) : (
+                            <td>{subRank.minPoints}+</td>
+                        )}
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        padding: 1rem;
+        min-height: calc(100vh - 4rem);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+    
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        border: 1px solid #000;
+        text-align: center;
+    }
+
+</style>
+
+<script>
+
+    const table = document.querySelector("table") 
+
+    if(!table) {
+        throw new Error("Table not found")
+    }
+
+    table.style.minWidth = `${table.clientWidth}px`
+
+</script>
+    
+    
+    
+    
+    
+    
+    

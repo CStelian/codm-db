@@ -511,6 +511,10 @@
         "epic": ["Deadly Botany"]
     },
     {
+        "id": "m1-garand",
+        "epic": ["Pipe Rifle"]
+    },
+    {
         "id": "j358",
         "legendary": ["Heavy Handed"],
         "epic": ["Scorpion (formerly called Abomination)", "Black Gold", "Phobos", "Zero G", "Meltdown", "Firecracker", "Nuclear Fallout", "Narcissist", "Revolution", "Ruby", "Echolocation", "Ritual", "Quartz", "Pantomime", "Citrine", "Enlightened", "Noir", "Defibrillator", "Merrymaker", "Glasslike", "Demolition", "Revolt", "Parzival", "Sakura Storm", "Effigy", "Cutting Edge", "Stampede", "Target Lock", "Hot Spot", "Surface Tension", "Mud Track", "150 BPM", "Demon Spawning", "Polar Opposite", "Grim Ending", "Shot of Caffeine"]

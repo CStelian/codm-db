@@ -144,3 +144,45 @@ export type ThrowableType = {
     type: string
     desc: string
 }
+
+export type WildcardType = {
+    id: string
+    name: string
+    description: string
+    unlockedAt: string
+    price: string
+}
+
+export type gameRankType = {
+    id: string
+    name: string
+    type: string
+    minPoints: number
+    maxPoints?: number
+    subRanks: Array<{
+        name: string
+        minPoints: number
+        maxPoints?: number
+    }>
+}
+
+export type EliteMissionType = {
+    id: string
+    name: string
+    startDate: string
+    endDate: string
+    noOfSeasons: number
+    seasons: Array<{
+        season: number
+        name: string
+        startDate: string
+        endDate: string
+    }>  
+    reward: {
+        type: string
+        id: string
+        name: string
+    }
+    requirement: string
+}
+

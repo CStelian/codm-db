@@ -1,0 +1,191 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import ProgressBar from "@components/utils/ProgressBar.astro"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+
+import type { WildcardType } from "@utils/types"
+
+const { id } = Astro.params
+
+const wildcardsList = await fetch(`${Astro.url.origin}/data/wildcards.json`)
+    .then((res) => res.json())
+    .catch((err) => console.error(err))
+
+const wildcard = wildcardsList.find((wildcard: WildcardType) => wildcard.id === id)
+
+const title = wildcard?.name
+const desc = wildcard?.description
+const image = `${Astro.url.origin}/assets/images/wildcards/${id}.jpg`
+const url = `${Astro.url.origin}/wildcards/${id}`
+const type = mainSiteSEO.type
+const siteName = mainSiteSEO.siteName
+const twitter = mainSiteSEO.twitter
+const locale = mainSiteSEO.locale
+const keywords = wildcard?.keywords
+
+const imageExists = await fetch(`${Astro.url.origin}/assets/images/wildcards/${id}.jpg`)
+    .then(res => res.ok)
+    .catch(() => false)
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type={type}
+    siteName={siteName}
+    twitter={twitter}
+    locale={locale}
+    keywords={keywords}
+>
+
+    <div class="notice">
+        <p>
+            Points to unlock the wildcards are obtained for free by completing Ranked Matches.
+        </p>
+    </div>
+
+    <main>
+        <h1>
+            {title}
+        </h1>
+        <p>
+            {desc}
+        </p>
+        {imageExists ? (
+            <Image
+                src={image}
+                alt={title}
+                width={400}
+                height={100}
+            />
+        ) : (
+            <Image
+                src={"/assets/images/wildcards/placeholder.png"}
+                alt={title}
+                width={400}
+                height={100}
+            />
+        )}
+        <h2>
+            Wildcard Requirements
+        </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Requirement</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Unlocked at</td>
+                    <td>{wildcard?.unlockedAt}*</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>{wildcard?.price}</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">
+            * When you first log in to the game, after the Season 3 update, the game will automatically let you unlock one wildcard for free, without points.
+        </p>
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        padding: 1rem;
+        min-height: calc(100vh - 4rem);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+    
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        border: 1px solid #000;
+    }
+
+    .notice {
+        background-color: #f19d00;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        margin-block: 1rem;
+        text-align: center;
+    }
+
+    .notice p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .note {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+</style>
+
+<script>
+
+    const table = document.querySelector("table") 
+
+    if(!table) {
+        throw new Error("Table not found")
+    }
+
+    table.style.minWidth = `${table.clientWidth}px`
+
+</script>
+    
+    
+    
+    
+    
+    
+    

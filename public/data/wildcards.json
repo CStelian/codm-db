@@ -1,0 +1,30 @@
+[
+    {
+        "id": "perk-greed-red",
+        "name": "Perk Greed: Red",
+        "description": "Get an extra slot to equip a non-duplicate red Perk.",
+        "unlockedAt": "0 points (with the one-time free unlock token)",
+        "price": "100 points"
+    },
+    {
+        "id": "bomber",
+        "name": "Bomber",
+        "description": "Allows to replace a tactical with a non-duplicate lethal.",
+        "unlockedAt": "0 points (with the one-time free unlock token)",
+        "price": "100 points"
+    },
+    {
+        "id": "tactical-shift",
+        "name": "Tactical Shift",
+        "description": "Allows to replace a lethal with a non-duplicate tactical.",
+        "unlockedAt": "0 points (with the one-time free unlock token)",
+        "price": "100 points"
+    },
+    {
+        "id": "overkill",
+        "name": "Overkill",
+        "description": "Take a non-duplicate primary weapon in place of a secondary weapon.",
+        "unlockedAt": "0 points (with the one-time free unlock token)",
+        "price": "100 points"
+    }
+]

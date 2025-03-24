@@ -2740,13 +2740,21 @@
         "name": "Safeguard",
         "gameType": "mp",
         "type": "limited-time",
-        "ranked": false,
+        "ranked": true,
         "timeLimited": true,
         "rules": "In Safeguard, there is an offensive and defensive team. The offensive team has to escort a non-combative robot along a predetermined path to a designated objective, typically near the defensive team's spawn point. The defensive team must prevent the robot from entering this objective. \nThe team will get a point if they completed their objective that round (escorted the robot to the objective, or prevented the robot from entering the objective).",
         "maps": [
             {
+                "id": "apocalypse",
+                "name": "Apocalypse"
+            },
+            {
                 "id": "seaside",
                 "name": "Seaside"
+            },
+            {
+                "id": "summit",
+                "name": "Summit"
             }
         ]
     },

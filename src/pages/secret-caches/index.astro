@@ -1,0 +1,300 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from "@utils/seoData/pages"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import { Image } from "astro:assets"
+import CoDMLogo from "@assets/logos/codm-logo.png"
+import EpicCache from "@assets/secret-caches/epic-caches.png"
+import LegendaryCache from "@assets/secret-caches/legendary-caches.png"
+import MythicCache from "@assets/secret-caches/mythic-caches.png"
+import PowerNovaCamoCrate from "@assets/secret-caches/power-nova-camo-crate.png"
+import LavaRemix from "@assets/secret-caches/ak117-lava-remix.png"
+import BassDrop from "@assets/secret-caches/cr-56-amax-bass-drop.png"
+import StunBaton from "@assets/secret-caches/stun-baton-surge-baton.png"
+
+const title = pagesSEO.secretCaches.title
+const desc = pagesSEO.secretCaches.desc
+const image = pagesSEO.secretCaches.image
+const url = pagesSEO.secretCaches.url
+const type = mainSiteSEO.type
+const siteName = mainSiteSEO.siteName
+const twitter = mainSiteSEO.twitter
+const locale = mainSiteSEO.locale
+const keywords = pagesSEO.secretCaches.keywords
+
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type={type}
+    siteName={siteName}
+    twitter={twitter}
+    locale={locale}
+    keywords={keywords}
+>
+
+    <main>
+
+        <h1>
+            The Secret Caches System in Call of Duty®: Mobile
+            <Image
+                src={CoDMLogo}
+                alt="Call of Duty®: Mobile Logo"
+                width="40"
+                height="40"
+            />
+        
+        </h1>
+
+        <p>{pagesSEO.secretCaches.desc}</p>
+
+        <hr />
+
+        <h2>Types</h2>
+
+        <div class="main-grid">
+
+            <div class="cache-type epic">
+
+                <Image
+                    src={EpicCache}
+                    alt="Epic Cache"
+                    width="120"
+                    height="120"
+                />
+
+                <p class="epic">Epic Caches</p>
+
+            </div>
+
+            <div class="cache-type legendary">
+
+                <Image
+                    src={LegendaryCache}
+                    alt="Legendary Cache"
+                    width="120"
+                    height="120"
+                />
+
+                <p class="legendary">Legendary Caches</p>
+
+            </div>
+
+            <div class="cache-type mythic">
+
+                <Image
+                    src={MythicCache}
+                    alt="Mythic Cache"
+                    width="120"
+                    height="120"
+                />
+
+                <p class="mythic">Mythic Caches</p>
+
+            </div>
+
+        </div>
+
+        <hr />
+
+        <h2>Rewards</h2>
+
+        <div class="main-grid">
+
+            <div class="cache-type epic">
+
+                <Image
+                    src={PowerNovaCamoCrate}
+                    alt="Power Nova Camo Crate"
+                    width="120"
+                    height="120"
+                />
+
+                <p class="epic">Power Nova Camo Crates</p>
+
+                <!-- <button id="expand-metadata-1" class="btn">
+                    Show more
+                </button> -->
+                <div id="metadata-1" class="metadata-container">
+                    <p class="epic metadata">127 camos</p>
+                    <p class="epic metadata">January 16, 2025 UTC – TBA</p>
+                </div>
+                
+
+            </div>
+
+            <div class="cache-type legendary">
+
+                <Image
+                    src={StunBaton}
+                    alt="Stun Baton - Surge Baton"
+                    width="120"
+                    height="120"
+                />
+
+                <p class="legendary">Stun Baton - Surge Baton</p>
+
+                <!-- <button id="expand-metadata-2" class="btn metadata-collapsed">
+                    Show more
+                </button> -->
+                <div class="metadata-container">
+                    <p class="legendary metadata">200 shards</p>
+                    <p class="legendary metadata">January 16, 2025 UTC – TBA</p>
+                </div>
+
+            </div>
+
+            <div class="cache-type legendary">
+
+                <Image
+                    src={BassDrop}
+                    alt="CR-56 AMAX - Bass Drop"
+                    width="120"
+                    height="120"
+                />
+
+                <p class="legendary">CR-56 AMAX - Bass Drop</p>
+
+                <!-- <button id="expand-metadata-3" class="btn metadata-collapsed">
+                    Show more
+                </button> -->
+                <div id="metadata-3" class="metadata-container">
+                    <p class="legendary metadata">200 shards</p>
+                    <p class="legendary metadata">January 16, 2025 UTC – TBA</p>
+                </div>
+
+            </div>
+
+            <div class="cache-type mythic">
+
+                <Image
+                    src={LavaRemix}
+                    alt="AK117 - Lava Remix"
+                    width="120"
+                    height="120"
+                />
+
+                <p class="mythic">AK117 - Lava Remix</p>
+
+                <!-- <button id="expand-metadata-4" class="btn metadata-collapsed">
+                    Show more
+                </button> -->
+                <div id="metadata-4" class="metadata-container">
+                    <p class="mythic metadata">500 shards</p>
+                    <p class="mythic metadata">January 16, 2025 UTC – TBA</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        padding: 1rem;
+        min-height: calc(100vh - 4rem);
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 1rem;
+        filter: drop-shadow(0 0 0.75rem #000);
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-grid {
+        margin: 0 auto;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .mythic {
+        --cache-type: var(--mythic-color);
+        color: var(--mythic-color);
+    }
+
+    .legendary {
+        --cache-type: var(--legendary-color);
+        color: var(--legendary-color);
+    }
+
+    .epic {
+        --cache-type: var(--epic-color);
+        color: var(--epic-color);
+    }
+
+    .cache-type {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px solid var(--cache-type, #fff);
+    }
+
+    .metadata {
+        margin: 0;
+    }
+
+    .collapsed {
+        display: none;
+    }
+
+    .expanded {
+        display: block;
+    }
+
+    .btn {
+        background: none;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .btn:hover, .btn:focus-visible {
+        text-decoration: underline;
+    }
+
+</style>
+
+<script>
+
+    const nav = document.querySelector("nav")
+    const main = document.querySelector("main")
+    const btn = document.querySelector(".btn")
+    const metadataContainers = document.querySelector('.metadata-containers') as HTMLElement
+
+    if(!nav || !main || !btn || !metadataContainers) {
+        throw new Error("Couldn't find the elements")
+    }
+
+    main.style.minHeight = `calc(100vh - ${nav.clientHeight}px)`
+
+</script>

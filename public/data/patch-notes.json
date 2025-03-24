@@ -1406,7 +1406,7 @@
                 "type": "buff",
                 "changes": [
                     {
-                        "title": "Increased radius from 4.5m to 5m..",
+                        "title": "Increased radius from 4.5m to 5m.",
                         "type": "buff"
                     },
                     {
@@ -1420,7 +1420,7 @@
                 "type": "buff",
                 "changes": [
                     {
-                        "title": "Increased radius from 4.5m to 5m..",
+                        "title": "Increased radius from 4.5m to 5m.",
                         "type": "buff"
                     },
                     {
@@ -1465,6 +1465,238 @@
                 "changes": [
                     {
                         "title": "Increased Operator Skill charge speed buff from 30% to 40%.",
+                        "type": "buff"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "season": 3,
+        "title": "Season 3",
+        "patchNotes": [
+            {
+                "item": "Krig 6",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Range profile improved from 15m/26m to 17m/30m.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "BSA improved from 17(10) to 16(9).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "CR-56 AMAX",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Multiplayer: Range profile increased from 16m/26m/30m to 16m/30m/36m.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Lower arm multiplier increased from 1x to 1.1x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Gunner Stock: Added a +10% range buff.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "M67 Ammo: Increased upper arm multiplier to 1.3x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Maddox",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Damage range improved from 10m/19m/30m to 12m/20m/30m.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Echo Fire Mod: Increased upper arm multiplier from 1x to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Type 25",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased lower arm multiplier from 1x to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "FFAR 1",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased 3rd damage phase from 17 to 18.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "ICR-1",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased lower arm multiplier from 1x to 1.1x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "FR .556",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Extended Mag A: Increased mag size from 39 to 44.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Fast Reload: Increased reload time buff from -15% to -25%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "MX9",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased chest and upper arm multipliers from 1x to 1.06x.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "Improved BSA from 23(20) to 20(17).",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "PDW-57",
+                "type": "adjustment",
+                "changes": [
+                    {
+                        "title": "OWC Foregrip: Reduced ADS Time Penalty from 14% to 10%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "OWC Foregrip: Reduced ADS Movement Speed penalty from 9% to 5%.",
+                        "type": "buff"
+                    },
+                    {
+                        "title": "OWC Foregrip: Reduced horizontal recoil reduction from -15.3% to -15.2%.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "M21 EBR",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased initial range from 10m to 14m.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Kilo Bolt-Action (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased head multiplier from 1.5x to 3.6x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "SP-R 208 (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased head multiplier from 2x to 2.6x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "MK2 (Battle Royale)",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased head multiplier from 2.6x to 3.6x.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Control Field",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased active duration from 18s to 45s.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Guardian",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased movement speed debuff from 25% to 35%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Flamenaut",
+                "type": "nerf",
+                "changes": [
+                    {
+                        "title": "Decreased HP from 600 to 400.",
+                        "type": "nerf"
+                    }
+                ]
+            },
+            {
+                "item": "Serpentine",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased damage resistance from 18% to 25%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Unit Support",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased charge boost from 45% to 55%.",
+                        "type": "buff"
+                    }
+                ]
+            },
+            {
+                "item": "Firepower Support",
+                "type": "buff",
+                "changes": [
+                    {
+                        "title": "Increased chance of obtaining the destroyed scorestreak from 60% to 70%.",
                         "type": "buff"
                     }
                 ]

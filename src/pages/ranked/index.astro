@@ -1,0 +1,183 @@
+---
+import Layout from "@layouts/Layout.astro"
+import { pagesSEO } from "@utils/seoData/pages"
+import { mainSiteSEO } from "@utils/seoData/mainSite"
+import { Image } from "astro:assets"
+import CoDMLogo from "@assets/logos/codm-logo.png"
+import MpMode from "@components/utils/MpMode.astro"
+import BrMode from "@components/utils/BrMode.astro"
+import type { gameModeType, gameRankType, EliteMissionType } from "@utils/types"
+import Rank from "@components/utils/Rank.astro"
+import EliteMission from "@components/utils/EliteMission.astro"
+
+const title = pagesSEO.ranked.title
+const desc = pagesSEO.ranked.desc
+const image = pagesSEO.ranked.image
+const url = pagesSEO.ranked.url
+const type = mainSiteSEO.type
+const siteName = mainSiteSEO.siteName
+const twitter = mainSiteSEO.twitter
+const locale = mainSiteSEO.locale
+const keywords = pagesSEO.ranked.keywords
+
+const mpModesList = await fetch(`${Astro.url.origin}/data/modes/mp.json`).then((res) => res.json())
+const brModesList = await fetch(`${Astro.url.origin}/data/modes/br.json`).then((res) => res.json())
+
+const rankedMPModes = mpModesList.filter((mpMode: gameModeType) => mpMode.ranked === true)
+const rankedBRModes = brModesList.filter((brMode: gameModeType) => brMode.ranked === true)
+
+const rankedMPRanks = await fetch(`${Astro.url.origin}/data/ranks/mp.json`).then((res) => res.json())
+const rankedBRRanks = await fetch(`${Astro.url.origin}/data/ranks/br.json`).then((res) => res.json())
+
+const eliteMissions = await fetch(`${Astro.url.origin}/data/ranks/elite-missions.json`).then((res) => res.json())
+---
+
+<Layout
+    title={title}
+    desc={desc}
+    image={image}
+    url={url}
+    type={type}
+    siteName={siteName}
+    twitter={twitter}
+    locale={locale}
+    keywords={keywords}
+>
+
+    <main>
+
+        <h1>
+            The Ranked System in Call of Duty®: Mobile
+            <Image
+                src={CoDMLogo}
+                alt="Call of Duty®: Mobile Logo"
+                width="40"
+                height="40"
+            />
+        
+        </h1>
+
+        <h2>Multiplayer</h2>
+
+        <h3>Ranks</h3>
+
+        <div class="list">
+            
+            {rankedMPRanks.map((rank: gameRankType) => (
+                <Rank
+                    rank={rank}
+                />
+            ))}
+
+        </div>
+
+        <h3>Modes</h3>
+
+        <div class="list">
+           
+            {rankedMPModes.map((mode: gameModeType) => (
+                <MpMode
+                    id={mode.id}
+                    name={mode.name}
+                    type={mode.type}
+                    ranked={mode.ranked}
+                    timeLimited={mode.timeLimited}
+                />
+            ))}
+
+        </div>
+
+        <hr />
+
+        <h2>Battle Royale</h2>
+
+        <h3>Ranks</h3>
+
+        <div class="list">
+
+            {rankedBRRanks.map((rank: gameRankType) => (
+                <Rank
+                    rank={rank}
+                />
+            ))}
+
+        </div>
+
+        <h3>Modes</h3>
+
+        <div class="list">
+           
+            {rankedBRModes.map((mode: gameModeType) => (
+                <BrMode
+                    id={mode.id}
+                    name={mode.name}
+                    type={mode.type}
+                    ranked={mode.ranked}
+                    timeLimited={mode.timeLimited}
+                />
+            ))}
+
+        </div>
+
+        <hr />
+
+        <h2>Elite Missions</h2>
+
+        <div class="list">
+
+            {eliteMissions.map((eliteMission: EliteMissionType) => (
+                <EliteMission
+                    eliteMission={eliteMission}
+                />
+            ))}
+
+        </div>
+
+    </main>
+
+</Layout>
+
+<style>
+
+    main {
+        padding: 1rem;
+        min-height: calc(100vh - 4rem);
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 1rem;
+        filter: drop-shadow(0 0 0.75rem #000);
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+</style>
+
+<script>
+
+    const nav = document.querySelector("nav")
+    const main = document.querySelector("main")
+
+    if(!nav || !main) {
+        throw new Error("Couldn't find the nav or main elements")
+    }
+
+    main.style.minHeight = `calc(100vh - ${nav.clientHeight}px)`
+
+</script>

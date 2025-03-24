@@ -4,6 +4,10 @@ export const navBarPages = [
     //     path: '/characters'
     // },
     {
+        name: 'Ranked',
+        path: '/ranked'
+    },
+    {
         name: 'Modes',
         path: '/modes'
     },
@@ -32,8 +36,16 @@ export const navBarPages = [
         path: '/perks'
     },
     {
+        name: 'Wildcards',
+        path: '/wildcards'
+    },
+    {
         name: 'Patch Notes',
         path: '/patch-notes'
+    },
+    {
+        name: 'Secret Caches',
+        path: '/secret-caches'
     }
 ]
 
@@ -76,5 +88,16 @@ export const legalPages = [
     {
         name: 'Privacy',
         path: '/legal/privacy'
+    }
+]
+
+export const socialPages = [
+    {
+        name: 'X (formerly Twitter)',
+        path: 'https://x.com/CoDMobileDB'
+    },
+    {
+        name: 'Discord',
+        path: 'https://discord.gg/3RrGsMhb37'
     }
 ]

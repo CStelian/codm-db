@@ -1,0 +1,71 @@
+---
+import type { EliteMissionType } from "@utils/types"
+
+interface Props {
+    eliteMission: EliteMissionType
+}
+
+const { eliteMission } = Astro.props
+
+---
+
+<a class="elite-mission-link" href={`/ranked/elite-missions/${eliteMission.id}`}>
+
+    <div class="elite-mission">
+
+        <div class="elite-mission-name">
+            <h2>{eliteMission.name}</h2>
+        </div>
+
+        <div class="elite-mission-thumbnail">
+            <img class="elite-mission-image" src={`/assets/images/ranked/elite-missions/${eliteMission.id}.png`} alt={eliteMission.name} />
+        </div>
+
+    </div>
+
+</a>
+
+<style>
+
+    .elite-mission-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .elite-mission {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: 0.5rem;
+    }
+
+    .elite-mission-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .elite-mission-thumbnail {
+        height: 320px;
+        width: auto;
+        border-radius: 1rem;
+    }
+
+    .elite-mission-image {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+</style>

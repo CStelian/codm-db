@@ -1,0 +1,68 @@
+---
+import type { gameRankType } from "@utils/types"
+
+interface Props {
+    rank: gameRankType
+}
+
+const { rank } = Astro.props
+
+---
+
+<a class="rank-link" href={`/ranked/${rank.type}/${rank.id}`}>
+
+    <div class="rank">
+
+        <div class="rank-name">
+            <h2>{rank.name}</h2>
+        </div>
+
+        <div class="rank-thumbnail">
+            <img class="rank-image" src={`/assets/images/ranked/${rank.type}/${rank.id}.png`} alt={rank.name} />
+        </div>
+
+    </div>
+
+</a>
+
+<style>
+
+    .rank-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .rank {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem;
+        border: 1px solid #fff;
+        border-radius: 0.5rem;
+    }
+
+    .rank-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .rank-thumbnail {
+        height: 320px;
+        width: auto;
+        border-radius: 1rem;
+    }
+
+    .rank-image {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+</style>

@@ -189,6 +189,13 @@
         "desc": "Fire from the skies in a chopper with a gun that has unlimited ammo. Careful not to overheat!"
     },
     {
+        "id": "raps",
+        "name": "R.A.P.S.",
+        "score": 1500,
+        "persistenceTier": "III",
+        "desc": "Deploy ship that drops autonomous Robotic Anti-Personnel Sentry drones."
+    },
+    {
         "id": "vtol",
         "name": "VTOL",
         "score": 1600,

@@ -133,7 +133,7 @@ weaponsList.forEach((weapon: WeaponType) => {
             reptile = goldCamoRequirements.pistol.reptile
             break
         case "launcher":
-            switch (weaponsList.id) {
+            switch (id) {
                 case "fhj-18":
                     sand = goldCamoRequirements.launcher.fhj18.sand
                     dragon = goldCamoRequirements.launcher.fhj18.dragon
@@ -185,6 +185,13 @@ weaponsList.forEach((weapon: WeaponType) => {
         }
     }
 })
+
+console.log(goldCamoRequirements.launcher.fhj18.sand)
+console.log(goldCamoRequirements.launcher.fhj18.dragon)
+console.log(goldCamoRequirements.launcher.fhj18.splinter)
+console.log(goldCamoRequirements.launcher.fhj18.tiger)
+console.log(goldCamoRequirements.launcher.fhj18.jungle)
+console.log(goldCamoRequirements.launcher.fhj18.reptile)
 
 const platinumCamoRequirements = await fetch(`${Astro.url.origin}/data/camos/platinum.json`)
     .then((res) => res.json())
@@ -419,6 +426,9 @@ weaponBlueprints.forEach((weapon: WeaponBlueprint) => {
 
 const pathname = Astro.url.pathname
 
+const imageExists = await fetch(`${Astro.url.origin}/assets/images/weapons/${id}.png`)
+    .then(res => res.ok)
+    .catch(() => false)
 
 ---
 
@@ -443,12 +453,21 @@ const pathname = Astro.url.pathname
         {desc}
     </p>
 
-    <Image
-        src={`/assets/images/weapons/${id}.png`}
-        alt={name}
-        width={800}
-        height={400}
-    />
+    {imageExists ? (
+        <Image
+            src={`/assets/images/weapons/${id}.png`}
+            alt={name}
+            width={800}
+            height={400}
+        />
+    ) : (
+        <Image
+            src="/assets/images/weapons/weapon-placeholder.png"
+            alt={`${name} placeholder`}
+            width={800}
+            height={400}
+        />
+    )}
 
     <div class="weapon-stats">
     
@@ -509,7 +528,7 @@ const pathname = Astro.url.pathname
         <h2>Aether Crystal Camo Requirements</h2>
         <p>{aether}</p>
 
-        {id === "uss-9" || id === "raal-mg" || id === "xm4" ? null :<h2>Alchemy Stars / Dream Aurora Camo Requirements</h2>
+        {id === "uss-9" || id === "raal-mg" || id === "xm4" || id === "vlk-rogue" || id === "m1-garand" ? null :<h2>Alchemy Stars / Dream Aurora Camo Requirements</h2>
         <p>{alchemyStars}</p>}
 
     </div>

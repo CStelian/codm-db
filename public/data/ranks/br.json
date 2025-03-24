@@ -1,0 +1,222 @@
+[
+    {
+        "id": "rookie",
+        "name": "Rookie",
+        "type": "battle-royale",
+        "minPoints": 1,
+        "maxPoints": 1000,
+        "subRanks": [
+            {
+                "name": "Rookie I",
+                "minPoints": 1,
+                "maxPoints": 200
+            },
+            {
+                "name": "Rookie II",
+                "minPoints": 201,
+                "maxPoints": 400
+            },
+            {
+                "name": "Rookie III",
+                "minPoints": 401,
+                "maxPoints": 600
+            },
+            {
+                "name": "Rookie IV",
+                "minPoints": 601,
+                "maxPoints": 800
+            },
+            {
+                "name": "Rookie V",
+                "minPoints": 801,
+                "maxPoints": 1000
+            }
+        ]
+    },
+    {
+        "id": "veteran",
+        "name": "Veteran",
+        "type": "battle-royale",
+        "minPoints": 1001,
+        "maxPoints": 2000,
+        "subRanks": [
+            {
+                "name": "Veteran I",
+                "minPoints": 1001,
+                "maxPoints": 1200
+            },
+            {
+                "name": "Veteran II",
+                "minPoints": 1201,
+                "maxPoints": 1400
+            },
+            {
+                "name": "Veteran III",
+                "minPoints": 1401,
+                "maxPoints": 1600
+            },
+            {
+                "name": "Veteran IV",
+                "minPoints": 1601,
+                "maxPoints": 1800
+            },
+            {
+                "name": "Veteran V",
+                "minPoints": 1801,
+                "maxPoints": 2000
+            }
+        ]
+    },
+    {
+        "id": "elite",
+        "name": "Elite",
+        "type": "battle-royale",
+        "minPoints": 2001,
+        "maxPoints": 3000,
+        "subRanks": [
+            {
+                "name": "Elite I",
+                "minPoints": 2001,
+                "maxPoints": 2200
+            },
+            {
+                "name": "Elite II",
+                "minPoints": 2201,
+                "maxPoints": 2400
+            },
+            {
+                "name": "Elite III",
+                "minPoints": 2401,
+                "maxPoints": 2600
+            },
+            {
+                "name": "Elite IV",
+                "minPoints": 2601,
+                "maxPoints": 2800
+            },
+            {
+                "name": "Elite V",
+                "minPoints": 2801,
+                "maxPoints": 3000
+            }
+        ]
+    },
+    {
+        "id": "pro",
+        "name": "Pro",
+        "type": "battle-royale",
+        "minPoints": 3001,
+        "maxPoints": 4500,
+        "subRanks": [
+            {
+                "name": "Pro I",
+                "minPoints": 3001,
+                "maxPoints": 3300
+            },
+            {
+                "name": "Pro II",
+                "minPoints": 3301,
+                "maxPoints": 3600
+            },
+            {
+                "name": "Pro III",
+                "minPoints": 3601,
+                "maxPoints": 3900
+            },
+            {
+                "name": "Pro IV",
+                "minPoints": 3901,
+                "maxPoints": 4200
+            },
+            {
+                "name": "Pro V",
+                "minPoints": 4201,
+                "maxPoints": 4500
+            }
+        ]
+    },
+    {
+        "id": "master",
+        "name": "Master",
+        "type": "battle-royale",
+        "minPoints": 4501,
+        "maxPoints": 6000,
+        "subRanks": [
+            {
+                "name": "Master I",
+                "minPoints": 4501,
+                "maxPoints": 4800
+            },
+            {
+                "name": "Master II",
+                "minPoints": 4801,
+                "maxPoints": 5100
+            },
+            {
+                "name": "Master III",
+                "minPoints": 5101,
+                "maxPoints": 5400
+            },
+            {
+                "name": "Master IV",
+                "minPoints": 5401,
+                "maxPoints": 5700
+            },
+            {
+                "name": "Master V",
+                "minPoints": 5701,
+                "maxPoints": 6000
+            }
+        ]
+    },
+    {
+        "id": "grand-master",
+        "name": "Grand Master",
+        "type": "battle-royale",
+        "minPoints": 6001,
+        "maxPoints": 8000,
+        "subRanks": [
+            {
+                "name": "Grand Master I",
+                "minPoints": 6001,
+                "maxPoints": 6400
+            },
+            {
+                "name": "Grand Master II",
+                "minPoints": 6401,
+                "maxPoints": 6800
+            },
+            {
+                "name": "Grand Master III",
+                "minPoints": 6801,
+                "maxPoints": 7200
+            },
+            {
+                "name": "Grand Master IV",
+                "minPoints": 7201,
+                "maxPoints": 7600
+            },
+            {
+                "name": "Grand Master V",
+                "minPoints": 7601,
+                "maxPoints": 8000
+            }
+        ]
+    },
+    {
+        "id": "legendary",
+        "name": "Legendary",
+        "type": "battle-royale",
+        "minPoints": 8001,
+        "subRanks": [
+            {
+                "name": "Legendary",
+                "minPoints": 8001
+            },
+            {
+                "name": "Top 5000",
+                "minPoints": 8001
+            }
+        ]
+    }
+]

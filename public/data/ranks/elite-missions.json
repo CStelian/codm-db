@@ -1,0 +1,104 @@
+[
+    {
+        "id": "bloom-in-black",
+        "name": "YEAR 2023 - Bloom in Black",
+        "startDate": "2023-01-19",
+        "endDate": "2024-02-07",
+        "noOfSeasons": 6,
+        "seasons": [
+            {
+                "season": 1,
+                "name": "Ancient Lion",
+                "startDate": "2023-01-19",
+                "endDate": "2023-03-29"
+            },
+            {
+                "season": 2,
+                "name": "Slithering Spires",
+                "startDate": "2023-03-30",
+                "endDate": "2023-05-31"
+            },
+            {
+                "season": 3,
+                "name": "Dreamy",
+                "startDate": "2023-06-01",
+                "endDate": "2023-08-02"
+            },
+            {
+                "season": 4,
+                "name": "Jellyfish Champ",
+                "startDate": "2023-08-03",
+                "endDate": "2023-10-04"
+            },
+            {
+                "season": 5,
+                "name": "Sleek",
+                "startDate": "2023-10-05",
+                "endDate": "2023-12-06"
+            },
+            {
+                "season": 6,
+                "name": "Ebb and Floe",
+                "startDate": "2023-12-07",
+                "endDate": "2024-02-07"
+            }
+        ],
+        "reward": {
+            "type": "weapon-blueprint",
+            "id": "weapon_mp_bloom_in_black",
+            "name": "DR-H - Kurohana - 68"
+        },
+        "requirement": "Reach 6 Legendary Medals in Ranked in Ranked Year 2023."
+    },
+    {
+        "id": "underworld-uprising",
+        "name": "2024 - Underworld Uprising",
+        "startDate": "2024-02-08",
+        "endDate": "2025-03-26",
+        "noOfSeasons": 6,
+        "seasons": [
+            {
+                "season": 1,
+                "name": "New Wave",
+                "startDate": "2024-02-08",
+                "endDate": "2024-04-17"
+            },
+            {
+                "season": 2,
+                "name": "Rusted Riches",
+                "startDate": "2024-04-18",
+                "endDate": "2024-06-26"
+            },
+            {
+                "season": 3,
+                "name": "Light It Up",
+                "startDate": "2024-06-27",
+                "endDate": "2024-08-28"
+            },
+            {
+                "season": 4,
+                "name": "Thorns",
+                "startDate": "2024-08-29",
+                "endDate": "2024-11-06"
+            },
+            {
+                "season": 5,
+                "name": "Galactical",
+                "startDate": "2024-11-07",
+                "endDate": "2025-01-15"
+            },
+            {
+                "season": 6,
+                "name": "Night Wings",
+                "startDate": "2025-01-16",
+                "endDate": "2025-03-26"
+            }
+        ],
+        "reward": {
+            "type": "weapon-blueprint",
+            "id": "weapon_mp_underworld_uprising",
+            "name": "LK24 - Deadly Petals"
+        },
+        "requirement": "Reach 6 Legendary Medals in Ranked in Ranked Year 2024."
+    }
+]
