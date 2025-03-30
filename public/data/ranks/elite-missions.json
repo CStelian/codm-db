@@ -100,5 +100,19 @@
             "name": "LK24 - Deadly Petals"
         },
         "requirement": "Reach 6 Legendary Medals in Ranked in Ranked Year 2024."
+    },
+    {
+        "id": "before-the-fall",
+        "name": "Elite Mission 2025 - Before the Fall",
+        "startDate": "2025-03-27",
+        "noOfSeasons": 1,
+        "seasons": [
+            {
+                "season": 1,
+                "name": "Machination",
+                "startDate": "2025-03-27",
+                "endDate": "2025-05-28"
+            }
+        ]
     }
 ]

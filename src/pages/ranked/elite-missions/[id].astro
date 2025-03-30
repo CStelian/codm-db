@@ -50,11 +50,11 @@ const noOfDays = Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 6
             {title}
 
             <span>
-                ({startDate.toLocaleDateString()} - {endDate.toLocaleDateString()})
+                ({startDate.toLocaleDateString()} - {eliteMission?.endDate ? endDate.toLocaleDateString() : "present"})
 
-                <span class="no-of-days">
+                {noOfDays && endDate && <span class="no-of-days">
                     {noOfDays} days
-                </span>
+                </span>}
             </span>
         </h1>
 
@@ -80,7 +80,7 @@ const noOfDays = Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 6
         <h2>
            Seasons
         </h2>
-        <table>
+        <table class="desktop-only">
             <thead>
                 <tr>
                     <th>Season No.</th>
@@ -103,16 +103,39 @@ const noOfDays = Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 6
             </tbody>
         </table>
 
+        <div class="mobile-only">
+            {eliteMission?.seasons.map((season: any) => (
+                <div class="season">
+                    <div class="season-header">
+                        <h3>
+                            Season {season.season}: {season.name}
+                        </h3>
+                    </div>
+                    <div class="season-footer">
+                        <p>
+                            {new Date(season.startDate).toLocaleDateString()} - {new Date(season.endDate).toLocaleDateString()} ({Math.ceil((new Date(season.endDate).getTime() - new Date(season.startDate).getTime()) / (1000 * 60 * 60 * 24))} days)
+                        </p>
+                    </div>
+                </div>
+            ))}
+        </div>
+
         <h2>
             Reward
         </h2>
 
-        <div class="reward">
-            <img src={`${Astro.url.origin}/assets/images/ranked/elite-missions/${eliteMission?.reward.id}.png`} alt={eliteMission?.reward.name} />
-            <p>
-                {eliteMission?.reward.name}
-            </p>
-        </div>
+        {eliteMission?.reward ? (
+            <div class="reward">
+                <img src={`${Astro.url.origin}/assets/images/ranked/elite-missions/${eliteMission?.reward.id}.png`} alt={eliteMission?.reward.name} />
+                <p>
+                    {eliteMission?.reward.name}
+                </p>
+            </div>
+        ) : (
+            <div class="reward">
+                <p>No reward available at the moment.</p>
+            </div>
+        )}
 
         <p class="notice">
             Note: The dates are in UTC.
@@ -215,6 +238,28 @@ const noOfDays = Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 6
         text-align: center;
         color: #ff0000;
         font-style: italic;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-only {
+            display: block;
+        }
+
+        .desktop-only {
+            display: none;
+        }
+    }
+    
+    .season {
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
     }
 
 </style>
