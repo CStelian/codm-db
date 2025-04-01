@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro"
 import { mainSiteSEO } from "@utils/seoData/mainSite"
 
-const modifiedDate = new Date('2024-03.24').toLocaleDateString('en-US', {
+const modifiedDate = new Date('2025-03-31').toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -10,32 +10,59 @@ const modifiedDate = new Date('2024-03.24').toLocaleDateString('en-US', {
 
 const image = mainSiteSEO.image
 const url = mainSiteSEO.url
-
 ---
 
 <Layout
     title="Fair Use Disclaimer"
     desc="Fair Use Disclaimer"
     image={image}
-    url=`${url}/legal/fair-use`
+    url={`${url}/legal/fair-use`}
     type="article"
 >
+
     <main>
         <div class="title">
             <h1 class="main-title">Fair Use Disclaimer</h1>
             <p class="last-modified">Last modified: {modifiedDate}</p>
         </div>
-        <h2>WEBSITE DISCLAIMER</h2>
-        <p>The information provided by CoD: Mobile DB (‘we’, ‘us’, or ‘our’) on https://www.codmdb.com (the ‘Site’) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
-        <p>UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.</p>
-        <h2>EXTERNAL LINKS DISCLAIMER</h2>
-        <p>The Site may contain (or you may be sent through the Site links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.</p>
-        <p>WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.</p>
+        <div class="tab-selector">
+            <button class="tab-button" onclick="showTab('website')">Website</button>
+            <button class="tab-button" onclick="showTab('camo-tracking-app')">Camo Tracking App</button>
+        </div>
+        <div class="tab-content active" id="website">
+            <h2>DISCLAIMER</h2>
+            <p>The information provided by CoD: Mobile DB ('we', 'us', or 'our') on https://www.codmdb.com (the 'Site') is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
+            <p>UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.</p>
+            <h2>EXTERNAL LINKS DISCLAIMER</h2>
+            <p>The Site may contain (or you may be sent through the Site links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.</p>
+            <p>WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.</p>
+        </div>
+        <div class="tab-content" id="camo-tracking-app">
+            <h2>CAMO TRACKING APP FAIR USE DISCLAIMER</h2>
+            <p>
+                The Camo Tracking application on Call of Duty®: Mobile Database uses assets from Call of Duty®: Mobile under the principle of fair use. This usage is:
+            </p>
+
+            <ul>
+                <li>Non-commercial in nature</li>
+                <li>Transformative in purpose (educational and informational)</li>
+                <li>Does not negatively impact the market value of the original work</li>
+                <li>Used for the benefit of the Call of Duty®: Mobile community</li>
+            </ul>
+
+            <p>
+                All assets used are property of Activision Publishing, Inc. and their respective owners. No commercial benefit is obtained from their use.
+            </p>
+
+            <p>
+                This application serves as an educational and informational tool to help players track their camo progress in Call of Duty®: Mobile.
+            </p>
+        </div>
     </main>
+
 </Layout>
 
 <style>
-
     main {
         max-width: 800px;
         margin: 0 auto;
@@ -47,6 +74,65 @@ const url = mainSiteSEO.url
         text-align: center;
     }
 
+    h2 {
+        margin-bottom: 1rem;
+    }
 
+    p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
 
+    ul {
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+    .tab-selector {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .tab-button {
+        background-color: var(--color-bg-secondary);
+        color: var(--color-text-secondary);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .tab-button.active {
+        background-color: var(--color-bg-primary);
+        color: var(--color-text-primary);
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+    
 </style>
+
+<script is:inline>
+    function showTab(tab) {
+        const websiteTab = document.getElementById('website');
+        const camoTrackingAppTab = document.getElementById('camo-tracking-app');
+
+        if (tab === 'website') {
+            websiteTab.classList.add('active');
+            camoTrackingAppTab.classList.remove('active');
+        } else if (tab === 'camo-tracking-app') {
+            camoTrackingAppTab.classList.add('active');
+            websiteTab.classList.remove('active');
+        }
+    }
+</script>

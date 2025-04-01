@@ -88,6 +88,10 @@ export const legalPages = [
     {
         name: 'Privacy',
         path: '/legal/privacy'
+    },
+    {
+        name: 'Terms of Service',
+        path: '/legal/terms'
     }
 ]
 
