@@ -1473,7 +1473,7 @@
     },
     {
         "season": 3,
-        "title": "Season 3",
+        "title": "Season 3: Cyber Mirage",
         "patchNotes": [
             {
                 "item": "Krig 6",
@@ -1702,5 +1702,10 @@
                 ]
             }
         ]
+    },
+    {
+        "season": 4,
+        "title": "Season 4: Infinity Realm",
+        "patchNotes": []
     }
 ]

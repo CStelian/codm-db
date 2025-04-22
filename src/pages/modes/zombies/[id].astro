@@ -93,7 +93,7 @@ modes.forEach((mode) => {
 
             <h2>Description</h2>
 
-            <p>{desc}</p>
+            <pre class="description">{desc}</pre>
 
         </div>
 
@@ -169,6 +169,13 @@ modes.forEach((mode) => {
 
     p {
         text-align: center;
+    }
+
+    .description {
+        text-align: center;
+        white-space: pre-wrap;
+        font-family: inherit;
+        margin: 0;
     }
 
     .maps-list {

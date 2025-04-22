@@ -384,6 +384,18 @@
         "ctrl": 50
     },
     {
+        "id": "vargo-s",
+        "name": "Vargo-S",
+        "desc": "Balanced and stable assault rifle with plenty of modification potential.",
+        "type": "ar",
+        "dmg": 31,
+        "acc": 55,
+        "range": 54,
+        "fireRate": 65,
+        "mobility": 78,
+        "ctrl": 43
+    },
+    {
         "id": "xpr-50",
         "name": "XPR-50",
         "desc": "Semi-automatic sniper rifle. Long Range with moderate recoil.",

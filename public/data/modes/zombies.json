@@ -1,5 +1,18 @@
 [
     {
+        "id": "classic-tutorial",
+        "name": "Classic - Tutorial",
+        "gameType": "zombies",
+        "timeLimited": false,
+        "desc": "Let's give it a try.",
+        "maps": [
+            {
+                "id": "shi-no-numa",
+                "name": "Shi No Numa"
+            }
+        ]
+    },
+    {
         "id": "classic-normal",
         "name": "Classic - Normal",
         "gameType": "zombies",
@@ -39,11 +52,28 @@
         ]
     },
     {
+        "id": "undead-siege-tutorial",
+        "name": "Undead Siege - Tutorial",
+        "gameType": "zombies",
+        "timeLimited": false,
+        "desc": "Before the teleportation device restarts, we need to survive this infested wasteland. \n Tank found some interesting materials, so I think it is time for a little... science.  \n -- Richtofen",
+        "maps": [
+            {
+                "id": "isolated",
+                "name": "Isolated (Limited Time)"
+            },
+            {
+                "id": "blackout",
+                "name": "Blackout (Limited Time)"
+            }
+        ]
+    },
+    {
         "id": "undead-siege-casual",
         "name": "Undead Siege - Casual",
         "gameType": "zombies",
         "timeLimited": true,
-        "desc": "It's surprising that the giant vortex of Aether has brought us some help. Let's see what these rookies got. -- Dempsey",
+        "desc": "It's surprising that the giant vortex of Aether has brought us some help. Let's see what these rookies got.  \n -- Dempsey",
         "maps": [
             {
                 "id": "isolated",
@@ -60,7 +90,7 @@
         "name": "Undead Siege - Hard",
         "gameType": "zombies",
         "timeLimited": true,
-        "desc": "Teleportation failed. Richtofen seems aware that this is not as simple as it appears. We must fight together to survive the floods of tireless undead. -- Nikolai",
+        "desc": "Teleportation failed. Richtofen seems aware that this is not as simple as it appears. We must fight together to survive the floods of tireless undead. \n -- Nikolai",
         "maps": [
             {
                 "id": "isolated",
@@ -77,7 +107,7 @@
         "name": "Undead Siege - Nightmare",
         "gameType": "zombies",
         "timeLimited": true,
-        "desc": "We traced the Aether energy to its source, and Richtofen finally revealed his new plan. This time we will take the fight to them and put an end to the chaos here. -- Nikolai",
+        "desc": "We traced the Aether energy to its source, and Richtofen finally revealed his new plan. This time we will take the fight to them and put an end to the chaos here. \n -- Nikolai",
         "maps": [
             {
                 "id": "isolated",

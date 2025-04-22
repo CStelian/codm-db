@@ -172,6 +172,11 @@
         "epic": ["Imperial Defender"]
     },
     {
+        "id": "vargo-s",
+        "epic": ["Hack Injector"],
+        "legendary": ["Fiery Hell"]
+    },
+    {
         "id": "xpr-50",
         "legendary": ["Broken Will"],
         "epic": ["Geometry", "Sunspot", "Marquis", "Arachnophobia", "Dark Tech", "Ooze", "Dragon Brood", "Dolphins Wink", "Shiver", "Laser Burn"]
